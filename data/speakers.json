@@ -10,28 +10,32 @@
       "title": "Co-Founder; Professor",
       "org": "Databricks & Anyscale; UC Berkeley",
       "link": "https://www.linkedin.com/in/ionstoica/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "ion_stoica.jpg"
     },
     {
       "name": "Rich Lyons",
       "title": "Chancellor",
       "org": "UC Berkeley",
       "link": "https://www.linkedin.com/in/rich-lyons-30332b1",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "rich_lyons.png"
     },
     {
       "name": "Dawn Song",
       "title": "Professor; Co-Director",
       "org": "UC Berkeley; Berkeley RDI",
       "link": "https://www.linkedin.com/in/dawn-song-51586033/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "dawn_song.jpg"
     },
     {
       "name": "Wojciech Zaremba",
       "title": "Co-Founder",
       "org": "OpenAI",
       "link": "https://www.linkedin.com/in/wojciech-zaremba-356568164/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "wojciech_zaremba.jpg"
     },
     {
       "name": "Ali Ghodsi",
@@ -45,14 +49,16 @@
       "title": "Co-Founder; Professor",
       "org": "Physical Intelligence; UC Berkeley",
       "link": "https://www.linkedin.com/in/sergey-levine-8a6679a9/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "sergey_levine.jpg"
     },
     {
       "name": "Jennifer Chayes",
       "title": "Dean of CDSS",
       "org": "UC Berkeley",
       "link": "https://www.linkedin.com/in/jennifer-chayes-3633694/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "jennifer_chayes.jpg"
     },
     {
       "name": "Peter Steinberger",
@@ -94,7 +100,8 @@
       "title": "",
       "org": "",
       "link": "https://www.linkedin.com/in/andrej-karpathy-9a650716/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "andrej_karpathy.jpg"
     },
     {
       "name": "Rao Surapaneni",
@@ -115,7 +122,8 @@
       "title": "VP of AI Research",
       "org": "Nvidia",
       "link": "https://www.linkedin.com/in/sanja-fidler-85343413/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "sanja_fidler.webp"
     },
     {
       "name": "Jonathan Cohen",
@@ -129,7 +137,8 @@
       "title": "Director of Robotics & Distinguished Scientist",
       "org": "Nvidia",
       "link": "https://www.linkedin.com/in/drjimfan/",
-      "stage": "Main"
+      "stage": "Main",
+      "headshot": "jim_fan.jpg"
     },
     {
       "name": "Dan Roth",
@@ -276,7 +285,8 @@
       "title": "MTS",
       "org": "OpenAI",
       "link": "https://www.linkedin.com/in/noam-brown-a463a894/",
-      "stage": "TBD"
+      "stage": "TBD",
+      "headshot": "noam_brown.jpg"
     },
     {
       "name": "Chris Bregler",
