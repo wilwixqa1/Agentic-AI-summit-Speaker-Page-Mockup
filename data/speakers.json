@@ -1,0 +1,436 @@
+{
+  "event": {
+    "name": "Agentic AI Summit 2026",
+    "dates": "August 1-2, 2026",
+    "venue": "UC Berkeley Campus"
+  },
+  "speakers": [
+    {
+      "name": "Ion Stoica",
+      "title": "Co-Founder; Professor",
+      "org": "Databricks & Anyscale; UC Berkeley",
+      "link": "https://www.linkedin.com/in/ionstoica/",
+      "stage": "Main"
+    },
+    {
+      "name": "Rich Lyons",
+      "title": "Chancellor",
+      "org": "UC Berkeley",
+      "link": "https://www.linkedin.com/in/rich-lyons-30332b1",
+      "stage": "Main"
+    },
+    {
+      "name": "Dawn Song",
+      "title": "Professor; Co-Director",
+      "org": "UC Berkeley; Berkeley RDI",
+      "link": "https://www.linkedin.com/in/dawn-song-51586033/",
+      "stage": "Main"
+    },
+    {
+      "name": "Wojciech Zaremba",
+      "title": "Co-Founder",
+      "org": "OpenAI",
+      "link": "https://www.linkedin.com/in/wojciech-zaremba-356568164/",
+      "stage": "Main"
+    },
+    {
+      "name": "Ali Ghodsi",
+      "title": "Co-Founder & CEO",
+      "org": "Databricks",
+      "link": "https://www.linkedin.com/in/alighodsi/",
+      "stage": "Main"
+    },
+    {
+      "name": "Sergey Levine",
+      "title": "Co-Founder; Professor",
+      "org": "Physical Intelligence; UC Berkeley",
+      "link": "https://www.linkedin.com/in/sergey-levine-8a6679a9/",
+      "stage": "Main"
+    },
+    {
+      "name": "Jennifer Chayes",
+      "title": "Dean of CDSS",
+      "org": "UC Berkeley",
+      "link": "https://www.linkedin.com/in/jennifer-chayes-3633694/",
+      "stage": "Main"
+    },
+    {
+      "name": "Peter Steinberger",
+      "title": "Creator of OpenClaw",
+      "org": "OpenAI",
+      "link": "",
+      "stage": "Main"
+    },
+    {
+      "name": "Jasjeet Sekhon",
+      "title": "Chief Strategy Officer",
+      "org": "Google DeepMind",
+      "link": "https://www.linkedin.com/in/jasjeet-sekhon-9a39b5159",
+      "stage": "Main"
+    },
+    {
+      "name": "Pushmeet Kohli",
+      "title": "VP of Science",
+      "org": "Google DeepMind",
+      "link": "https://www.linkedin.com/in/pushmeet-kohli-6a0b2b3/",
+      "stage": "Main"
+    },
+    {
+      "name": "Igor Babuschkin",
+      "title": "Co-Founder",
+      "org": "xAI",
+      "link": "https://www.linkedin.com/in/igor-babuschkin/",
+      "stage": "Main"
+    },
+    {
+      "name": "Ed Chi",
+      "title": "VP of Research",
+      "org": "Google DeepMind",
+      "link": "https://www.linkedin.com/in/edchi/",
+      "stage": "Main"
+    },
+    {
+      "name": "Andrej Karpathy",
+      "title": "",
+      "org": "",
+      "link": "https://www.linkedin.com/in/andrej-karpathy-9a650716/",
+      "stage": "Main"
+    },
+    {
+      "name": "Rao Surapaneni",
+      "title": "VP/GM AI Search & Specialized AI",
+      "org": "Google Cloud",
+      "link": "",
+      "stage": "Main"
+    },
+    {
+      "name": "Peter Desantis",
+      "title": "SVP, Foundational AI Models",
+      "org": "Amazon",
+      "link": "https://www.linkedin.com/in/peter-desantis-4b474a4/",
+      "stage": "Main"
+    },
+    {
+      "name": "Sanja Fidler",
+      "title": "VP of AI Research",
+      "org": "Nvidia",
+      "link": "https://www.linkedin.com/in/sanja-fidler-85343413/",
+      "stage": "Main"
+    },
+    {
+      "name": "Jonathan Cohen",
+      "title": "VP of Applied Research",
+      "org": "Nvidia",
+      "link": "https://www.linkedin.com/in/jonathan-cohen-2572764/",
+      "stage": "Main"
+    },
+    {
+      "name": "Jim Fan",
+      "title": "Director of Robotics & Distinguished Scientist",
+      "org": "Nvidia",
+      "link": "https://www.linkedin.com/in/drjimfan/",
+      "stage": "Main"
+    },
+    {
+      "name": "Dan Roth",
+      "title": "Chief AI Scientist",
+      "org": "Oracle",
+      "link": "https://www.linkedin.com/in/dan-roth-86738a5/",
+      "stage": "Main"
+    },
+    {
+      "name": "Weizhu Chen",
+      "title": "Technical Fellow & CVP",
+      "org": "Microsoft AI",
+      "link": "https://www.linkedin.com/in/weizhu-chen-620b2330/",
+      "stage": "Main"
+    },
+    {
+      "name": "Adarsh Hiremath",
+      "title": "Co-Founder & CTO",
+      "org": "Mercor",
+      "link": "https://www.linkedin.com/in/adarsh-hiremath/",
+      "stage": "Main"
+    },
+    {
+      "name": "Arvind Jain",
+      "title": "Founder & CEO",
+      "org": "Glean",
+      "link": "https://www.linkedin.com/in/arvindjain/",
+      "stage": "Main"
+    },
+    {
+      "name": "Richard Socher",
+      "title": "Founder & CEO",
+      "org": "You.com",
+      "link": "https://www.linkedin.com/in/richardsocher/",
+      "stage": "Main"
+    },
+    {
+      "name": "Gabe Pereyra",
+      "title": "Co-Founder & President",
+      "org": "Harvey AI",
+      "link": "https://www.linkedin.com/in/gabepereyra/",
+      "stage": "Main"
+    },
+    {
+      "name": "Michele Catasta",
+      "title": "President",
+      "org": "Replit",
+      "link": "https://www.linkedin.com/in/pirroh/",
+      "stage": "Main"
+    },
+    {
+      "name": "Alex Graveley",
+      "title": "Director of Comet",
+      "org": "Perplexity AI",
+      "link": "https://www.linkedin.com/in/alexgraveley/",
+      "stage": "Main"
+    },
+    {
+      "name": "Michael Spranger",
+      "title": "President",
+      "org": "Sony AI",
+      "link": "https://www.linkedin.com/in/michael-spranger-4aa36716/",
+      "stage": "Main"
+    },
+    {
+      "name": "Martin Casado",
+      "title": "General Partner",
+      "org": "a16z",
+      "link": "https://www.linkedin.com/in/martincasado/",
+      "stage": "Main"
+    },
+    {
+      "name": "Alfred Lin",
+      "title": "General Partner",
+      "org": "Sequoia Capital",
+      "link": "https://www.linkedin.com/in/alfredlin/",
+      "stage": "Main"
+    },
+    {
+      "name": "Andy Konwinski",
+      "title": "Co-Founder",
+      "org": "Databricks & Laude Ventures",
+      "link": "https://www.linkedin.com/in/andykonwinski/",
+      "stage": "Main"
+    },
+    {
+      "name": "Anjney Midha",
+      "title": "General Partner",
+      "org": "a16z",
+      "link": "https://www.linkedin.com/in/anjney/",
+      "stage": "Main"
+    },
+    {
+      "name": "Saurabh Tiwary",
+      "title": "VP & GM, Cloud AI",
+      "org": "Google",
+      "link": "https://www.linkedin.com/in/saurabhtiwary/",
+      "stage": "Main"
+    },
+    {
+      "name": "Lukas Biewald",
+      "title": "Founder & CEO; SVP of AI",
+      "org": "Weights & Biases; CoreWeave",
+      "link": "https://www.linkedin.com/in/lukasbiewald/",
+      "stage": "Main"
+    },
+    {
+      "name": "Milind Naphade",
+      "title": "SVP, AI Foundations",
+      "org": "Capital One",
+      "link": "https://www.linkedin.com/in/milind-naphade-a919816/",
+      "stage": "Main"
+    },
+    {
+      "name": "Ali Nazari",
+      "title": "Head of Deep Learning Research",
+      "org": "Susquehanna International Group",
+      "link": "https://www.linkedin.com/in/ali-nazari-97246716",
+      "stage": "Main"
+    },
+    {
+      "name": "Anastasis Germanidis",
+      "title": "Co-Founder & Co-CEO",
+      "org": "Runway",
+      "link": "https://www.linkedin.com/in/anastasis/",
+      "stage": "Main"
+    },
+    {
+      "name": "Dima Dmytro Dzhulgakov",
+      "title": "Co-Founder & CTO",
+      "org": "Fireworks AI",
+      "link": "https://www.linkedin.com/in/dzhulgakov/",
+      "stage": "Main"
+    },
+    {
+      "name": "Ryan Lopopolo",
+      "title": "MTS (Lead Dark Factory)",
+      "org": "OpenAI",
+      "link": "",
+      "stage": "TBD"
+    },
+    {
+      "name": "Noam Brown",
+      "title": "MTS",
+      "org": "OpenAI",
+      "link": "https://www.linkedin.com/in/noam-brown-a463a894/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Chris Bregler",
+      "title": "Senior Director",
+      "org": "Google DeepMind",
+      "link": "https://www.linkedin.com/in/chrisbregler/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Vincent Vanhoucke",
+      "title": "Distinguished Engineer",
+      "org": "Waymo",
+      "link": "https://www.linkedin.com/in/vincent-vanhoucke-3684203/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Peter Stone",
+      "title": "Chief Scientist; Professor",
+      "org": "Sony AI; UT Austin",
+      "link": "https://www.linkedin.com/in/peter-stone-3a73033/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Danqi Chen",
+      "title": "Associate Professor",
+      "org": "Princeton",
+      "link": "https://www.linkedin.com/in/danqi-chen-a507a51a/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Krithik Puthalath",
+      "title": "CEO",
+      "org": "Zyphra",
+      "link": "",
+      "stage": "TBD"
+    },
+    {
+      "name": "Eric Ho",
+      "title": "Co-Founder & CEO",
+      "org": "Goodfire",
+      "link": "",
+      "stage": "TBD"
+    },
+    {
+      "name": "Aditya Grover",
+      "title": "Co-Founder & CTO",
+      "org": "Inception Labs",
+      "link": "https://www.linkedin.com/in/adityagrover/",
+      "stage": "TBD"
+    },
+    {
+      "name": "Ekin Dogus Cubuk",
+      "title": "Co-Founder",
+      "org": "Periodic Labs",
+      "link": "",
+      "stage": "TBD"
+    },
+    {
+      "name": "Andi Peng",
+      "title": "Co-Founder",
+      "org": "Humans &",
+      "link": "",
+      "stage": "TBD"
+    },
+    {
+      "name": "Nick Harris",
+      "title": "Founder & CEO",
+      "org": "Lightmatter",
+      "link": "https://www.linkedin.com/in/nicholaschristopherharris/",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Ori Goshen",
+      "title": "Co-Founder & CEO",
+      "org": "AI21 Labs",
+      "link": "https://www.linkedin.com/in/origoshen/",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Ben Athiwaratkun",
+      "title": "Senior Director, Core ML",
+      "org": "Together AI",
+      "link": "https://www.linkedin.com/in/benathi/",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Priya Ponnapalli",
+      "title": "SVP of Engineering",
+      "org": "Scale AI",
+      "link": "",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Giambattista Parascandolo",
+      "title": "Research Fellow",
+      "org": "OpenAI",
+      "link": "https://sites.google.com/view/giambattista-parascandolo/home",
+      "stage": "Frontier"
+    },
+    {
+      "name": "James Zou",
+      "title": "Professor",
+      "org": "Stanford",
+      "link": "https://www.james-zou.com",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Bolei Zhou",
+      "title": "Associate Professor / Chief AI Scientist",
+      "org": "UCLA / Coco Robotics",
+      "link": "https://boleizhou.github.io/",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Misha Sra",
+      "title": "Associate Professor",
+      "org": "UC Santa Barbara",
+      "link": "https://sites.cs.ucsb.edu/~sra/",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Neil Lawrence",
+      "title": "Chief Scientist & Co-founder",
+      "org": "Trent AI & University of Cambridge",
+      "link": "https://www.linkedin.com/in/neil-lawrence-129a22127",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Mengdi Wang",
+      "title": "Professor",
+      "org": "Princeton",
+      "link": "https://mwang.princeton.edu",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Vijay Ganesh",
+      "title": "Professor",
+      "org": "Georgia Institute of Technology",
+      "link": "https://ca.linkedin.com/in/ganeshvijay",
+      "stage": "Frontier"
+    },
+    {
+      "name": "Will Knight",
+      "title": "Senior Writer",
+      "org": "Wired",
+      "link": "https://www.linkedin.com/in/willknight1/",
+      "stage": "Media"
+    },
+    {
+      "name": "Megan Morrone",
+      "title": "Reporter",
+      "org": "Axios",
+      "link": "https://www.linkedin.com/in/meganmorrone/",
+      "stage": "Media"
+    }
+  ]
+}
