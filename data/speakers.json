@@ -10,10 +10,8 @@
       "title": "Co-Founder; Professor",
       "org": "Databricks and Anyscale; UC Berkeley",
       "stage": "Main",
-      "headshot": "ion_stoica.jpg",
-      "link": "https://people.eecs.berkeley.edu/~istoica/",
-      "scale": "0.85",
-      "crop": "center 35%"
+      "headshot": "ion_stoica.png",
+      "link": "https://people.eecs.berkeley.edu/~istoica/"
     },
     {
       "name": "Rich Lyons",
