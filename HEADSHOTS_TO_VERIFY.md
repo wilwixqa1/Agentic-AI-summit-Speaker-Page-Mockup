@@ -17,7 +17,7 @@ Batch 1 (earlier session, order had drifted):
 Batch 2 (assigned strictly by upload order):
 - michele_catasta.png   -> Michele Catasta   (full beard, blue quarter-zip, panel stage)
 - alex_graveley.png     -> Alex Graveley     (dark cap, stubble, casual/outdoor selfie)
-- michael_spranger.png  -> Michael Spranger  (bald, black glasses, black sweater, arms crossed)
+- michael_spranger.png  -> Michael Spranger  [CONFIRMED - user supplied correct photo this session]
 - alfred_lin.png        -> Alfred Lin        [CONFIRMED - user supplied correct photo this session]
 - andy_konwinski.png    -> Andy Konwinski    [CONFIRMED - user supplied correct photo this session]
 - lukas_biewald.png     -> Lukas Biewald     (dark hair, teal shirt, gold network-graphic bg) [user-confirmed]
