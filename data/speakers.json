@@ -51,7 +51,8 @@
       "org": "Physical Intelligence; UC Berkeley",
       "stage": "Main",
       "headshot": "sergey_levine.jpg",
-      "link": "https://people.eecs.berkeley.edu/~svlevine/"
+      "link": "https://people.eecs.berkeley.edu/~svlevine/",
+      "crop": "center 40%"
     },
     {
       "name": "Jennifer Chayes",
@@ -59,7 +60,8 @@
       "org": "UC Berkeley",
       "stage": "Main",
       "headshot": "jennifer_chayes.jpg",
-      "link": "https://cdss.berkeley.edu/people/jennifer-chayes"
+      "link": "https://cdss.berkeley.edu/people/jennifer-chayes",
+      "crop": "center 40%"
     },
     {
       "name": "Peter Steinberger",
@@ -83,7 +85,8 @@
       "org": "Google DeepMind",
       "stage": "Main",
       "headshot": "pushmeet_kohli.png",
-      "link": "https://research.google/people/105667/"
+      "link": "https://research.google/people/105667/",
+      "crop": "center 40%"
     },
     {
       "name": "Igor Babuschkin",
