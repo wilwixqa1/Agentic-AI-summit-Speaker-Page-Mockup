@@ -15,7 +15,7 @@ Batch 1 (earlier session, order had drifted):
   NOTE: DeSantis still to verify (typically clean-shaven; saved image shows a beard).
 
 Batch 2 (assigned strictly by upload order):
-- michele_catasta.png   -> Michele Catasta   (full beard, blue quarter-zip, panel stage)
+- michele_catasta.png   -> Michele Catasta   [CONFIRMED - user supplied correct photo this session]
 - alex_graveley.png     -> Alex Graveley     [CONFIRMED - user supplied correct photo this session]
 - michael_spranger.png  -> Michael Spranger  [CONFIRMED - user supplied correct photo this session]
 - alfred_lin.png        -> Alfred Lin        [CONFIRMED - user supplied correct photo this session]
