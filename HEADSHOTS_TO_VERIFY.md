@@ -41,6 +41,5 @@ Spot-check that these open correctly; a few are personal sites / LinkedIn that m
 ## D. (resolved — Chuan Li, Adarsh, Anjney links replaced with user-provided URLs)
 
 ## E. Housekeeping
-- NEW PHOTO NEEDED: Peter Steinberger — current headshot (peter_steinberger.png) should be replaced with a better one.
 - noam_brown.jpg is in the repo but Noam Brown is Frontier (not Main); not rendered. Delete or keep for Frontier page later.
 - 2 TBD Main Stage slots (AMD, Daytona) are not in speakers.json (no person attached yet).
