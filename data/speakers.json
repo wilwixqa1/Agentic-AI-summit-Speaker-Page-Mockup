@@ -141,7 +141,8 @@
       "org": "Nvidia",
       "stage": "Main",
       "headshot": "jim_fan.png",
-      "link": "https://jimfan.me/"
+      "link": "https://jimfan.me/",
+      "crop": "60% 35%"
     },
     {
       "name": "Dan Roth",
