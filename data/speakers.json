@@ -59,7 +59,9 @@
       "org": "UC Berkeley",
       "stage": "Main",
       "headshot": "jennifer_chayes.png",
-      "link": "https://cdss.berkeley.edu/people/jennifer-chayes"
+      "link": "https://cdss.berkeley.edu/people/jennifer-chayes",
+      "scale": "1.15",
+      "crop": "center 30%"
     },
     {
       "name": "Peter Steinberger",
