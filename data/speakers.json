@@ -43,7 +43,7 @@
       "org": "Databricks",
       "stage": "Main",
       "headshot": "ali_ghodsi.png",
-      "link": "https://www.linkedin.com/in/alighodsi/"
+      "link": "https://people.eecs.berkeley.edu/~alig/"
     },
     {
       "name": "Sergey Levine",
@@ -163,7 +163,7 @@
       "org": "Mercor",
       "stage": "Main",
       "headshot": "adarsh_hiremath.png",
-      "link": "https://www.linkedin.com/in/adarsh-hiremath"
+      "link": "https://www.forbes.com/profile/adarsh-hiremath/"
     },
     {
       "name": "Arvind Jain",
@@ -171,7 +171,7 @@
       "org": "Glean",
       "stage": "Main",
       "headshot": "arvind_jain.png",
-      "link": "https://www.glean.com/about"
+      "link": "https://www.glean.com/authors/arvind-jain"
     },
     {
       "name": "Richard Socher",
@@ -187,7 +187,7 @@
       "org": "Harvey AI",
       "stage": "Main",
       "headshot": "gabe_pereyra.png",
-      "link": "https://www.linkedin.com/in/gabepereyra"
+      "link": "https://www.harvey.ai/blog/author/gabe-pereyra"
     },
     {
       "name": "Michele Catasta",
@@ -243,7 +243,7 @@
       "org": "a16z",
       "stage": "Main",
       "headshot": "anjney_midha.png",
-      "link": "https://www.linkedin.com/in/anjneymidha/"
+      "link": "https://a16z.com/author/anjney-midha/"
     },
     {
       "name": "Saurabh Tiwary",
@@ -267,14 +267,15 @@
       "org": "Capital One",
       "stage": "Main",
       "headshot": "milind_naphade.png",
-      "link": "https://www.linkedin.com/in/milind-naphade-a919816/"
+      "link": "https://www.capitalone.com/tech/ai/milind-naphade-svp-ai-foundations/"
     },
     {
       "name": "Ali Nazari",
       "title": "Head of Deep Learning Research",
       "org": "Susquehanna International Group",
       "stage": "Main",
-      "headshot": "ali_nazari.png"
+      "headshot": "ali_nazari.png",
+      "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
     },
     {
       "name": "Anastasis Germanidis",
@@ -289,14 +290,16 @@
       "title": "Co-Founder/CTO",
       "org": "Fireworks AI",
       "stage": "Main",
-      "headshot": "dima_dzhulgakov.png"
+      "headshot": "dima_dzhulgakov.png",
+      "link": "https://www.linkedin.com/in/dzhulgakov/"
     },
     {
       "name": "Waseem Alshikh",
       "title": "Co-Founder/CTO",
       "org": "Writer",
       "stage": "Main",
-      "headshot": "waseem_alshikh.png"
+      "headshot": "waseem_alshikh.png",
+      "link": "https://www.linkedin.com/in/waseemalshikh/"
     },
     {
       "name": "Chuan Li",
@@ -304,70 +307,79 @@
       "org": "Lambda",
       "stage": "Main",
       "headshot": "chuan_li.png",
-      "link": "https://www.linkedin.com/in/chuan-li"
+      "link": "https://github.com/chuanli11"
     },
     {
       "name": "Surojit Chatterjee",
       "title": "Founder/CEO",
       "org": "Ema",
       "stage": "Main",
-      "headshot": "surojit_chatterjee.png"
+      "headshot": "surojit_chatterjee.png",
+      "link": "https://www.linkedin.com/in/surojitchatterjee/"
     },
     {
       "name": "Anahita Tafvizi",
       "title": "Chief Data & AI Officer",
       "org": "Snowflake",
       "stage": "Main",
-      "headshot": "anahita_tafvizi.png"
+      "headshot": "anahita_tafvizi.png",
+      "link": "https://www.snowflake.com/en/blog/authors/anahita-tafvizi-/"
     },
     {
       "name": "Duncan Lennox",
       "title": "Chief Product & Technology Officer",
       "org": "Hubspot",
       "stage": "Main",
-      "headshot": "duncan_lennox.png"
+      "headshot": "duncan_lennox.png",
+      "link": "https://www.hubspot.com/company/board-of-directors/duncan-lennox"
     },
     {
       "name": "Jeff Wecker",
       "title": "CTO",
       "org": "Two Sigma",
       "stage": "Main",
-      "headshot": "jeff_wecker.png"
+      "headshot": "jeff_wecker.png",
+      "link": "https://www.linkedin.com/in/jeffwecker/"
     },
     {
       "name": "Jen Allum",
       "title": "SVP, Co-Head of GenAI",
       "org": "DE Shaw",
       "stage": "Main",
-      "headshot": "jen_allum.png"
+      "headshot": "jen_allum.png",
+      "link": "https://www.jenniferallum.info/"
     },
     {
       "name": "Ryan Lopopolo",
       "title": "MTS (lead Dark Factory)",
       "org": "OpenAI",
       "stage": "Main",
-      "headshot": "ryan_lopopolo.png"
+      "headshot": "ryan_lopopolo.png",
+      "link": "https://hyperbo.la/contact/"
     },
     {
       "name": "Aditya Grover",
       "title": "Co-Founder/CTO",
       "org": "Inception Labs (NeoLab)",
       "stage": "Main",
-      "headshot": "aditya_grover.png"
+      "headshot": "aditya_grover.png",
+      "link": "https://aditya-grover.github.io/"
     },
     {
       "name": "Ekin Dogus Cubuk",
       "title": "Co-Founder",
       "org": "Periodic Labs (NeoLab)",
       "stage": "Main",
-      "headshot": "ekin_dogus_cubuk.png"
+      "headshot": "ekin_dogus_cubuk.png",
+      "link": "https://www.linkedin.com/in/ekin-dogus-cubuk-9148b8114/"
     },
     {
       "name": "Andi Peng",
       "title": "Co-Founder",
       "org": "Humans & (NeoLab)",
       "stage": "Main",
-      "headshot": "andi_peng.png"
+      "headshot": "andi_peng.png",
+      "link": "https://andipeng.com/"
     }
   ]
 }

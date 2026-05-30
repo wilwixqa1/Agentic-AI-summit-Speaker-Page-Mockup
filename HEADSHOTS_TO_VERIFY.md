@@ -34,15 +34,11 @@ Batch 3 (the 14 missing, uploaded two at a time in list order):
 - Peter DeSantis: listed "SVP, Foundational AI Models, Quantum Computing, Amazon" — now leads Amazon's new AGI org; confirm exact title.
 - Richard Socher: org set to "You.com" per Confirmed Speakers tab, but Main Stage draft-program note says "Richard will talk about his new startup; pls update his affiliation" (possibly "Recursive"). Confirm.
 
-## C. Links still missing (12) — need profile URLs
-Ali Nazari, Dima Dmytro Dzhulgakov, Waseem Alshikh, Surojit Chatterjee,
-Anahita Tafvizi, Duncan Lennox, Jeff Wecker, Jen Allum, Ryan Lopopolo,
-Aditya Grover, Ekin Dogus Cubuk, Andi Peng.
+## C. Links — RESOLVED (all 47 speakers now have links as of this update)
+(Previously 12 missing + 3 guessed slugs; user provided the full set.)
+Spot-check that these open correctly; a few are personal sites / LinkedIn that may change.
 
-## D. Links assigned but slug NOT verified (may 404)
-- Chuan Li        -> https://www.linkedin.com/in/chuan-li   (guessed slug)
-- Adarsh Hiremath -> https://www.linkedin.com/in/adarsh-hiremath  (guessed slug)
-- Anjney Midha    -> https://www.linkedin.com/in/anjneymidha/  (guessed slug)
+## D. (resolved — Chuan Li, Adarsh, Anjney links replaced with user-provided URLs)
 
 ## E. Housekeeping
 - noam_brown.jpg is in the repo but Noam Brown is Frontier (not Main); not rendered. Delete or keep for Frontier page later.
