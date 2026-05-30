@@ -19,7 +19,7 @@ Batch 2 (assigned strictly by upload order):
 - alex_graveley.png     -> Alex Graveley     (dark cap, stubble, casual/outdoor selfie)
 - michael_spranger.png  -> Michael Spranger  (bald, black glasses, black sweater, arms crossed)
 - alfred_lin.png        -> Alfred Lin        [CONFIRMED - user supplied correct photo this session]
-- andy_konwinski.png    -> Andy Konwinski    (large bushy beard, gray glasses, cream sweater, under a tree)
+- andy_konwinski.png    -> Andy Konwinski    [CONFIRMED - user supplied correct photo this session]
 - lukas_biewald.png     -> Lukas Biewald     (dark hair, teal shirt, gold network-graphic bg) [user-confirmed]
 
 Batch 3 (the 14 missing, uploaded two at a time in list order):
