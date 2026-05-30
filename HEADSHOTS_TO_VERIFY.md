@@ -10,7 +10,7 @@ Verify each filename matches the correct person (side-by-side with the flyer).
 Batch 1 (earlier session, order had drifted):
 - peter_desantis.png    -> Peter DeSantis    (glasses, dark beard, brown checkered blazer, white sculptural bg)
 - igor_babuschkin.png   -> Igor Babuschkin   (younger, plaid scarf, circular crop, dark bg)
-- saurabh_tiwary.png    -> Saurabh Tiwary    (glasses, gray suit/blue shirt, teal-blue gradient)
+- saurabh_tiwary.png    -> Saurabh Tiwary    [CONFIRMED - user supplied correct photo this session]
 - dan_roth.png          -> Dan Roth          [CONFIRMED - user supplied correct photo this session]
   NOTE: DeSantis still to verify (typically clean-shaven; saved image shows a beard).
 
