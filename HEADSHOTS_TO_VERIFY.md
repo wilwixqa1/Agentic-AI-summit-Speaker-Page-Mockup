@@ -11,8 +11,8 @@ Batch 1 (earlier session, order had drifted):
 - peter_desantis.png    -> Peter DeSantis    (glasses, dark beard, brown checkered blazer, white sculptural bg)
 - igor_babuschkin.png   -> Igor Babuschkin   (younger, plaid scarf, circular crop, dark bg)
 - saurabh_tiwary.png    -> Saurabh Tiwary    (glasses, gray suit/blue shirt, teal-blue gradient)
-- dan_roth.png          -> Dan Roth          (bald, light beard, dark suit, blue bg)
-  NOTE: DeSantis and Roth are typically clean-shaven in public photos; both saved images show beards. Look closely.
+- dan_roth.png          -> Dan Roth          [CONFIRMED - user supplied correct photo this session]
+  NOTE: DeSantis still to verify (typically clean-shaven; saved image shows a beard).
 
 Batch 2 (assigned strictly by upload order):
 - michele_catasta.png   -> Michele Catasta   (full beard, blue quarter-zip, panel stage)
