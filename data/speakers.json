@@ -105,7 +105,7 @@
     },
     {
       "name": "Andrej Karpathy",
-      "title": "",
+      "title": "Co-Founder of OpenAI; Founder of Eureka Labs",
       "org": "",
       "stage": "Main",
       "headshot": "andrej_karpathy.jpg",
@@ -121,7 +121,7 @@
     },
     {
       "name": "Peter DeSantis",
-      "title": "SVP, Foundational AI Models, Quantum Computing",
+      "title": "SVP, Foundational AI Models, Custom Silicon, Quantum Computing",
       "org": "Amazon",
       "stage": "Main",
       "headshot": "peter_desantis.png",
@@ -202,7 +202,7 @@
     },
     {
       "name": "Alex Graveley",
-      "title": "Director of Comet",
+      "title": "Director, Comet",
       "org": "Perplexity AI",
       "stage": "Main",
       "headshot": "alex_graveley.png",
@@ -250,16 +250,16 @@
     },
     {
       "name": "Saurabh Tiwary",
-      "title": "VP & GM, Cloud AI",
-      "org": "Google",
+      "title": "VP & GM, Google Cloud AI",
+      "org": "",
       "stage": "Main",
       "headshot": "saurabh_tiwary.png",
       "link": "https://www.linkedin.com/in/saurabh-tiwary/"
     },
     {
       "name": "Lukas Biewald",
-      "title": "Founder/CEO; SVP of AI",
-      "org": "Weights & Biases; CoreWeave",
+      "title": "Founder/CEO",
+      "org": "Weights & Biases",
       "stage": "Main",
       "headshot": "lukas_biewald.png",
       "link": "https://lukasbiewald.com/"
@@ -306,7 +306,7 @@
     },
     {
       "name": "Chuan Li",
-      "title": "Chief Science Officer",
+      "title": "Chief Scientific Officer",
       "org": "Lambda",
       "stage": "Main",
       "headshot": "chuan_li.png",

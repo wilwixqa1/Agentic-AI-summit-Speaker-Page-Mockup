@@ -28,11 +28,12 @@ Batch 3 (the 14 missing, uploaded two at a time in list order):
   jeff_wecker.png, jen_allum.png, ryan_lopopolo.png, aditya_grover.png,
   ekin_dogus_cubuk.png, andi_peng.png
 
-## B. Titles / affiliations to confirm (source = speaker spreadsheet, may be stale)
-- Igor Babuschkin: spreadsheet still says "Co-Founder, xAI" but Dawn's own note says "check what Igor is doing now" (he left xAI Aug 2025 for Babuschkin Ventures).
-- Alfred Lin: listed "General Partner, Sequoia" — he became Sequoia managing partner Nov 2025.
-- Peter DeSantis: listed "SVP, Foundational AI Models, Quantum Computing, Amazon" — now leads Amazon's new AGI org; confirm exact title.
-- Richard Socher: org set to "You.com" per Confirmed Speakers tab, but Main Stage draft-program note says "Richard will talk about his new startup; pls update his affiliation" (possibly "Recursive"). Confirm.
+## B. Titles / affiliations — RESOLVED against official flyer (May 31)
+All titles/orgs now match the speaker flyer, which is the authoritative source.
+Karpathy (was blank), Saurabh Tiwary, Chuan Li, Alex Graveley, Lukas Biewald,
+and Peter DeSantis (added "Custom Silicon") corrected to flyer wording.
+NOTE: Igor Babuschkin shows "Co-Founder, xAI" and Alfred Lin "General Partner, Sequoia"
+per the flyer; if real-world roles changed, that's a flyer decision for Linda, not the page.
 
 ## C. Links — RESOLVED (all 47 speakers now have links as of this update)
 (Previously 12 missing + 3 guessed slugs; user provided the full set.)
