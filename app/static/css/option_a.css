@@ -1,7 +1,11 @@
 .grid-speakers {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+}
+.grid-speakers .speaker-card {
+  width: calc((100% - 3 * 20px) / 4);
 }
 .speaker-card {
   background: white;
@@ -45,13 +49,13 @@
   display: inline-block;
 }
 
-@media (max-width: 900px) { .grid-speakers { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 640px) { .grid-speakers { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+@media (max-width: 900px) { .grid-speakers .speaker-card { width: calc((100% - 2 * 20px) / 3); } }
+@media (max-width: 640px) { .grid-speakers { gap: 12px; } .grid-speakers .speaker-card { width: calc((100% - 12px) / 2); } }
 
 .more-announced {
   text-align: center;
-  color: #999;
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 28px;
+  color: var(--berkeley-blue);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 48px 0 24px;
 }
