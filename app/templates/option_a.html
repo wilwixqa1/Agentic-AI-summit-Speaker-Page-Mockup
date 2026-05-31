@@ -12,12 +12,12 @@
       <input class="search-input" type="text" id="search" placeholder="Search speakers by name or organization..." />
     </div>
 
-    {% set stages = [("Main Stage", "Main"), ("Frontier Research Stage", "Frontier"), ("TBD", "TBD"), ("Media", "Media")] %}
+    {% set stages = [("", "Main"), ("Frontier Research Stage", "Frontier"), ("TBD", "TBD"), ("Media", "Media")] %}
     {% for stage_label, stage_key in stages %}
       {% set stage_speakers = data.speakers | selectattr("stage", "equalto", stage_key) | list %}
       {% if stage_speakers %}
       <div class="stage-group" data-stage="{{ stage_key }}">
-        <span class="stage-label">{{ stage_label }}</span>
+        {% if stage_label %}<span class="stage-label">{{ stage_label }}</span>{% endif %}
         <span class="speaker-count">{{ stage_speakers | length }} speakers</span>
         <div class="grid-speakers">
           {% for s in stage_speakers %}
@@ -40,6 +40,7 @@
       </div>
       {% endif %}
     {% endfor %}
+    <p class="more-announced">More to be announced</p>
   </div>
 </section>
 {% endblock %}
