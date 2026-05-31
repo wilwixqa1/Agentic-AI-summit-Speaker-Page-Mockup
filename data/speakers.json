@@ -265,38 +265,6 @@
       "link": "https://lukasbiewald.com/"
     },
     {
-      "name": "Milind Naphade",
-      "title": "SVP, AI Foundations",
-      "org": "Capital One",
-      "stage": "Main",
-      "headshot": "milind_naphade.png",
-      "link": "https://www.capitalone.com/tech/ai/milind-naphade-svp-ai-foundations/"
-    },
-    {
-      "name": "Ali Nazari",
-      "title": "Head of Deep Learning Research",
-      "org": "Susquehanna International Group",
-      "stage": "Main",
-      "headshot": "ali_nazari.png",
-      "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
-    },
-    {
-      "name": "Anastasis Germanidis",
-      "title": "Co-Founder/Co-CEO",
-      "org": "Runway",
-      "stage": "Main",
-      "headshot": "anastasis_germanidis.png",
-      "link": "https://agermanidis.com/"
-    },
-    {
-      "name": "Dima Dmytro Dzhulgakov",
-      "title": "Co-Founder/CTO",
-      "org": "Fireworks AI",
-      "stage": "Main",
-      "headshot": "dima_dzhulgakov.png",
-      "link": "https://www.linkedin.com/in/dzhulgakov/"
-    },
-    {
       "name": "Waseem Alshikh",
       "title": "Co-Founder/CTO",
       "org": "Writer",
@@ -383,6 +351,38 @@
       "stage": "Main",
       "headshot": "andi_peng.png",
       "link": "https://andipeng.com/"
+    },
+    {
+      "name": "Milind Naphade",
+      "title": "SVP, AI Foundations",
+      "org": "Capital One",
+      "stage": "Main",
+      "headshot": "milind_naphade.png",
+      "link": "https://www.capitalone.com/tech/ai/milind-naphade-svp-ai-foundations/"
+    },
+    {
+      "name": "Ali Nazari",
+      "title": "Head of Deep Learning Research",
+      "org": "Susquehanna International Group",
+      "stage": "Main",
+      "headshot": "ali_nazari.png",
+      "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
+    },
+    {
+      "name": "Anastasis Germanidis",
+      "title": "Co-Founder/Co-CEO",
+      "org": "Runway",
+      "stage": "Main",
+      "headshot": "anastasis_germanidis.png",
+      "link": "https://agermanidis.com/"
+    },
+    {
+      "name": "Dima Dmytro Dzhulgakov",
+      "title": "Co-Founder/CTO",
+      "org": "Fireworks AI",
+      "stage": "Main",
+      "headshot": "dima_dzhulgakov.png",
+      "link": "https://www.linkedin.com/in/dzhulgakov/"
     }
   ]
 }
