@@ -5,7 +5,7 @@
   gap: 20px;
 }
 .grid-speakers .speaker-card {
-  width: calc((100% - 3 * 20px) / 4);
+  width: calc((100% - 3 * 20px) / 4 - 1px);
 }
 .speaker-card {
   background: white;
