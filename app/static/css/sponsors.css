@@ -86,9 +86,16 @@
 
 /* ════════ SIDE EVENTS LINE ════════ */
 .side-events {
-  background: var(--berkeley-blue);
+  background: #002a52;
   margin-top: 28px;
   position: relative;
+  overflow: hidden;
+}
+.side-events::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 85% 15%, rgba(70,130,200,0.35), transparent 60%);
+  pointer-events: none;
 }
 .side-events-inner {
   padding: 56px 32px;
