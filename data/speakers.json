@@ -38,6 +38,14 @@
       "link": "https://www.linkedin.com/in/wojciechzaremba/"
     },
     {
+      "name": "Andrej Karpathy",
+      "title": "Co-Founder of OpenAI; Founder of Eureka Labs",
+      "org": "",
+      "stage": "Main",
+      "headshot": "andrej_karpathy.jpg",
+      "link": "https://karpathy.ai/"
+    },
+    {
       "name": "Ali Ghodsi",
       "title": "Co-Founder/CEO",
       "org": "Databricks",
@@ -54,6 +62,14 @@
       "link": "https://people.eecs.berkeley.edu/~svlevine/"
     },
     {
+      "name": "Peter Steinberger",
+      "title": "Creator of OpenClaw",
+      "org": "OpenAI",
+      "stage": "Main",
+      "headshot": "peter_steinberger.png",
+      "link": "https://steipete.me/"
+    },
+    {
       "name": "Jennifer Chayes",
       "title": "Dean of CDSS",
       "org": "UC Berkeley",
@@ -62,14 +78,6 @@
       "link": "https://cdss.berkeley.edu/people/jennifer-chayes",
       "scale": "1.15",
       "crop": "center 30%"
-    },
-    {
-      "name": "Peter Steinberger",
-      "title": "Creator of OpenClaw",
-      "org": "OpenAI",
-      "stage": "Main",
-      "headshot": "peter_steinberger.png",
-      "link": "https://steipete.me/"
     },
     {
       "name": "Jasjeet Sekhon",
@@ -102,14 +110,6 @@
       "stage": "Main",
       "headshot": "ed_chi.png",
       "link": "https://www.edchi.net/"
-    },
-    {
-      "name": "Andrej Karpathy",
-      "title": "Co-Founder of OpenAI; Founder of Eureka Labs",
-      "org": "",
-      "stage": "Main",
-      "headshot": "andrej_karpathy.jpg",
-      "link": "https://karpathy.ai/"
     },
     {
       "name": "Rao Surapaneni",
@@ -161,6 +161,14 @@
       "link": "https://www.microsoft.com/en-us/research/people/wzchen/"
     },
     {
+      "name": "Jonathan Cohen",
+      "title": "VP of Applied Research",
+      "org": "Nvidia",
+      "stage": "Main",
+      "headshot": "jonathan_cohen.png",
+      "link": "https://www.jcohen.name/"
+    },
+    {
       "name": "Adarsh Hiremath",
       "title": "Co-Founder/CTO",
       "org": "Mercor",
@@ -178,8 +186,8 @@
     },
     {
       "name": "Richard Socher",
-      "title": "Founder/CEO",
-      "org": "You.com",
+      "title": "Co-Founder, Recursive Superintelligence",
+      "org": "",
       "stage": "Main",
       "headshot": "richard_socher.png",
       "link": "https://socher.org"
@@ -383,6 +391,30 @@
       "stage": "Main",
       "headshot": "dima_dzhulgakov.png",
       "link": "https://www.linkedin.com/in/dzhulgakov/"
+    },
+    {
+      "name": "Krithik Puthalath",
+      "title": "CEO",
+      "org": "Zyphra",
+      "stage": "Main",
+      "headshot": "krithik_puthalath.png",
+      "link": "https://www.linkedin.com/in/krithikputhalath/"
+    },
+    {
+      "name": "Wei Zhan",
+      "title": "Chief Scientist",
+      "org": "Applied Intuition",
+      "stage": "Main",
+      "headshot": "wei_zhan.png",
+      "link": "https://zhanwei.site/"
+    },
+    {
+      "name": "Faraz Shafiq",
+      "title": "Head of AI",
+      "org": "Wells Fargo",
+      "stage": "Main",
+      "headshot": "faraz_shafiq.png",
+      "link": "https://www.linkedin.com/in/fshafiq/"
     }
   ]
 }
