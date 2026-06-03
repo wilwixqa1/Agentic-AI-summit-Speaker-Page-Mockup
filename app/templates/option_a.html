@@ -20,7 +20,6 @@
       {% if stage_speakers %}
       <div class="stage-group" data-stage="{{ stage_key }}">
         {% if stage_label %}<span class="stage-label">{{ stage_label }}</span>{% endif %}
-        <span class="speaker-count">{{ stage_speakers | length }} speakers</span>
         <div class="grid-speakers">
           {% for s in stage_speakers %}
           <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
