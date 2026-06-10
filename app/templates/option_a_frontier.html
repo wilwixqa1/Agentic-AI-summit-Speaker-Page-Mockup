@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% set active = 'a-frontier' %}
+{% block title %}Option A + Frontier — Circle Grid{% endblock %}
+{% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/sponsors.css">{% endblock %}
+{% block content %}
+<section class="speakers-section">
+  <div class="container">
+    <h1 class="section-title">Featured Speakers</h1>
+    <p class="section-sub">{{ data.event.name }} brings together leading researchers, founders, and industry leaders shaping the future of Agentic AI.</p>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search-input" type="text" id="search" placeholder="Search speakers by name or organization..." />
+    </div>
+
+    {% set ns = namespace(color=0) %}
+
+    <!-- ── Main Stage (flat grid, as today) ── -->
+    {% if main_speakers %}
+    <div class="stage-group" data-stage="Main">
+      <div class="grid-speakers">
+        {% for s in main_speakers %}
+        <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
+          {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+          <div class="speaker-avatar" style="{% set colors = ['#dce9f5','#e8e5fa','#d9f0e6','#fae8df','#fbe3ec','#faecd4','#e5f0d8','#eceae3'] %}background: {{ colors[ns.color % 8] }};">
+            {% if s.headshot %}
+              <img src="/static/img/speakers/{{ s.headshot }}" alt="{{ s.name }}"{% if s.crop or s.scale %} style="{% if s.crop %}object-position: {{ s.crop }};{% endif %}{% if s.scale %}transform: scale({{ s.scale }});{% endif %}"{% endif %} />
+            {% else %}
+              {{ s.name.split()[0][0] }}{{ s.name.split()[-1][0] }}
+            {% endif %}
+          </div>
+          {% set ns.color = ns.color + 1 %}
+          <p class="speaker-name">{{ s.name }}</p>
+          <p class="speaker-title">{{ s.title }}</p>
+          <p class="speaker-org">{{ s.org }}</p>
+          {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- ── Frontier Stage (grouped by session) ── -->
+    <div class="frontier-divider"><span>Frontier Stage</span></div>
+    {% for session, members in sessions %}
+    <div class="stage-group" data-stage="{{ session }}">
+      <span class="stage-label">{{ session }}</span>
+      <div class="grid-speakers">
+        {% for s in members %}
+        <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
+          {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+          <div class="speaker-avatar" style="{% set colors = ['#dce9f5','#e8e5fa','#d9f0e6','#fae8df','#fbe3ec','#faecd4','#e5f0d8','#eceae3'] %}background: {{ colors[ns.color % 8] }};">
+            {% if s.headshot %}
+              <img src="/static/img/speakers/{{ s.headshot }}" alt="{{ s.name }}"{% if s.crop or s.scale %} style="{% if s.crop %}object-position: {{ s.crop }};{% endif %}{% if s.scale %}transform: scale({{ s.scale }});{% endif %}"{% endif %} />
+            {% else %}
+              {{ s.name.split()[0][0] }}{{ s.name.split()[-1][0] }}
+            {% endif %}
+          </div>
+          {% set ns.color = ns.color + 1 %}
+          <p class="speaker-name">{{ s.name }}</p>
+          <p class="speaker-title">{{ s.title }}</p>
+          <p class="speaker-org">{{ s.org }}</p>
+          {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    <p class="more-announced">More speakers to be announced soon...</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+document.getElementById('search').addEventListener('input', function(e) {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll('.speaker-card').forEach(card => {
+    const name = card.dataset.name || '';
+    const org = card.dataset.org || '';
+    card.style.display = (name.includes(q) || org.includes(q)) ? '' : 'none';
+  });
+  document.querySelectorAll('.stage-group').forEach(group => {
+    const visible = group.querySelectorAll('.speaker-card[style=""], .speaker-card:not([style])');
+    const hidden = group.querySelectorAll('.speaker-card[style*="none"]');
+    group.style.display = (visible.length === 0 && hidden.length > 0) ? 'none' : '';
+  });
+});
+</script>
+{% endblock %}

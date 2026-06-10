@@ -59,3 +59,36 @@
   font-weight: 700;
   margin: 48px 0 24px;
 }
+
+/* ── Main/Frontier toggle (Option A + Toggle variant) ── */
+.stage-toggle {
+  display: flex; justify-content: center; gap: 8px;
+  margin: 0 auto 24px; max-width: 360px;
+}
+.toggle-btn {
+  flex: 1; padding: 10px 18px; font-size: 14px; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  color: var(--berkeley-blue); background: white;
+  border: 1px solid var(--line); border-radius: 999px;
+  transition: all 0.15s ease;
+}
+.toggle-btn:hover { border-color: var(--berkeley-blue); }
+.toggle-btn.active {
+  background: var(--berkeley-blue); color: white;
+  border-color: var(--berkeley-blue);
+}
+.stage-panel[hidden] { display: none; }
+
+/* ── Frontier divider (Option A + Frontier variant) ── */
+.frontier-divider {
+  display: flex; align-items: center; text-align: center;
+  margin: 48px 0 8px; color: var(--berkeley-blue);
+}
+.frontier-divider::before,
+.frontier-divider::after {
+  content: ""; flex: 1; height: 1px; background: var(--line);
+}
+.frontier-divider span {
+  padding: 0 16px; font-size: 18px; font-weight: 800;
+  letter-spacing: 0.02em;
+}

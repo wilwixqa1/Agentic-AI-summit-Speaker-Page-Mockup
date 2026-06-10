@@ -19,6 +19,22 @@ def load_speakers():
         return json.load(f)
 
 
+def load_frontier():
+    with open(FRONTIER_PATH) as f:
+        return json.load(f)
+
+
+def frontier_sessions(frontier_data):
+    """Group Frontier speakers by session, ordered by session_order then slot."""
+    sessions = {}
+    for s in frontier_data["speakers"]:
+        sessions.setdefault(s["session"], []).append(s)
+    ordered = sorted(sessions.items(), key=lambda kv: kv[1][0]["session_order"])
+    for _, members in ordered:
+        members.sort(key=lambda s: s["slot"])
+    return ordered
+
+
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
     return templates.TemplateResponse(request, "index.html")
@@ -44,20 +60,55 @@ def option_c(request: Request):
 
 @app.get("/frontier", response_class=HTMLResponse)
 def frontier(request: Request):
-    with open(FRONTIER_PATH) as f:
-        data = json.load(f)
-    # group speakers by session, preserving session_order then slot
-    sessions = {}
-    for s in data["speakers"]:
-        sessions.setdefault(s["session"], []).append(s)
-    ordered = sorted(
-        sessions.items(),
-        key=lambda kv: kv[1][0]["session_order"],
-    )
-    for _, members in ordered:
-        members.sort(key=lambda s: s["slot"])
+    data = load_frontier()
+    ordered = frontier_sessions(data)
     return templates.TemplateResponse(
         request, "frontier.html", {"data": data, "sessions": ordered}
+    )
+
+
+@app.get("/option-a-frontier", response_class=HTMLResponse)
+def option_a_frontier(request: Request):
+    """Option A circle-grid: Main Stage grid + Frontier grouped by session."""
+    main = load_speakers()
+    frontier_data = load_frontier()
+    return templates.TemplateResponse(
+        request,
+        "option_a_frontier.html",
+        {
+            "data": main,
+            "main_speakers": main["speakers"],
+            "sessions": frontier_sessions(frontier_data),
+        },
+    )
+
+
+@app.get("/option-a-toggle", response_class=HTMLResponse)
+def option_a_toggle(request: Request):
+    """Option A with a Main / Frontier toggle."""
+    main = load_speakers()
+    frontier_data = load_frontier()
+    return templates.TemplateResponse(
+        request,
+        "option_a_toggle.html",
+        {
+            "data": main,
+            "main_speakers": main["speakers"],
+            "sessions": frontier_sessions(frontier_data),
+        },
+    )
+
+
+@app.get("/option-a-flat", response_class=HTMLResponse)
+def option_a_flat(request: Request):
+    """Option A flat list, no categories: Main + Frontier combined."""
+    main = load_speakers()
+    frontier_data = load_frontier()
+    all_speakers = main["speakers"] + frontier_data["speakers"]
+    return templates.TemplateResponse(
+        request,
+        "option_a_flat.html",
+        {"data": main, "all_speakers": all_speakers},
     )
 
 

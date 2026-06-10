@@ -19,6 +19,9 @@
       </a>
       <nav class="site-nav">
         <a href="/option-a" {% if active == 'a' %}class="active"{% endif %}>Option A</a>
+        <a href="/option-a-frontier" {% if active == 'a-frontier' %}class="active"{% endif %}>A + Frontier</a>
+        <a href="/option-a-toggle" {% if active == 'a-toggle' %}class="active"{% endif %}>A + Toggle</a>
+        <a href="/option-a-flat" {% if active == 'a-flat' %}class="active"{% endif %}>A + Flat</a>
         <a href="/option-b" {% if active == 'b' %}class="active"{% endif %}>Option B</a>
         <a href="/option-c" {% if active == 'c' %}class="active"{% endif %}>Option C</a>
         <a href="/frontier" {% if active == 'frontier' %}class="active"{% endif %}>Frontier Stage</a>
