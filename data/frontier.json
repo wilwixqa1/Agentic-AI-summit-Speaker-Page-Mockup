@@ -12,7 +12,7 @@
       "session_order": 0,
       "slot": 0,
       "headshot": "noam_brown.jpg",
-      "link": null
+      "link": "https://noambrown.com/"
     },
     {
       "name": "Jianfeng Gao",
@@ -23,7 +23,7 @@
       "session_order": 0,
       "slot": 1,
       "headshot": "jianfeng_gao.png",
-      "link": null
+      "link": "https://www.microsoft.com/en-us/research/people/jfgao/"
     },
     {
       "name": "Aditya Grover",
@@ -34,7 +34,7 @@
       "session_order": 0,
       "slot": 2,
       "headshot": "aditya_grover.png",
-      "link": null
+      "link": "https://aditya-grover.github.io/"
     },
     {
       "name": "Giambattista Parascandolo",
@@ -45,7 +45,7 @@
       "session_order": 0,
       "slot": 3,
       "headshot": "giambattista_parascandolo.png",
-      "link": null
+      "link": "https://sites.google.com/view/giambattista-parascandolo/home"
     },
     {
       "name": "Yu Su",
@@ -56,7 +56,7 @@
       "session_order": 0,
       "slot": 4,
       "headshot": "yu_su.png",
-      "link": null
+      "link": "https://ysu1989.github.io/"
     },
     {
       "name": "Danqi Chen",
@@ -67,7 +67,7 @@
       "session_order": 0,
       "slot": 5,
       "headshot": "danqi_chen.png",
-      "link": null
+      "link": "https://www.cs.princeton.edu/~danqic/"
     },
     {
       "name": "Doga Kerestecioglu",
@@ -78,7 +78,7 @@
       "session_order": 0,
       "slot": 6,
       "headshot": "doga_kerestecioglu.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/dogaker"
     },
     {
       "name": "Rishabh Agarwal",
@@ -89,7 +89,7 @@
       "session_order": 0,
       "slot": 7,
       "headshot": "rishabh_agarwal.png",
-      "link": null
+      "link": "https://agarwl.github.io/"
     },
     {
       "name": "Furong Huang",
@@ -100,7 +100,7 @@
       "session_order": 0,
       "slot": 8,
       "headshot": "furong_huang.png",
-      "link": null
+      "link": "https://furong-huang.com/"
     },
     {
       "name": "Raja Giryes",
@@ -111,7 +111,7 @@
       "session_order": 0,
       "slot": 9,
       "headshot": "raja_giryes.png",
-      "link": null
+      "link": "https://www.giryes.sites.tau.ac.il/"
     },
     {
       "name": "Sergei Gukov",
@@ -122,7 +122,7 @@
       "session_order": 1,
       "slot": 10,
       "headshot": "sergei_gukov.png",
-      "link": null
+      "link": "https://www.pma.caltech.edu/people/gukov"
     },
     {
       "name": "Abhradeep Guha Thakurta",
@@ -133,7 +133,7 @@
       "session_order": 1,
       "slot": 11,
       "headshot": "abhradeep_thakurta.png",
-      "link": null
+      "link": "https://athakurta.squarespace.com/"
     },
     {
       "name": "Markus J. Buehler",
@@ -144,7 +144,7 @@
       "session_order": 2,
       "slot": 12,
       "headshot": "markus_buehler.png",
-      "link": null
+      "link": "https://lamm.mit.edu/"
     },
     {
       "name": "James Zou",
@@ -155,7 +155,7 @@
       "session_order": 2,
       "slot": 13,
       "headshot": "james_zou.png",
-      "link": null
+      "link": "https://www.james-zou.com/"
     },
     {
       "name": "Mengdi Wang",
@@ -166,7 +166,7 @@
       "session_order": 2,
       "slot": 14,
       "headshot": "mengdi_wang.png",
-      "link": null
+      "link": "https://mwang.princeton.edu/"
     },
     {
       "name": "Rose Yu",
@@ -177,7 +177,7 @@
       "session_order": 2,
       "slot": 15,
       "headshot": "rose_yu.png",
-      "link": null
+      "link": "https://roseyu.com/"
     },
     {
       "name": "Nick Talken",
@@ -188,7 +188,7 @@
       "session_order": 2,
       "slot": 16,
       "headshot": "nick_talken.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/nick-talken-b720ba42/"
     },
     {
       "name": "Eno Reyes",
@@ -199,7 +199,7 @@
       "session_order": 3,
       "slot": 17,
       "headshot": "eno_reyes.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/enoreyes/"
     },
     {
       "name": "Dhruv Batra",
@@ -210,7 +210,7 @@
       "session_order": 3,
       "slot": 18,
       "headshot": "dhruv_batra.png",
-      "link": null
+      "link": "https://dhruvbatra.com/"
     },
     {
       "name": "Shamir Abdul Aziz",
@@ -221,7 +221,7 @@
       "session_order": 3,
       "slot": 19,
       "headshot": "shamir_aziz.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/meetshamir/"
     },
     {
       "name": "Krishnakumar Sharma",
@@ -232,7 +232,7 @@
       "session_order": 3,
       "slot": 20,
       "headshot": "krishnakumar_sharma.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/krisberlin/"
     },
     {
       "name": "Chris Bregler",
@@ -243,7 +243,7 @@
       "session_order": 4,
       "slot": 21,
       "headshot": "chris_bregler.png",
-      "link": null
+      "link": "https://chris.bregler.com/"
     },
     {
       "name": "Trevor Darrell",
@@ -254,7 +254,7 @@
       "session_order": 4,
       "slot": 22,
       "headshot": "trevor_darrell.png",
-      "link": null
+      "link": "https://people.eecs.berkeley.edu/~trevor/"
     },
     {
       "name": "Vincent Vanhoucke",
@@ -265,7 +265,7 @@
       "session_order": 5,
       "slot": 23,
       "headshot": "vincent_vanhoucke.png",
-      "link": null
+      "link": "https://vincent.vanhoucke.com/"
     },
     {
       "name": "Peter Stone",
@@ -276,7 +276,7 @@
       "session_order": 5,
       "slot": 24,
       "headshot": "peter_stone.png",
-      "link": null
+      "link": "https://www.cs.utexas.edu/~pstone/"
     },
     {
       "name": "Bolei Zhou",
@@ -287,7 +287,7 @@
       "session_order": 5,
       "slot": 25,
       "headshot": "bolei_zhou.png",
-      "link": null
+      "link": "https://boleizhou.github.io/"
     },
     {
       "name": "Manmohan Chandraker",
@@ -298,7 +298,7 @@
       "session_order": 5,
       "slot": 26,
       "headshot": "manmohan_chandraker.png",
-      "link": null
+      "link": "https://cseweb.ucsd.edu/~mkchandraker/"
     },
     {
       "name": "Ion Stoica",
@@ -309,7 +309,7 @@
       "session_order": 6,
       "slot": 27,
       "headshot": "ion_stoica.png",
-      "link": null
+      "link": "https://people.eecs.berkeley.edu/~istoica/"
     },
     {
       "name": "Tim Hockin",
@@ -320,7 +320,7 @@
       "session_order": 6,
       "slot": 28,
       "headshot": "tim_hockin.png",
-      "link": null
+      "link": "https://hockin.org/~thockin/"
     },
     {
       "name": "Tushar Krishna",
@@ -331,7 +331,7 @@
       "session_order": 6,
       "slot": 29,
       "headshot": "tushar_krishna.png",
-      "link": null
+      "link": "https://tusharkrishna.ece.gatech.edu/"
     },
     {
       "name": "Ben Athiwaratkun",
@@ -342,7 +342,7 @@
       "session_order": 6,
       "slot": 30,
       "headshot": "ben_athiwaratkun.png",
-      "link": null
+      "link": "https://benathi.github.io/"
     },
     {
       "name": "Gosia Steinder",
@@ -353,7 +353,7 @@
       "session_order": 6,
       "slot": 31,
       "headshot": "gosia_steinder.png",
-      "link": null
+      "link": "https://researcher.ibm.com/researcher/view.php?person=us-steinder"
     },
     {
       "name": "Daniel Homola",
@@ -364,7 +364,7 @@
       "session_order": 7,
       "slot": 32,
       "headshot": "daniel_homola.png",
-      "link": null
+      "link": "https://danielhomola.ai/"
     },
     {
       "name": "Daniel Fink",
@@ -375,7 +375,7 @@
       "session_order": 7,
       "slot": 33,
       "headshot": "daniel_fink.png",
-      "link": null
+      "link": "https://www.cognizant.com/us/en/ai-lab/blog/agentic-ai-developer-interview-daniel-fink"
     },
     {
       "name": "Jon-Rav Shende",
@@ -386,7 +386,7 @@
       "session_order": 8,
       "slot": 34,
       "headshot": "jonrav_shende.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/jonshende/"
     },
     {
       "name": "Itsik Mantin",
@@ -397,7 +397,7 @@
       "session_order": 8,
       "slot": 35,
       "headshot": "itsik_mantin.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/imantin/"
     },
     {
       "name": "Mohamed Nabeel",
@@ -408,7 +408,7 @@
       "session_order": 8,
       "slot": 36,
       "headshot": "mohamed_nabeel.png",
-      "link": null
+      "link": "https://scholar.google.com/citations?user=Lka4RwsAAAAJ&hl=en"
     },
     {
       "name": "Jordan Jindong Gu",
@@ -419,7 +419,7 @@
       "session_order": 8,
       "slot": 37,
       "headshot": "jordan_gu.png",
-      "link": null
+      "link": "https://jindonggu.github.io/"
     },
     {
       "name": "John A McDermid",
@@ -430,7 +430,7 @@
       "session_order": 8,
       "slot": 38,
       "headshot": "john_mcdermid.png",
-      "link": null
+      "link": "https://www.cs.york.ac.uk/people/jam"
     },
     {
       "name": "Geng Sng",
@@ -441,7 +441,7 @@
       "session_order": 8,
       "slot": 39,
       "headshot": "geng_sng.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/geng-sng/"
     },
     {
       "name": "Vaishnavi Gudur",
@@ -452,7 +452,7 @@
       "session_order": 8,
       "slot": 40,
       "headshot": "vaishnavi_gudur.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/vaishnavi-gudur"
     },
     {
       "name": "Neil Lawrence",
@@ -463,7 +463,7 @@
       "session_order": 8,
       "slot": 41,
       "headshot": "neil_lawrence.png",
-      "link": null
+      "link": "https://inverseprobability.com/"
     },
     {
       "name": "Dr. Dan Fu",
@@ -474,7 +474,7 @@
       "session_order": 9,
       "slot": 42,
       "headshot": "dan_fu.png",
-      "link": null
+      "link": "https://danfu.org/"
     },
     {
       "name": "Jongryool Kim",
@@ -485,7 +485,7 @@
       "session_order": 9,
       "slot": 43,
       "headshot": "jongryool_kim.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/jongryool-kim-72bb3982/"
     },
     {
       "name": "Rahul Bakshi",
@@ -496,7 +496,7 @@
       "session_order": 9,
       "slot": 44,
       "headshot": "rahul_bakshi.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/thetechnologist"
     },
     {
       "name": "Nick Harris",
@@ -507,7 +507,7 @@
       "session_order": 9,
       "slot": 45,
       "headshot": "nick_harris.png",
-      "link": null
+      "link": "https://nicholascharris.com/"
     },
     {
       "name": "John Liu",
@@ -518,7 +518,7 @@
       "session_order": 9,
       "slot": 46,
       "headshot": "john_liu.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/johnliu13"
     },
     {
       "name": "Jun Yang",
@@ -529,7 +529,7 @@
       "session_order": 9,
       "slot": 47,
       "headshot": "jun_yang.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/junyang/"
     },
     {
       "name": "Michel Tricot",
@@ -540,7 +540,7 @@
       "session_order": 10,
       "slot": 48,
       "headshot": "michel_tricot.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/micheltricot"
     },
     {
       "name": "Arindam Sett",
@@ -551,7 +551,7 @@
       "session_order": 10,
       "slot": 49,
       "headshot": "arindam_sett.png",
-      "link": null
+      "link": "https://www.ischool.berkeley.edu/people/arindam-sett"
     },
     {
       "name": "Christopher Petrillo",
@@ -562,7 +562,7 @@
       "session_order": 10,
       "slot": 50,
       "headshot": "christopher_petrillo.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/christopher-petrillo-a0b64b76/"
     },
     {
       "name": "Eric Ho",
@@ -573,7 +573,7 @@
       "session_order": 11,
       "slot": 51,
       "headshot": "eric_ho.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/eric-ho-53981862/"
     },
     {
       "name": "Huan Sun",
@@ -584,7 +584,7 @@
       "session_order": 11,
       "slot": 52,
       "headshot": "huan_sun.png",
-      "link": null
+      "link": "https://u.osu.edu/ihudas/people/"
     },
     {
       "name": "Navrina Singh",
@@ -595,7 +595,7 @@
       "session_order": 11,
       "slot": 53,
       "headshot": "navrina_singh.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/navrina"
     },
     {
       "name": "Donghao Huang",
@@ -606,7 +606,7 @@
       "session_order": 12,
       "slot": 54,
       "headshot": "donghao_huang.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/donghao-huang/"
     },
     {
       "name": "Venkat Bhat",
@@ -617,7 +617,7 @@
       "session_order": 12,
       "slot": 55,
       "headshot": "venkat_bhat.png",
-      "link": null
+      "link": "https://psychiatry.utoronto.ca/faculty/venkat-bhat"
     },
     {
       "name": "Shaghayegh Gharghabi",
@@ -628,7 +628,7 @@
       "session_order": 12,
       "slot": 56,
       "headshot": "shaghayegh_gharghabi.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/sh-gharghabi/"
     },
     {
       "name": "Kira Radinsky",
@@ -639,7 +639,7 @@
       "session_order": 12,
       "slot": 57,
       "headshot": "kira_radinsky.png",
-      "link": null
+      "link": "http://www.kiraradinsky.com/"
     },
     {
       "name": "Lovedeep Gondara",
@@ -650,7 +650,7 @@
       "session_order": 13,
       "slot": 58,
       "headshot": "lovedeep_gondara.png",
-      "link": null
+      "link": "https://lovedeepgondara.com/"
     },
     {
       "name": "Rishi Bommasani",
@@ -661,7 +661,7 @@
       "session_order": 13,
       "slot": 59,
       "headshot": "rishi_bommasani.png",
-      "link": null
+      "link": "https://rishibommasani.github.io/"
     },
     {
       "name": "Michal Shmueli-Scheuer",
@@ -672,7 +672,7 @@
       "session_order": 14,
       "slot": 60,
       "headshot": "michal_shmuelischeuer.png",
-      "link": null
+      "link": "https://research.ibm.com/people/michal-shmueli-scheuer"
     },
     {
       "name": "Srijith Rajamohan",
@@ -683,7 +683,7 @@
       "session_order": 14,
       "slot": 61,
       "headshot": "srijith_rajamohan.png",
-      "link": null
+      "link": "https://srijithr.gitlab.io/"
     },
     {
       "name": "Ranjan Sinha",
@@ -694,7 +694,7 @@
       "session_order": 14,
       "slot": 62,
       "headshot": "ranjan_sinha.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/sinharanjan/"
     },
     {
       "name": "Anastasios N Angelopoulos",
@@ -705,7 +705,7 @@
       "session_order": 14,
       "slot": 63,
       "headshot": "anastasios_angelopoulos.png",
-      "link": null
+      "link": "https://people.eecs.berkeley.edu/~angelopoulos/"
     },
     {
       "name": "Aayush Agrawal",
@@ -716,7 +716,7 @@
       "session_order": 14,
       "slot": 64,
       "headshot": "aayush_agrawal.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/aayushxagrawal/"
     },
     {
       "name": "Izzy Miller",
@@ -727,7 +727,7 @@
       "session_order": 14,
       "slot": 65,
       "headshot": "izzy_miller.png",
-      "link": null
+      "link": "https://www.izzy.co/"
     },
     {
       "name": "Rahul Krishna",
@@ -738,7 +738,7 @@
       "session_order": 14,
       "slot": 66,
       "headshot": "rahul_krishna.png",
-      "link": null
+      "link": "http://rkrsn.us"
     },
     {
       "name": "Yuan (Emily) Xue",
@@ -749,7 +749,7 @@
       "session_order": 14,
       "slot": 67,
       "headshot": "yuan_xue.png",
-      "link": null
+      "link": "https://yuanxue.github.io/"
     },
     {
       "name": "S Joy Mountford",
@@ -760,7 +760,7 @@
       "session_order": 14,
       "slot": 68,
       "headshot": "s_mountford.png",
-      "link": null
+      "link": "https://www.joymountford.com/"
     },
     {
       "name": "Gideon Mendels",
@@ -771,7 +771,7 @@
       "session_order": 14,
       "slot": 69,
       "headshot": "gideon_mendels.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/gideon-mendels/"
     },
     {
       "name": "Scott Clark",
@@ -782,7 +782,7 @@
       "session_order": 14,
       "slot": 70,
       "headshot": "scott_clark.png",
-      "link": null
+      "link": "https://scottclark.io/"
     },
     {
       "name": "Barr Moses",
@@ -793,7 +793,7 @@
       "session_order": 14,
       "slot": 71,
       "headshot": "barr_moses.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/barrmoses/"
     },
     {
       "name": "Ori Goshen",
@@ -804,7 +804,7 @@
       "session_order": 15,
       "slot": 72,
       "headshot": "ori_goshen.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/ori-goshen-809a263/"
     },
     {
       "name": "Sunita Verma",
@@ -815,7 +815,7 @@
       "session_order": 15,
       "slot": 73,
       "headshot": "sunita_verma.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/sunita-verma-1a4491/"
     },
     {
       "name": "David Hsu",
@@ -826,7 +826,7 @@
       "session_order": 15,
       "slot": 74,
       "headshot": "david_hsu.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/dvdhsu"
     },
     {
       "name": "Dan Klein",
@@ -837,7 +837,7 @@
       "session_order": 15,
       "slot": 75,
       "headshot": "dan_klein.png",
-      "link": null
+      "link": "https://people.eecs.berkeley.edu/~klein/"
     },
     {
       "name": "Rene Pajta",
@@ -848,7 +848,7 @@
       "session_order": 15,
       "slot": 76,
       "headshot": "rene_pajta.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/renepajta/"
     },
     {
       "name": "Priya Ponnapalli",
@@ -859,7 +859,7 @@
       "session_order": 15,
       "slot": 77,
       "headshot": "priya_ponnapalli.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/priya-ponnapalli/"
     },
     {
       "name": "Merve Unuvar",
@@ -870,7 +870,7 @@
       "session_order": 15,
       "slot": 78,
       "headshot": "merve_unuvar.png",
-      "link": null
+      "link": "https://research.ibm.com/people/merve-unuvar"
     },
     {
       "name": "Nayaki Nayyar",
@@ -881,7 +881,7 @@
       "session_order": 15,
       "slot": 79,
       "headshot": "nayaki_nayyar.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/nayakinayyar"
     },
     {
       "name": "Surbhi Rathore",
@@ -892,7 +892,7 @@
       "session_order": 15,
       "slot": 80,
       "headshot": "surbhi_rathore.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/surbhi-rathore/"
     },
     {
       "name": "Ramesh Raskar",
@@ -903,7 +903,7 @@
       "session_order": 16,
       "slot": 82,
       "headshot": "ramesh_raskar.png",
-      "link": null
+      "link": "https://www.media.mit.edu/people/raskar/overview/"
     },
     {
       "name": "Wenbo Guo",
@@ -914,7 +914,7 @@
       "session_order": 16,
       "slot": 83,
       "headshot": "wenbo_guo.png",
-      "link": null
+      "link": "https://henrygwb.github.io/"
     },
     {
       "name": "Woosuk Kwon",
@@ -925,7 +925,7 @@
       "session_order": 16,
       "slot": 84,
       "headshot": "woosuk_kwon.png",
-      "link": null
+      "link": "https://woosuk.me/"
     },
     {
       "name": "Banghua Zhu",
@@ -936,7 +936,7 @@
       "session_order": 16,
       "slot": 85,
       "headshot": "banghua_zhu.png",
-      "link": null
+      "link": "https://banghua.me/"
     },
     {
       "name": "Raj De Datta",
@@ -947,7 +947,7 @@
       "session_order": 16,
       "slot": 86,
       "headshot": "raj_datta.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/rdedatta"
     },
     {
       "name": "Philip Rathle",
@@ -958,7 +958,7 @@
       "session_order": 16,
       "slot": 87,
       "headshot": "philip_rathle.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/prathle/"
     },
     {
       "name": "Saurabh Gupta",
@@ -969,7 +969,7 @@
       "session_order": 16,
       "slot": 89,
       "headshot": "saurabh_gupta.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/saurabhguptaprofile/"
     },
     {
       "name": "Shiva Kasiviswanathan",
@@ -980,7 +980,7 @@
       "session_order": 16,
       "slot": 90,
       "headshot": "shiva_kasiviswanathan.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/kasivisw/"
     },
     {
       "name": "Haishi Bai",
@@ -991,7 +991,7 @@
       "session_order": 16,
       "slot": 91,
       "headshot": "haishi_bai.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/haishi/"
     },
     {
       "name": "Karen Ullrich",
@@ -1002,7 +1002,7 @@
       "session_order": 16,
       "slot": 92,
       "headshot": "karen_ullrich.png",
-      "link": null
+      "link": "https://www.linkedin.com/in/karen-ullrich/"
     },
     {
       "name": "Denis Akhiyarov",
@@ -1013,7 +1013,7 @@
       "session_order": 16,
       "slot": 93,
       "headshot": "denis_akhiyarov.png",
-      "link": null
+      "link": "https://scholar.google.com/citations?user=TfBvStoAAAAJ&hl=en"
     },
     {
       "name": "Tanya Roosta",
@@ -1024,7 +1024,7 @@
       "session_order": 16,
       "slot": 94,
       "headshot": "tanya_roosta.png",
-      "link": null
+      "link": "https://tanyaroosta.github.io/"
     },
     {
       "name": "Nilou Salehi",
@@ -1035,7 +1035,7 @@
       "session_order": 16,
       "slot": 95,
       "headshot": "nilou_salehi.png",
-      "link": null
+      "link": "https://niloufar.org/"
     }
   ]
 }
