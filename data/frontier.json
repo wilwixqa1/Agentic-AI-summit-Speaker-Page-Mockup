@@ -11,7 +11,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 0,
-      "headshot": null,
+      "headshot": "noam_brown.jpg",
       "link": null
     },
     {
@@ -22,7 +22,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 1,
-      "headshot": null,
+      "headshot": "jianfeng_gao.png",
       "link": null
     },
     {
@@ -33,7 +33,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 2,
-      "headshot": null,
+      "headshot": "aditya_grover.png",
       "link": null
     },
     {
@@ -44,7 +44,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 3,
-      "headshot": null,
+      "headshot": "giambattista_parascandolo.png",
       "link": null
     },
     {
@@ -55,7 +55,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 4,
-      "headshot": null,
+      "headshot": "yu_su.png",
       "link": null
     },
     {
@@ -66,7 +66,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 5,
-      "headshot": null,
+      "headshot": "danqi_chen.png",
       "link": null
     },
     {
@@ -77,7 +77,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 6,
-      "headshot": null,
+      "headshot": "doga_kerestecioglu.png",
       "link": null
     },
     {
@@ -88,7 +88,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 7,
-      "headshot": null,
+      "headshot": "rishabh_agarwal.png",
       "link": null
     },
     {
@@ -99,7 +99,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 8,
-      "headshot": null,
+      "headshot": "furong_huang.png",
       "link": null
     },
     {
@@ -110,7 +110,7 @@
       "session": "Foundational Capabilities",
       "session_order": 0,
       "slot": 9,
-      "headshot": null,
+      "headshot": "raja_giryes.png",
       "link": null
     },
     {
@@ -121,7 +121,7 @@
       "session": "AI for Math",
       "session_order": 1,
       "slot": 10,
-      "headshot": null,
+      "headshot": "sergei_gukov.png",
       "link": null
     },
     {
@@ -132,7 +132,7 @@
       "session": "AI for Math",
       "session_order": 1,
       "slot": 11,
-      "headshot": null,
+      "headshot": "abhradeep_thakurta.png",
       "link": null
     },
     {
@@ -143,7 +143,7 @@
       "session": "AI for Science",
       "session_order": 2,
       "slot": 12,
-      "headshot": null,
+      "headshot": "markus_buehler.png",
       "link": null
     },
     {
@@ -154,7 +154,7 @@
       "session": "AI for Science",
       "session_order": 2,
       "slot": 13,
-      "headshot": null,
+      "headshot": "james_zou.png",
       "link": null
     },
     {
@@ -165,7 +165,7 @@
       "session": "AI for Science",
       "session_order": 2,
       "slot": 14,
-      "headshot": null,
+      "headshot": "mengdi_wang.png",
       "link": null
     },
     {
@@ -176,7 +176,7 @@
       "session": "AI for Science",
       "session_order": 2,
       "slot": 15,
-      "headshot": null,
+      "headshot": "rose_yu.png",
       "link": null
     },
     {
@@ -187,7 +187,7 @@
       "session": "AI for Science",
       "session_order": 2,
       "slot": 16,
-      "headshot": null,
+      "headshot": "nick_talken.png",
       "link": null
     },
     {
@@ -198,7 +198,7 @@
       "session": "Coding & Web Agent",
       "session_order": 3,
       "slot": 17,
-      "headshot": null,
+      "headshot": "eno_reyes.png",
       "link": null
     },
     {
@@ -209,7 +209,7 @@
       "session": "Coding & Web Agent",
       "session_order": 3,
       "slot": 18,
-      "headshot": null,
+      "headshot": "dhruv_batra.png",
       "link": null
     },
     {
@@ -220,7 +220,7 @@
       "session": "Coding & Web Agent",
       "session_order": 3,
       "slot": 19,
-      "headshot": null,
+      "headshot": "shamir_aziz.png",
       "link": null
     },
     {
@@ -231,7 +231,7 @@
       "session": "Coding & Web Agent",
       "session_order": 3,
       "slot": 20,
-      "headshot": null,
+      "headshot": "krishnakumar_sharma.png",
       "link": null
     },
     {
@@ -242,7 +242,7 @@
       "session": "Multimodal",
       "session_order": 4,
       "slot": 21,
-      "headshot": null,
+      "headshot": "chris_bregler.png",
       "link": null
     },
     {
@@ -253,7 +253,7 @@
       "session": "Multimodal",
       "session_order": 4,
       "slot": 22,
-      "headshot": null,
+      "headshot": "trevor_darrell.png",
       "link": null
     },
     {
@@ -264,7 +264,7 @@
       "session": "Robotics & World Model",
       "session_order": 5,
       "slot": 23,
-      "headshot": null,
+      "headshot": "vincent_vanhoucke.png",
       "link": null
     },
     {
@@ -275,7 +275,7 @@
       "session": "Robotics & World Model",
       "session_order": 5,
       "slot": 24,
-      "headshot": null,
+      "headshot": "peter_stone.png",
       "link": null
     },
     {
@@ -286,7 +286,7 @@
       "session": "Robotics & World Model",
       "session_order": 5,
       "slot": 25,
-      "headshot": null,
+      "headshot": "bolei_zhou.png",
       "link": null
     },
     {
@@ -297,7 +297,7 @@
       "session": "Robotics & World Model",
       "session_order": 5,
       "slot": 26,
-      "headshot": null,
+      "headshot": "manmohan_chandraker.png",
       "link": null
     },
     {
@@ -308,7 +308,7 @@
       "session": "Agent Infrastructure - 1",
       "session_order": 6,
       "slot": 27,
-      "headshot": null,
+      "headshot": "ion_stoica.png",
       "link": null
     },
     {
@@ -319,7 +319,7 @@
       "session": "Agent Infrastructure - 1",
       "session_order": 6,
       "slot": 28,
-      "headshot": null,
+      "headshot": "tim_hockin.png",
       "link": null
     },
     {
@@ -330,7 +330,7 @@
       "session": "Agent Infrastructure - 1",
       "session_order": 6,
       "slot": 29,
-      "headshot": null,
+      "headshot": "tushar_krishna.png",
       "link": null
     },
     {
@@ -341,7 +341,7 @@
       "session": "Agent Infrastructure - 1",
       "session_order": 6,
       "slot": 30,
-      "headshot": null,
+      "headshot": "ben_athiwaratkun.png",
       "link": null
     },
     {
@@ -352,7 +352,7 @@
       "session": "Agent Infrastructure - 1",
       "session_order": 6,
       "slot": 31,
-      "headshot": null,
+      "headshot": "gosia_steinder.png",
       "link": null
     },
     {
@@ -363,7 +363,7 @@
       "session": "Multi Agent",
       "session_order": 7,
       "slot": 32,
-      "headshot": null,
+      "headshot": "daniel_homola.png",
       "link": null
     },
     {
@@ -374,18 +374,18 @@
       "session": "Multi Agent",
       "session_order": 7,
       "slot": 33,
-      "headshot": null,
+      "headshot": "daniel_fink.png",
       "link": null
     },
     {
-      "name": "Jon-Rav Shene",
+      "name": "Jon-Rav Shende",
       "title": "Chief Technology Officer",
       "org": "Thales Group",
       "stage": "Frontier",
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 34,
-      "headshot": null,
+      "headshot": "jonrav_shende.png",
       "link": null
     },
     {
@@ -396,7 +396,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 35,
-      "headshot": null,
+      "headshot": "itsik_mantin.png",
       "link": null
     },
     {
@@ -407,7 +407,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 36,
-      "headshot": null,
+      "headshot": "mohamed_nabeel.png",
       "link": null
     },
     {
@@ -418,7 +418,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 37,
-      "headshot": null,
+      "headshot": "jordan_gu.png",
       "link": null
     },
     {
@@ -429,7 +429,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 38,
-      "headshot": null,
+      "headshot": "john_mcdermid.png",
       "link": null
     },
     {
@@ -440,7 +440,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 39,
-      "headshot": null,
+      "headshot": "geng_sng.png",
       "link": null
     },
     {
@@ -451,7 +451,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 40,
-      "headshot": null,
+      "headshot": "vaishnavi_gudur.png",
       "link": null
     },
     {
@@ -462,7 +462,7 @@
       "session": "AI for Cybersecurity",
       "session_order": 8,
       "slot": 41,
-      "headshot": null,
+      "headshot": "neil_lawrence.png",
       "link": null
     },
     {
@@ -473,7 +473,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 42,
-      "headshot": null,
+      "headshot": "dan_fu.png",
       "link": null
     },
     {
@@ -484,7 +484,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 43,
-      "headshot": null,
+      "headshot": "jongryool_kim.png",
       "link": null
     },
     {
@@ -495,7 +495,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 44,
-      "headshot": null,
+      "headshot": "rahul_bakshi.png",
       "link": null
     },
     {
@@ -506,7 +506,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 45,
-      "headshot": null,
+      "headshot": "nick_harris.png",
       "link": null
     },
     {
@@ -517,7 +517,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 46,
-      "headshot": null,
+      "headshot": "john_liu.png",
       "link": null
     },
     {
@@ -528,7 +528,7 @@
       "session": "Agent Infrastructure - 2",
       "session_order": 9,
       "slot": 47,
-      "headshot": null,
+      "headshot": "jun_yang.png",
       "link": null
     },
     {
@@ -539,7 +539,7 @@
       "session": "AI and Data",
       "session_order": 10,
       "slot": 48,
-      "headshot": null,
+      "headshot": "michel_tricot.png",
       "link": null
     },
     {
@@ -550,7 +550,7 @@
       "session": "AI and Data",
       "session_order": 10,
       "slot": 49,
-      "headshot": null,
+      "headshot": "arindam_sett.png",
       "link": null
     },
     {
@@ -561,7 +561,7 @@
       "session": "AI and Data",
       "session_order": 10,
       "slot": 50,
-      "headshot": null,
+      "headshot": "christopher_petrillo.png",
       "link": null
     },
     {
@@ -572,7 +572,7 @@
       "session": "AI Safety",
       "session_order": 11,
       "slot": 51,
-      "headshot": null,
+      "headshot": "eric_ho.png",
       "link": null
     },
     {
@@ -583,7 +583,7 @@
       "session": "AI Safety",
       "session_order": 11,
       "slot": 52,
-      "headshot": null,
+      "headshot": "huan_sun.png",
       "link": null
     },
     {
@@ -594,7 +594,7 @@
       "session": "AI Safety",
       "session_order": 11,
       "slot": 53,
-      "headshot": null,
+      "headshot": "navrina_singh.png",
       "link": null
     },
     {
@@ -605,7 +605,7 @@
       "session": "AI for Finance and Healthcare",
       "session_order": 12,
       "slot": 54,
-      "headshot": null,
+      "headshot": "donghao_huang.png",
       "link": null
     },
     {
@@ -616,7 +616,7 @@
       "session": "AI for Finance and Healthcare",
       "session_order": 12,
       "slot": 55,
-      "headshot": null,
+      "headshot": "venkat_bhat.png",
       "link": null
     },
     {
@@ -627,18 +627,18 @@
       "session": "AI for Finance and Healthcare",
       "session_order": 12,
       "slot": 56,
-      "headshot": null,
+      "headshot": "shaghayegh_gharghabi.png",
       "link": null
     },
     {
       "name": "Kira Radinsky",
-      "title": "CTO and Founder",
+      "title": "Co-Founder & CTO",
       "org": "Diagnostic Robotics",
       "stage": "Frontier",
       "session": "AI for Finance and Healthcare",
       "session_order": 12,
       "slot": 57,
-      "headshot": null,
+      "headshot": "kira_radinsky.png",
       "link": null
     },
     {
@@ -649,7 +649,7 @@
       "session": "Policy & Governance",
       "session_order": 13,
       "slot": 58,
-      "headshot": null,
+      "headshot": "lovedeep_gondara.png",
       "link": null
     },
     {
@@ -660,7 +660,7 @@
       "session": "Policy & Governance",
       "session_order": 13,
       "slot": 59,
-      "headshot": null,
+      "headshot": "rishi_bommasani.png",
       "link": null
     },
     {
@@ -671,7 +671,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 60,
-      "headshot": null,
+      "headshot": "michal_shmuelischeuer.png",
       "link": null
     },
     {
@@ -682,7 +682,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 61,
-      "headshot": null,
+      "headshot": "srijith_rajamohan.png",
       "link": null
     },
     {
@@ -693,7 +693,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 62,
-      "headshot": null,
+      "headshot": "ranjan_sinha.png",
       "link": null
     },
     {
@@ -704,7 +704,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 63,
-      "headshot": null,
+      "headshot": "anastasios_angelopoulos.png",
       "link": null
     },
     {
@@ -715,7 +715,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 64,
-      "headshot": null,
+      "headshot": "aayush_agrawal.png",
       "link": null
     },
     {
@@ -726,7 +726,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 65,
-      "headshot": null,
+      "headshot": "izzy_miller.png",
       "link": null
     },
     {
@@ -737,7 +737,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 66,
-      "headshot": null,
+      "headshot": "rahul_krishna.png",
       "link": null
     },
     {
@@ -748,7 +748,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 67,
-      "headshot": null,
+      "headshot": "yuan_xue.png",
       "link": null
     },
     {
@@ -759,7 +759,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 68,
-      "headshot": null,
+      "headshot": "s_mountford.png",
       "link": null
     },
     {
@@ -770,7 +770,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 69,
-      "headshot": null,
+      "headshot": "gideon_mendels.png",
       "link": null
     },
     {
@@ -781,7 +781,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 70,
-      "headshot": null,
+      "headshot": "scott_clark.png",
       "link": null
     },
     {
@@ -792,7 +792,7 @@
       "session": "Agent Evaluation & Benchmarks",
       "session_order": 14,
       "slot": 71,
-      "headshot": null,
+      "headshot": "barr_moses.png",
       "link": null
     },
     {
@@ -803,7 +803,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 72,
-      "headshot": null,
+      "headshot": "ori_goshen.png",
       "link": null
     },
     {
@@ -814,7 +814,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 73,
-      "headshot": null,
+      "headshot": "sunita_verma.png",
       "link": null
     },
     {
@@ -825,7 +825,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 74,
-      "headshot": null,
+      "headshot": "david_hsu.png",
       "link": null
     },
     {
@@ -836,7 +836,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 75,
-      "headshot": null,
+      "headshot": "dan_klein.png",
       "link": null
     },
     {
@@ -847,7 +847,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 76,
-      "headshot": null,
+      "headshot": "rene_pajta.png",
       "link": null
     },
     {
@@ -858,7 +858,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 77,
-      "headshot": null,
+      "headshot": "priya_ponnapalli.png",
       "link": null
     },
     {
@@ -869,7 +869,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 78,
-      "headshot": null,
+      "headshot": "merve_unuvar.png",
       "link": null
     },
     {
@@ -880,7 +880,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 79,
-      "headshot": null,
+      "headshot": "nayaki_nayyar.png",
       "link": null
     },
     {
@@ -891,7 +891,7 @@
       "session": "Enterprise AI",
       "session_order": 15,
       "slot": 80,
-      "headshot": null,
+      "headshot": "surbhi_rathore.png",
       "link": null
     },
     {
@@ -902,7 +902,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 82,
-      "headshot": null,
+      "headshot": "ramesh_raskar.png",
       "link": null
     },
     {
@@ -913,7 +913,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 83,
-      "headshot": null,
+      "headshot": "wenbo_guo.png",
       "link": null
     },
     {
@@ -924,7 +924,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 84,
-      "headshot": null,
+      "headshot": "woosuk_kwon.png",
       "link": null
     },
     {
@@ -935,7 +935,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 85,
-      "headshot": null,
+      "headshot": "banghua_zhu.png",
       "link": null
     },
     {
@@ -946,7 +946,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 86,
-      "headshot": null,
+      "headshot": "raj_datta.png",
       "link": null
     },
     {
@@ -957,7 +957,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 87,
-      "headshot": null,
+      "headshot": "philip_rathle.png",
       "link": null
     },
     {
@@ -968,7 +968,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 89,
-      "headshot": null,
+      "headshot": "saurabh_gupta.png",
       "link": null
     },
     {
@@ -979,7 +979,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 90,
-      "headshot": null,
+      "headshot": "shiva_kasiviswanathan.png",
       "link": null
     },
     {
@@ -990,7 +990,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 91,
-      "headshot": null,
+      "headshot": "haishi_bai.png",
       "link": null
     },
     {
@@ -1001,7 +1001,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 92,
-      "headshot": null,
+      "headshot": "karen_ullrich.png",
       "link": null
     },
     {
@@ -1012,7 +1012,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 93,
-      "headshot": null,
+      "headshot": "denis_akhiyarov.png",
       "link": null
     },
     {
@@ -1023,7 +1023,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 94,
-      "headshot": null,
+      "headshot": "tanya_roosta.png",
       "link": null
     },
     {
@@ -1034,7 +1034,7 @@
       "session": "Frameworks & Developer Platforms",
       "session_order": 16,
       "slot": 95,
-      "headshot": null,
+      "headshot": "nilou_salehi.png",
       "link": null
     }
   ]
