@@ -92,3 +92,26 @@
   padding: 0 16px; font-size: 18px; font-weight: 800;
   letter-spacing: 0.02em;
 }
+
+/* ── Bottom pager (Option A + Pages variant) ── */
+.page-pager {
+  display: flex; justify-content: center; gap: 8px;
+  margin: 40px auto 0; max-width: 360px;
+}
+.page-btn {
+  width: 40px; height: 40px; font-size: 15px; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  color: var(--berkeley-blue); background: white;
+  border: 1px solid var(--line); border-radius: 999px;
+  transition: all 0.15s ease;
+}
+.page-btn:hover { border-color: var(--berkeley-blue); }
+.page-btn.active {
+  background: var(--berkeley-blue); color: white;
+  border-color: var(--berkeley-blue);
+}
+.page-panel[hidden] { display: none; }
+.no-results {
+  text-align: center; color: var(--berkeley-blue);
+  font-size: 18px; margin: 32px 0;
+}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% set active = 'a-paged' %}
+{% block title %}Option A + Pages — Circle Grid{% endblock %}
+{% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/sponsors.css">{% endblock %}
+{% block content %}
+<section class="speakers-section">
+  <div class="container">
+    <h1 class="section-title">Featured Speakers</h1>
+    <p class="section-sub">{{ data.event.name }} brings together leading researchers, founders, and industry leaders shaping the future of Agentic AI.</p>
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search-input" type="text" id="search" placeholder="Search speakers by name or organization..." />
+    </div>
+
+    {% set ns = namespace(color=0) %}
+
+    {% for page in pages %}
+    <!-- ── Page {{ loop.index }} panel ── -->
+    <div class="stage-panel page-panel" id="panel-page-{{ loop.index }}"{% if not loop.first %} hidden{% endif %}>
+      <div class="stage-group">
+        <div class="grid-speakers">
+          {% for s in page %}
+          <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
+            {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+            <div class="speaker-avatar" style="{% set colors = ['#dce9f5','#e8e5fa','#d9f0e6','#fae8df','#fbe3ec','#faecd4','#e5f0d8','#eceae3'] %}background: {{ colors[ns.color % 8] }};">
+              {% if s.headshot %}
+                <img src="/static/img/speakers/{{ s.headshot }}" alt="{{ s.name }}"{% if s.crop or s.scale %} style="{% if s.crop %}object-position: {{ s.crop }};{% endif %}{% if s.scale %}transform: scale({{ s.scale }});{% endif %}"{% endif %} />
+              {% else %}
+                {{ s.name.split()[0][0] }}{{ s.name.split()[-1][0] }}
+              {% endif %}
+            </div>
+            {% set ns.color = ns.color + 1 %}
+            <p class="speaker-name">{{ s.name }}</p>
+            <p class="speaker-title">{{ s.title }}</p>
+            <p class="speaker-org">{{ s.org }}</p>
+            {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    <!-- No-results message (search) -->
+    <p class="no-results" id="no-results" hidden>No speakers match your search.</p>
+
+    <!-- ── Bottom pager ── -->
+    <div class="page-pager" role="tablist" aria-label="Speaker pages">
+      {% for page in pages %}
+      <button class="page-btn{% if loop.first %} active{% endif %}" data-page="{{ loop.index }}" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ loop.index }}</button>
+      {% endfor %}
+    </div>
+
+    <p class="more-announced">More speakers to be announced soon...</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+// ── Bottom pager: switch between page panels ──
+const pageBtns = document.querySelectorAll('.page-btn');
+const pagePanels = document.querySelectorAll('.page-panel');
+
+function showPage(n) {
+  pageBtns.forEach(b => {
+    const on = b.dataset.page === String(n);
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
+  pagePanels.forEach(p => {
+    p.hidden = (p.id !== 'panel-page-' + n);
+  });
+}
+
+pageBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    showPage(this.dataset.page);
+  });
+});
+
+// ── Search across ALL pages ──
+const searchInput = document.getElementById('search');
+const noResults = document.getElementById('no-results');
+const pager = document.querySelector('.page-pager');
+const allCards = document.querySelectorAll('.speaker-card');
+
+searchInput.addEventListener('input', function(e) {
+  const q = e.target.value.toLowerCase().trim();
+
+  if (q === '') {
+    // Restore paged view
+    pagePanels.forEach(p => { p.hidden = true; });
+    allCards.forEach(c => { c.style.display = ''; });
+    pager.style.display = '';
+    noResults.hidden = true;
+    // Re-show the currently-active page
+    const active = document.querySelector('.page-btn.active');
+    showPage(active ? active.dataset.page : 1);
+    return;
+  }
+
+  // Searching: reveal every panel and filter cards globally
+  pagePanels.forEach(p => { p.hidden = false; });
+  pager.style.display = 'none';
+  let anyVisible = false;
+  allCards.forEach(card => {
+    const name = card.dataset.name || '';
+    const org = card.dataset.org || '';
+    const match = name.includes(q) || org.includes(q);
+    card.style.display = match ? '' : 'none';
+    if (match) anyVisible = true;
+  });
+  noResults.hidden = anyVisible;
+});
+</script>
+{% endblock %}

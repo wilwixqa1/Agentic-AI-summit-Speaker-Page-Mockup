@@ -112,6 +112,25 @@ def option_a_flat(request: Request):
     )
 
 
+@app.get("/option-a-paged", response_class=HTMLResponse)
+def option_a_paged(request: Request):
+    """Option A circle-grid, combined list split into 3 pages (bottom pager)."""
+    main = load_speakers()
+    frontier_data = load_frontier()
+    all_speakers = main["speakers"] + frontier_data["speakers"]
+    import math
+    num_pages = 3
+    per_page = math.ceil(len(all_speakers) / num_pages)
+    pages = [
+        all_speakers[i * per_page:(i + 1) * per_page] for i in range(num_pages)
+    ]
+    return templates.TemplateResponse(
+        request,
+        "option_a_paged.html",
+        {"data": main, "pages": pages, "num_pages": num_pages},
+    )
+
+
 @app.get("/healthz")
 def healthz():
     return {"ok": True}
