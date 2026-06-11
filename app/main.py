@@ -114,16 +114,44 @@ def option_a_flat(request: Request):
 
 @app.get("/option-a-paged", response_class=HTMLResponse)
 def option_a_paged(request: Request):
-    """Option A circle-grid, combined list split into 3 pages (bottom pager)."""
+    """Option A circle-grid, combined list split into 3 pages (bottom pager).
+
+    Drops the duplicate Main-stage Aditya Grover entry (he also appears as a
+    Frontier speaker), and balances the 3-page split so no page ends with a
+    lone single card in the 4-column grid.
+    """
     main = load_speakers()
     frontier_data = load_frontier()
     all_speakers = main["speakers"] + frontier_data["speakers"]
-    import math
+
+    # Remove the Main-stage Aditya Grover (keep the Frontier instance, which
+    # sits later in the list). Only the first matching Main entry is dropped.
+    for i, s in enumerate(all_speakers):
+        if s.get("name") == "Aditya Grover" and s.get("stage") == "Main":
+            del all_speakers[i]
+            break
+
+    cols = 4
     num_pages = 3
-    per_page = math.ceil(len(all_speakers) / num_pages)
-    pages = [
-        all_speakers[i * per_page:(i + 1) * per_page] for i in range(num_pages)
-    ]
+    total = len(all_speakers)
+    base = total // num_pages
+    counts = [base] * num_pages
+    for i in range(total - base * num_pages):
+        counts[i] += 1
+    # Nudge counts so no page ends with a single card on the last row.
+    for i in range(num_pages - 1):
+        if counts[i] % cols == 1:
+            counts[i] += 1
+            counts[i + 1] -= 1
+    if counts[-1] % cols == 1 and counts[-1] > 1:
+        counts[-2] += 1
+        counts[-1] -= 1
+
+    pages, start = [], 0
+    for c in counts:
+        pages.append(all_speakers[start:start + c])
+        start += c
+
     return templates.TemplateResponse(
         request,
         "option_a_paged.html",
