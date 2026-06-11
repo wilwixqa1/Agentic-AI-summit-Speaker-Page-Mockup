@@ -49,8 +49,8 @@
     },
     {
       "name": "Yu Su",
-      "title": "CEO / Associate Professor",
-      "org": "NeoCognition / Ohio State University",
+      "title": "CEO; Associate Professor",
+      "org": "NeoCognition; Ohio State University",
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
@@ -137,8 +137,8 @@
     },
     {
       "name": "Markus J. Buehler",
-      "title": "Professor, Founder, CTO",
-      "org": "MIT / Unreasonable Labs",
+      "title": "Professor; Co-Founder/CTO",
+      "org": "MIT; Unreasonable Labs",
       "stage": "Frontier",
       "session": "AI for Science",
       "session_order": 2,
@@ -181,7 +181,7 @@
     },
     {
       "name": "Nick Talken",
-      "title": "CEO & Cofounder",
+      "title": "Co-Founder/CEO",
       "org": "Albert Invent",
       "stage": "Frontier",
       "session": "AI for Science",
@@ -203,7 +203,7 @@
     },
     {
       "name": "Dhruv Batra",
-      "title": "Chief Scientist / co-founder",
+      "title": "Co-Founder/Chief Scientist",
       "org": "Yutori",
       "stage": "Frontier",
       "session": "Coding & Web Agent",
@@ -280,8 +280,8 @@
     },
     {
       "name": "Bolei Zhou",
-      "title": "Associate Professor / Chief AI Scientist",
-      "org": "UCLA / Coco Robotics",
+      "title": "Associate Professor; Chief AI Scientist",
+      "org": "UCLA; Coco Robotics",
       "stage": "Frontier",
       "session": "Robotics & World Model",
       "session_order": 5,
@@ -456,7 +456,7 @@
     },
     {
       "name": "Neil Lawrence",
-      "title": "Chief Scientist and Co-founder",
+      "title": "Co-Founder/Chief Scientist",
       "org": "Trent AI",
       "stage": "Frontier",
       "session": "AI for Cybersecurity",
@@ -533,7 +533,7 @@
     },
     {
       "name": "Michel Tricot",
-      "title": "CEO & Co-Founder",
+      "title": "Co-Founder/CEO",
       "org": "Airbyte",
       "stage": "Frontier",
       "session": "AI and Data",
@@ -588,7 +588,7 @@
     },
     {
       "name": "Navrina Singh",
-      "title": "CEO, Founder",
+      "title": "Founder/CEO",
       "org": "Credo AI",
       "stage": "Frontier",
       "session": "AI Safety",
@@ -632,7 +632,7 @@
     },
     {
       "name": "Kira Radinsky",
-      "title": "Co-Founder & CTO",
+      "title": "Co-Founder/CTO",
       "org": "Diagnostic Robotics",
       "stage": "Frontier",
       "session": "AI for Finance and Healthcare",
@@ -764,7 +764,7 @@
     },
     {
       "name": "Gideon Mendels",
-      "title": "CEO and Co-founder",
+      "title": "Co-Founder/CEO",
       "org": "Comet",
       "stage": "Frontier",
       "session": "Agent Evaluation & Benchmarks",
@@ -786,7 +786,7 @@
     },
     {
       "name": "Barr Moses",
-      "title": "CEO and co-founder",
+      "title": "Co-Founder/CEO",
       "org": "Monte Carlo AI",
       "stage": "Frontier",
       "session": "Agent Evaluation & Benchmarks",
@@ -819,7 +819,7 @@
     },
     {
       "name": "David Hsu",
-      "title": "CEO and founder",
+      "title": "Founder/CEO",
       "org": "Retool",
       "stage": "Frontier",
       "session": "Enterprise AI",
@@ -830,8 +830,8 @@
     },
     {
       "name": "Dan Klein",
-      "title": "Professor / Co-founder CTO",
-      "org": "UC Berkeley / Scaled Cognition",
+      "title": "Co-Founder/CTO; Professor",
+      "org": "Scaled Cognition; UC Berkeley",
       "stage": "Frontier",
       "session": "Enterprise AI",
       "session_order": 15,
