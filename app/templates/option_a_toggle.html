@@ -54,7 +54,6 @@
       {% set ns2 = namespace(color=0) %}
       {% for session, members in sessions %}
       <div class="stage-group" data-stage="{{ session }}">
-        <span class="stage-label">{{ session }}</span>
         <div class="grid-speakers">
           {% for s in members %}
           <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">

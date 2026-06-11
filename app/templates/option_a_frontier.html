@@ -41,11 +41,9 @@
     </div>
     {% endif %}
 
-    <!-- ── Frontier Stage (grouped by session) ── -->
-    <div class="frontier-divider"><span>Frontier Stage</span></div>
+    <!-- ── Frontier Stage (grouped by session, labels hidden) ── -->
     {% for session, members in sessions %}
     <div class="stage-group" data-stage="{{ session }}">
-      <span class="stage-label">{{ session }}</span>
       <div class="grid-speakers">
         {% for s in members %}
         <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
