@@ -71,6 +71,8 @@
             "Chuan Li"
           ],
           "moderator": "TBD",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "10:25 AM",
           "color": "blue"
@@ -146,6 +148,8 @@
             "Alex Graveley (Director, Comet, Perplexity AI)"
           ],
           "moderator": "Anjney Midha",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "11:45 AM",
           "color": "blue"
@@ -220,6 +224,8 @@
             "Weizhu Chen"
           ],
           "moderator": "Will Knight (Wired)",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "2:35 PM",
           "color": "blue"
@@ -279,6 +285,8 @@
             "Wei Zhan"
           ],
           "moderator": "TBD",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "3:45 PM",
           "color": "blue"
@@ -301,6 +309,33 @@
             "Li Deng (Chief AI Officer, Global Head of ML, Vatic Investments)"
           ],
           "moderator": "Bradley Olson (Technology Editor from WSJ)",
+          "panel_only": true,
+          "panel_speakers": [
+            {
+              "name": "Ali Nazari",
+              "title": "Head of Deep Learning Research",
+              "org": "Susquehanna International Group",
+              "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
+            },
+            {
+              "name": "Jeff Wecker",
+              "title": "CTO",
+              "org": "Two Sigma",
+              "link": "https://www.linkedin.com/in/jeffwecker/"
+            },
+            {
+              "name": "Jen Allum",
+              "title": "SVP, Co-Head of GenAI",
+              "org": "The D. E. Shaw Group",
+              "link": "https://www.linkedin.com/in/jen-allum/"
+            },
+            {
+              "name": "Li Deng",
+              "title": "Chief AI Officer, Global Head of ML",
+              "org": "Vatic Investments",
+              "link": null
+            }
+          ],
           "speakers": [],
           "start": "4:30 PM",
           "color": "blue"
@@ -406,6 +441,8 @@
             "Surojit Chatterjee (Founder/CEO, Ema)"
           ],
           "moderator": "Aaron Jacobson (GP, NEA)",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "10:35 AM",
           "color": "blue"
@@ -494,6 +531,8 @@
             "Ed Chi"
           ],
           "moderator": "Igor Babuschkin",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "1:35 PM",
           "color": "blue"
@@ -523,6 +562,8 @@
             "Ivan Burazin (Co-Founder/CEO, Daytona)"
           ],
           "moderator": "Megan Morrone (Axios, Editor of Technology)",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "2:15 PM",
           "color": "blue"
@@ -574,6 +615,8 @@
             "Nikhil Chandhok"
           ],
           "moderator": "TBD",
+          "panel_only": false,
+          "panel_speakers": [],
           "speakers": [],
           "start": "3:15 PM",
           "color": "blue"

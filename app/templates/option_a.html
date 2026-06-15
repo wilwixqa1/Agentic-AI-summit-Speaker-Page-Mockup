@@ -31,8 +31,19 @@
             <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
             <div class="tl-content">
               <p class="tl-kind">{{ e.panel_title }}</p>
-              {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
-              <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+              {% if e.panel_only %}
+                {% for s in e.panel_speakers %}
+                <div class="tl-speaker">
+                  {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+                  <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
+                  {% if s.link %}</a>{% endif %}
+                </div>
+                {% endfor %}
+                <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+              {% else %}
+                {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
+                <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+              {% endif %}
             </div>
           </div>
           {% elif e.type in ['Break', 'Lunch'] %}
