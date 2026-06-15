@@ -33,7 +33,7 @@
 .timeline::before {
   content: ""; position: absolute;
   left: 150px; top: 8px; bottom: 8px; width: 2px;
-  background: #d9dde3;
+  background: #d9dde3; z-index: 0;
 }
 
 /* A timeline row: time on the left, dot on the rail, content on the right */
@@ -87,14 +87,20 @@
 /* Logistics rows (Break / Lunch) — single grey label */
 .tl-logistics { color: var(--ink-2); font-size: 16px; font-weight: 600; }
 
-/* Session header bar — blue tint with left accent */
+/* Session header bar — blue tint with left accent. Sits above the rail
+   (position+z-index) with an opaque background so the timeline line is masked. */
 .session-header {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
   background: #e8eefc; border-left: 4px solid #2563eb;
   border-radius: 8px; padding: 18px 24px;
   margin: 18px 0 10px 0;
 }
 .session-header h3 {
   margin: 0; color: #2563eb; font-size: 22px; font-weight: 700;
+}
+.session-time {
+  color: #2563eb; font-size: 17px; font-weight: 600; white-space: nowrap;
 }
 
 @media (max-width: 720px) {

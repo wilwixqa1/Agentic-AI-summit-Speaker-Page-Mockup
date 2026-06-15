@@ -43,10 +43,13 @@
           </div>
           {% else %}
           {% if e.session %}
-          <div class="session-header"><h3>{{ e.session }}</h3></div>
+          <div class="session-header">
+            <h3>{{ e.session }}</h3>
+            {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
+          </div>
           {% endif %}
           <div class="tl-row">
-            <div class="tl-time">{{ e.start }}</div>
+            <div class="tl-time">{% if not e.session %}{{ e.start }}{% endif %}</div>
             <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
             <div class="tl-content">
               <p class="tl-kind">{{ e.type }}</p>
