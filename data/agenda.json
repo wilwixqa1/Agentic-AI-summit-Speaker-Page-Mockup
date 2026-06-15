@@ -129,20 +129,6 @@
               "org": "OpenAI",
               "link": "https://hyperbo.la/contact/",
               "talk": null
-            },
-            {
-              "name": "Michele Catasta",
-              "title": "President",
-              "org": "Replit",
-              "link": "https://www.linkedin.com/in/pirroh",
-              "talk": null
-            },
-            {
-              "name": "Alex Graveley",
-              "title": "Director, Comet",
-              "org": "Perplexity AI",
-              "link": "https://alexgraveley.com/",
-              "talk": null
             }
           ],
           "start": "11:30 AM",
@@ -156,8 +142,8 @@
             "Andrej Karpathy",
             "Peter Steinberger",
             "Ryan Lopopolo",
-            "Michele Catasta",
-            "Alex Graveley"
+            "Michele Catasta (President, Replit)",
+            "Alex Graveley (Director, Comet, Perplexity AI)"
           ],
           "moderator": "Anjney Midha",
           "speakers": [],
@@ -309,10 +295,10 @@
           "session": "Agentic AI in Capital Markets",
           "panel_title": "Panel: Agentic AI in Capital Markets",
           "panelists": [
-            "Ali Nazari",
-            "Jeff Wecker",
-            "Jen Allum",
-            "Li Deng"
+            "Ali Nazari (Head of Deep Learning Research, Susquehanna International Group)",
+            "Jeff Wecker (CTO, Two Sigma)",
+            "Jen Allum (SVP, Co-Head of GenAI, The D. E. Shaw Group)",
+            "Li Deng (Chief AI Officer, Global Head of ML, Vatic Investments)"
           ],
           "moderator": "Bradley Olson (Technology Editor from WSJ)",
           "speakers": [],
@@ -401,20 +387,6 @@
               "org": "Snowflake",
               "link": "https://www.snowflake.com/en/blog/authors/anahita-tafvizi-/",
               "talk": null
-            },
-            {
-              "name": "Waseem Alshikh",
-              "title": "Co-Founder/CTO",
-              "org": "Writer",
-              "link": "https://www.linkedin.com/in/waseemalshikh/",
-              "talk": null
-            },
-            {
-              "name": "Surojit Chatterjee",
-              "title": "Founder/CEO",
-              "org": "Ema",
-              "link": "https://www.linkedin.com/in/surojitchatterjee/",
-              "talk": null
             }
           ],
           "start": "9:40 AM",
@@ -430,8 +402,8 @@
             "Arvind Jain",
             "Duncan Lennox",
             "Anahita Tafvizi",
-            "Waseem Alshikh",
-            "Surojit Chatterjee"
+            "Waseem Alshikh (Co-Founder/CTO, Writer)",
+            "Surojit Chatterjee (Founder/CEO, Ema)"
           ],
           "moderator": "Aaron Jacobson (GP, NEA)",
           "speakers": [],
@@ -531,24 +503,10 @@
           "session": "Agentic AI Developer Platforms",
           "speakers": [
             {
-              "name": "Dima Dmytro Dzhulgakov",
-              "title": "Co-Founder/CTO",
-              "org": "Fireworks AI",
-              "link": "https://www.linkedin.com/in/dzhulgakov/",
-              "talk": null
-            },
-            {
               "name": "Lukas Biewald",
               "title": "Founder/CEO",
               "org": "Weights & Biases",
               "link": "https://lukasbiewald.com/",
-              "talk": null
-            },
-            {
-              "name": "Ivan Burazin",
-              "title": "Co-Founder/CEO",
-              "org": "Daytona",
-              "link": null,
               "talk": null
             }
           ],
@@ -560,9 +518,9 @@
           "session": null,
           "panel_title": "Panel: Agentic AI Developer Platforms",
           "panelists": [
-            "Dima Dmytro Dzhulgakov",
+            "Dima Dmytro Dzhulgakov (Co-Founder/CTO, Fireworks AI)",
             "Lukas Biewald",
-            "Ivan Burazin"
+            "Ivan Burazin (Co-Founder/CEO, Daytona)"
           ],
           "moderator": "Megan Morrone (Axios, Editor of Technology)",
           "speakers": [],
