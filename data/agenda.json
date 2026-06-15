@@ -1,0 +1,646 @@
+{
+  "event": {
+    "name": "Agentic AI Summit 2026",
+    "dates": "August 1-2, 2026"
+  },
+  "days": [
+    {
+      "key": "sat",
+      "label": "Mainstage - Saturday",
+      "date": "Saturday, August 1",
+      "entries": [
+        {
+          "type": "Opening Remarks",
+          "session": null,
+          "speakers": [
+            {
+              "name": "Rich Lyons",
+              "title": "Chancellor",
+              "org": "UC Berkeley",
+              "link": "https://chancellor.berkeley.edu/people/richard-k-lyons",
+              "talk": null
+            }
+          ],
+          "start": "9:15 AM",
+          "color": "blue"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Agentic AI Infrastructure & Platform",
+          "speakers": [
+            {
+              "name": "Peter DeSantis",
+              "title": "SVP, Foundational AI Models, Custom Silicon, Quantum Computing",
+              "org": "Amazon",
+              "link": "https://www.aboutamazon.com/news/innovation-at-amazon/peter-desantis-amazon-artificial-general-intelligence",
+              "talk": null
+            },
+            {
+              "name": "Saurabh Tiwary",
+              "title": "VP & GM, Google Cloud AI",
+              "org": null,
+              "link": "https://www.linkedin.com/in/saurabh-tiwary/",
+              "talk": null
+            },
+            {
+              "name": "Jonathan Cohen",
+              "title": "VP of Applied Research",
+              "org": "Nvidia",
+              "link": "https://www.jcohen.name/",
+              "talk": null
+            },
+            {
+              "name": "Chuan Li",
+              "title": "Chief Scientific Officer",
+              "org": "Lambda",
+              "link": "https://github.com/chuanli11",
+              "talk": null
+            }
+          ],
+          "start": "9:30 AM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Agentic AI Infrastructure & Platform",
+          "panelists": [
+            "Peter DeSantis",
+            "Saurabh Tiwary",
+            "Jonathan Cohen",
+            "Chuan Li"
+          ],
+          "moderator": "TBD",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Fireside Chat",
+          "session": null,
+          "speakers": [
+            {
+              "name": "Martin Casado",
+              "title": "General Partner",
+              "org": "a16z",
+              "link": "https://a16z.com/author/martin-casado/",
+              "talk": null
+            },
+            {
+              "name": "Jasjeet Sekhon",
+              "title": "Chief Strategy Officer",
+              "org": "Google DeepMind",
+              "link": "https://jsekhon.com",
+              "talk": null
+            }
+          ],
+          "start": "10:45 AM",
+          "color": "green"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Future of Software Development",
+          "speakers": [
+            {
+              "name": "Andrej Karpathy",
+              "title": "Co-Founder of OpenAI; Founder of Eureka Labs",
+              "org": null,
+              "link": "https://karpathy.ai/",
+              "talk": null
+            },
+            {
+              "name": "Peter Steinberger",
+              "title": "Creator of OpenClaw",
+              "org": "OpenAI",
+              "link": "https://steipete.me/",
+              "talk": null
+            },
+            {
+              "name": "Ryan Lopopolo",
+              "title": "MTS (lead Dark Factory)",
+              "org": "OpenAI",
+              "link": "https://hyperbo.la/contact/",
+              "talk": null
+            },
+            {
+              "name": "Michele Catasta",
+              "title": "President",
+              "org": "Replit",
+              "link": "https://www.linkedin.com/in/pirroh",
+              "talk": null
+            },
+            {
+              "name": "Alex Graveley",
+              "title": "Director, Comet",
+              "org": "Perplexity AI",
+              "link": "https://alexgraveley.com/",
+              "talk": null
+            }
+          ],
+          "start": "11:10 AM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Future of Software Development",
+          "panelists": [
+            "Andrej Karpathy",
+            "Peter Steinberger",
+            "Ryan Lopopolo",
+            "Michele Catasta",
+            "Alex Graveley"
+          ],
+          "moderator": "Anjney Midha",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Lunch",
+          "session": null,
+          "speakers": [],
+          "start": "1:30 PM",
+          "color": "amber"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Agentic AI Foundational Capabilities",
+          "speakers": [
+            {
+              "name": "Wojciech Zaremba",
+              "title": "Co-Founder",
+              "org": "OpenAI",
+              "link": "https://www.linkedin.com/in/wojciechzaremba/",
+              "talk": null
+            },
+            {
+              "name": "Pushmeet Kohli",
+              "title": "VP of Science",
+              "org": "Google DeepMind",
+              "link": "https://research.google/people/105667/",
+              "talk": null
+            },
+            {
+              "name": "Dawn Song",
+              "title": "Professor; Co-Director",
+              "org": "UC Berkeley; Berkeley RDI",
+              "link": "https://people.eecs.berkeley.edu/~dawnsong/",
+              "talk": null
+            },
+            {
+              "name": "Dan Roth",
+              "title": "Chief AI Scientist",
+              "org": "Oracle",
+              "link": "https://www.cis.upenn.edu/~danroth/",
+              "talk": null
+            },
+            {
+              "name": "Weizhu Chen",
+              "title": "Technical Fellow & CVP",
+              "org": "Microsoft AI",
+              "link": "https://www.microsoft.com/en-us/research/people/wzchen/",
+              "talk": null
+            }
+          ],
+          "start": "1:30 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Agentic AI Foundational Capabilities",
+          "panelists": [
+            "Wojciech Zaremba",
+            "Pushmeet Kohli",
+            "Dawn Song",
+            "Dan Roth",
+            "Weizhu Chen"
+          ],
+          "moderator": "Will Knight (Wired)",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Robotic & World Models",
+          "speakers": [
+            {
+              "name": "Sergey Levine",
+              "title": "Co-Founder; Professor",
+              "org": "Physical Intelligence; UC Berkeley",
+              "link": "https://people.eecs.berkeley.edu/~svlevine/",
+              "talk": null
+            },
+            {
+              "name": "Jim Fan",
+              "title": "Director of Robotics & Distinguished Scientist",
+              "org": "Nvidia",
+              "link": "https://jimfan.me/",
+              "talk": null
+            },
+            {
+              "name": "Anastasis Germanidis",
+              "title": "Co-Founder/Co-CEO",
+              "org": "Runway",
+              "link": "https://agermanidis.com/",
+              "talk": null
+            },
+            {
+              "name": "Michael Spranger",
+              "title": "President",
+              "org": "Sony AI",
+              "link": "https://sites.google.com/view/michaelspranger/",
+              "talk": null
+            },
+            {
+              "name": "Wei Zhan",
+              "title": "Chief Scientist",
+              "org": "Applied Intuition",
+              "link": "https://zhanwei.site/",
+              "talk": null
+            }
+          ],
+          "start": "3:00 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Robotic & World Models",
+          "panelists": [
+            "Sergey Levine",
+            "Jim Fan",
+            "Anastasis Germanidis",
+            "Michael Spranger",
+            "Wei Zhan"
+          ],
+          "moderator": "TBD",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Break",
+          "session": null,
+          "speakers": [],
+          "start": "4:30 PM",
+          "color": "amber"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Agentic AI in Capital Markets",
+          "speakers": [
+            {
+              "name": "Ali Nazari",
+              "title": "Head of Deep Learning Research",
+              "org": "Susquehanna International Group",
+              "link": "https://www.linkedin.com/in/ali-nazari-97246716/",
+              "talk": null
+            },
+            {
+              "name": "Jeff Wecker",
+              "title": "CTO",
+              "org": "Two Sigma",
+              "link": "https://www.linkedin.com/in/jeffwecker/",
+              "talk": null
+            },
+            {
+              "name": "Jen Allum",
+              "title": "SVP, Co-Head of GenAI",
+              "org": "The D. E. Shaw Group",
+              "link": "https://www.linkedin.com/in/jen-allum/",
+              "talk": null
+            },
+            {
+              "name": "Li Deng",
+              "title": "Chief AI Officer, Global Head of ML",
+              "org": "Vatic Investments",
+              "link": null,
+              "talk": null
+            }
+          ],
+          "start": "4:30 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Agentic AI in Capital Markets",
+          "panelists": [
+            "Ali Nazari",
+            "Jeff Wecker",
+            "Jen Allum",
+            "Li Deng"
+          ],
+          "moderator": "Bradley Olson (Technology Editor from WSJ)",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Fireside Chat",
+          "session": null,
+          "speakers": [
+            {
+              "name": "Andrew Ng",
+              "title": "Founder",
+              "org": "DeepLearning.AI",
+              "link": null,
+              "talk": null
+            },
+            {
+              "name": "Alfred Lin",
+              "title": "General Partner",
+              "org": "Sequoia Capital",
+              "link": "https://sequoiacap.com/people/alfred-lin/",
+              "talk": null
+            }
+          ],
+          "start": "5:00 PM",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "key": "sun",
+      "label": "Mainstage - Sunday",
+      "date": "Sunday, August 2",
+      "entries": [
+        {
+          "type": "Opening Remarks",
+          "session": null,
+          "speakers": [
+            {
+              "name": "Jennifer Chayes",
+              "title": "Dean of CDSS",
+              "org": "UC Berkeley",
+              "link": "https://cdss.berkeley.edu/people/jennifer-chayes",
+              "talk": null
+            }
+          ],
+          "start": "9:30 AM",
+          "color": "blue"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Enterprise AI",
+          "speakers": [
+            {
+              "name": "Rao Surapaneni",
+              "title": "VP/GM AI Search & Specialized AI",
+              "org": "Google Cloud",
+              "link": "https://www.linkedin.com/in/raosurapaneni/",
+              "talk": null
+            },
+            {
+              "name": "Adarsh Hiremath",
+              "title": "Co-Founder/CTO",
+              "org": "Mercor",
+              "link": "https://www.forbes.com/profile/adarsh-hiremath/",
+              "talk": null
+            },
+            {
+              "name": "Arvind Jain",
+              "title": "Founder/CEO",
+              "org": "Glean",
+              "link": "https://www.glean.com/authors/arvind-jain",
+              "talk": null
+            },
+            {
+              "name": "Duncan Lennox",
+              "title": "Chief Product & Technology Officer",
+              "org": "Hubspot",
+              "link": "https://www.hubspot.com/company/board-of-directors/duncan-lennox",
+              "talk": null
+            },
+            {
+              "name": "Anahita Tafvizi",
+              "title": "Chief Data & AI Officer",
+              "org": "Snowflake",
+              "link": "https://www.snowflake.com/en/blog/authors/anahita-tafvizi-/",
+              "talk": null
+            },
+            {
+              "name": "Waseem Alshikh",
+              "title": "Co-Founder/CTO",
+              "org": "Writer",
+              "link": "https://www.linkedin.com/in/waseemalshikh/",
+              "talk": null
+            },
+            {
+              "name": "Surojit Chatterjee",
+              "title": "Founder/CEO",
+              "org": "Ema",
+              "link": "https://www.linkedin.com/in/surojitchatterjee/",
+              "talk": null
+            }
+          ],
+          "start": "9:40 AM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Enterprise AI",
+          "panelists": [
+            "Rao Surapaneni",
+            "Adarsh Hiremath",
+            "Arvind Jain",
+            "Duncan Lennox",
+            "Anahita Tafvizi",
+            "Waseem Alshikh",
+            "Surojit Chatterjee"
+          ],
+          "moderator": "Aaron Jacobson (GP, NEA)",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Fireside Chat",
+          "session": null,
+          "speakers": [
+            {
+              "name": "Ali Ghodsi",
+              "title": "Co-Founder/CEO",
+              "org": "Databricks",
+              "link": "https://people.eecs.berkeley.edu/~alig/",
+              "talk": null
+            },
+            {
+              "name": "Andy Konwinski",
+              "title": "Co-Founder",
+              "org": "Databricks, Perplexity and Laude Ventures",
+              "link": "https://andykonwinski.com/about/",
+              "talk": null
+            }
+          ],
+          "start": "11:05 AM",
+          "color": "green"
+        },
+        {
+          "type": "Lunch",
+          "session": null,
+          "speakers": [],
+          "start": "1:00 PM",
+          "color": "amber"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Frontier Research",
+          "speakers": [
+            {
+              "name": "Ekin Dogus Cubuk",
+              "title": "Co-Founder",
+              "org": "Periodic Labs",
+              "link": "https://www.linkedin.com/in/ekin-dogus-cubuk-9148b8114/",
+              "talk": null
+            },
+            {
+              "name": "Andi Peng",
+              "title": "Co-Founder",
+              "org": "Humans &",
+              "link": "https://andipeng.com/",
+              "talk": null
+            },
+            {
+              "name": "Richard Socher",
+              "title": "Co-Founder",
+              "org": "Recursive Superintelligence",
+              "link": "https://socher.org",
+              "talk": null
+            },
+            {
+              "name": "Krithik Puthalath",
+              "title": "CEO",
+              "org": "Zyphra",
+              "link": "https://www.linkedin.com/in/krithikputhalath/",
+              "talk": null
+            },
+            {
+              "name": "Ed Chi",
+              "title": "VP of Research",
+              "org": "Google DeepMind",
+              "link": "https://www.edchi.net/",
+              "talk": null
+            }
+          ],
+          "start": "1:00 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Frontier Research",
+          "panelists": [
+            "Ekin Dogus Cubuk",
+            "Andi Peng",
+            "Richard Socher",
+            "Krithik Puthalath",
+            "Ed Chi"
+          ],
+          "moderator": "Igor Babuschkin",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Agentic AI Developer Platforms",
+          "speakers": [
+            {
+              "name": "Dima Dmytro Dzhulgakov",
+              "title": "Co-Founder/CTO",
+              "org": "Fireworks AI",
+              "link": "https://www.linkedin.com/in/dzhulgakov/",
+              "talk": null
+            },
+            {
+              "name": "Lukas Biewald",
+              "title": "Founder/CEO",
+              "org": "Weights & Biases",
+              "link": "https://lukasbiewald.com/",
+              "talk": null
+            },
+            {
+              "name": "Ivan Burazin",
+              "title": "Co-Founder/CEO",
+              "org": "Daytona",
+              "link": null,
+              "talk": null
+            }
+          ],
+          "start": "2:05 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Agentic AI Developer Platforms",
+          "panelists": [
+            "Dima Dmytro Dzhulgakov",
+            "Lukas Biewald",
+            "Ivan Burazin"
+          ],
+          "moderator": "Megan Morrone (Axios, Editor of Technology)",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        },
+        {
+          "type": "Focus Talks",
+          "session": "Agentic AI in Finance & Legal",
+          "speakers": [
+            {
+              "name": "Gabe Pereyra",
+              "title": "Co-Founder/President",
+              "org": "Harvey AI",
+              "link": "https://www.harvey.ai/blog/author/gabe-pereyra",
+              "talk": null
+            },
+            {
+              "name": "Milind Naphade",
+              "title": "SVP, AI Foundations",
+              "org": "Capital One",
+              "link": "https://www.capitalone.com/tech/ai/milind-naphade-svp-ai-foundations/",
+              "talk": null
+            },
+            {
+              "name": "Faraz Shafiq",
+              "title": "Head of AI",
+              "org": "Wells Fargo",
+              "link": "https://www.linkedin.com/in/fshafiq/",
+              "talk": null
+            },
+            {
+              "name": "Nikhil Chandhok",
+              "title": "Chief Product & Technology Officer",
+              "org": "Circle",
+              "link": "https://www.circle.com/leadership/nikhil-chandhok",
+              "talk": null
+            }
+          ],
+          "start": "2:45 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Panel",
+          "session": null,
+          "panel_title": "Panel: Agentic AI in Finance & Legal",
+          "panelists": [
+            "Gabe Pereyra",
+            "Milind Naphade",
+            "Faraz Shafiq",
+            "Nikhil Chandhok"
+          ],
+          "moderator": "TBD",
+          "speakers": [],
+          "start": null,
+          "color": "blue"
+        }
+      ]
+    }
+  ]
+}

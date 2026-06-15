@@ -3,8 +3,72 @@
 {% block title %}Option A — Circle Grid{% endblock %}
 {% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/agenda.css">
 <link rel="stylesheet" href="/static/css/sponsors.css">{% endblock %}
 {% block content %}
+{% if agenda %}
+<!-- ════════ PROGRAM SCHEDULE / AGENDA — NEW (sits above Featured Speakers) ════════ -->
+<section class="agenda-section">
+  <div class="container">
+    <h2 class="agenda-title">Program Schedule</h2>
+
+    <div class="agenda-tabs" role="tablist" aria-label="Agenda day">
+      {% for day in agenda.days %}
+      <button class="agenda-tab {% if loop.first %}active{% endif %}"
+              data-target="agenda-{{ day.key }}" role="tab"
+              aria-selected="{{ 'true' if loop.first else 'false' }}">{{ day.label }}</button>
+      {% endfor %}
+    </div>
+
+    {% for day in agenda.days %}
+    <div class="agenda-panel" id="agenda-{{ day.key }}" {% if not loop.first %}hidden{% endif %}>
+      <p class="agenda-date">{{ day.date }}</p>
+      <div class="timeline">
+        {% for e in day.entries %}
+          {% if e.type == 'Panel' %}
+          <div class="tl-row">
+            <div class="tl-time"></div>
+            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+            <div class="tl-content">
+              <p class="tl-kind">{{ e.panel_title }}</p>
+              {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
+              <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+            </div>
+          </div>
+          {% elif e.type in ['Break', 'Lunch'] %}
+          <div class="tl-row">
+            <div class="tl-time">{{ e.start }}</div>
+            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+            <div class="tl-content"><p class="tl-logistics">{{ e.type }}</p></div>
+          </div>
+          {% else %}
+          {% if e.session %}
+          <div class="session-header"><h3>{{ e.session }}</h3></div>
+          {% endif %}
+          <div class="tl-row">
+            <div class="tl-time">{{ e.start }}</div>
+            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+            <div class="tl-content">
+              <p class="tl-kind">{{ e.type }}</p>
+              {% for s in e.speakers %}
+              <div class="tl-speaker">
+                {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+                <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
+                {% if s.link %}</a>{% endif %}
+                {% if s.talk %}<div class="tl-talk">{{ s.talk }}</div>{% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section class="speakers-section">
   <div class="container">
     <h1 class="section-title">Featured Speakers</h1>
@@ -62,6 +126,21 @@
 {% endblock %}
 {% block scripts %}
 <script>
+// Agenda day tabs (Saturday / Sunday)
+document.querySelectorAll('.agenda-tab').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const target = this.dataset.target;
+    document.querySelectorAll('.agenda-tab').forEach(b => {
+      const on = b === this;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.agenda-panel').forEach(p => {
+      p.hidden = (p.id !== target);
+    });
+  });
+});
+
 document.getElementById('search').addEventListener('input', function(e) {
   const q = e.target.value.toLowerCase();
   document.querySelectorAll('.speaker-card').forEach(card => {

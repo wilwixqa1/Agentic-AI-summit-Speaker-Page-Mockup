@@ -8,6 +8,7 @@ from fastapi.templating import Jinja2Templates
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "speakers.json"
 FRONTIER_PATH = BASE_DIR / "data" / "frontier.json"
+AGENDA_PATH = BASE_DIR / "data" / "agenda.json"
 
 app = FastAPI(title="Agentic AI Summit - Speaker Page Mockup")
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "app" / "static")), name="static")
@@ -21,6 +22,11 @@ def load_speakers():
 
 def load_frontier():
     with open(FRONTIER_PATH) as f:
+        return json.load(f)
+
+
+def load_agenda():
+    with open(AGENDA_PATH) as f:
         return json.load(f)
 
 
@@ -43,7 +49,8 @@ def index(request: Request):
 @app.get("/option-a", response_class=HTMLResponse)
 def option_a(request: Request):
     data = load_speakers()
-    return templates.TemplateResponse(request, "option_a.html", {"data": data})
+    return templates.TemplateResponse(request, "option_a.html",
+                                      {"data": data, "agenda": load_agenda()})
 
 
 @app.get("/option-b", response_class=HTMLResponse)
