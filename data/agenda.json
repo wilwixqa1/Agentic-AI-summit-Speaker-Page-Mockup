@@ -105,7 +105,7 @@
           "speakers": [
             {
               "name": "Andrej Karpathy",
-              "title": "Co-Founder of OpenAI; Founder of Eureka Labs",
+              "title": "Anthropic; Co-Founder of OpenAI",
               "org": null,
               "link": "https://karpathy.ai/",
               "talk": null
@@ -161,7 +161,7 @@
             "Michele Catasta",
             "Alex Graveley"
           ],
-          "moderator": "Anjney Midha",
+          "moderator": "Anjney Midha (GP, a16z)",
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
@@ -181,8 +181,8 @@
           "speakers": [
             {
               "name": "Dawn Song",
-              "title": "Professor; Co-Director",
-              "org": "UC Berkeley; Berkeley RDI",
+              "title": "Professor, UC Berkeley; Co-Director, Berkeley RDI",
+              "org": null,
               "link": "https://people.eecs.berkeley.edu/~dawnsong/",
               "talk": null
             }
@@ -237,7 +237,7 @@
             "Dan Roth",
             "Weizhu Chen"
           ],
-          "moderator": "Will Knight (Wired)",
+          "moderator": "Will Knight (Senior Writer, Wired)",
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
@@ -250,8 +250,8 @@
           "speakers": [
             {
               "name": "Sergey Levine",
-              "title": "Co-Founder; Professor",
-              "org": "Physical Intelligence; UC Berkeley",
+              "title": "Co-Founder, Physical Intelligence; Professor, UC Berkeley",
+              "org": null,
               "link": "https://people.eecs.berkeley.edu/~svlevine/",
               "talk": null
             },
