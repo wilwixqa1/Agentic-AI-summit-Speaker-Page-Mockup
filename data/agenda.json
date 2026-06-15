@@ -70,7 +70,7 @@
             "Jonathan Cohen",
             "Chuan Li"
           ],
-          "moderator": "TBD",
+          "moderator": null,
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
@@ -131,6 +131,20 @@
               "org": "OpenAI",
               "link": "https://hyperbo.la/contact/",
               "talk": null
+            },
+            {
+              "name": "Michele Catasta",
+              "title": "President",
+              "org": "Replit",
+              "link": "https://www.linkedin.com/in/pirroh",
+              "talk": null
+            },
+            {
+              "name": "Alex Graveley",
+              "title": "Director, Comet",
+              "org": "Perplexity AI",
+              "link": "https://alexgraveley.com/",
+              "talk": null
             }
           ],
           "start": "11:30 AM",
@@ -144,21 +158,21 @@
             "Andrej Karpathy",
             "Peter Steinberger",
             "Ryan Lopopolo",
-            "Michele Catasta (President, Replit)",
-            "Alex Graveley (Director, Comet, Perplexity AI)"
+            "Michele Catasta",
+            "Alex Graveley"
           ],
           "moderator": "Anjney Midha",
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
-          "start": "11:45 AM",
+          "start": "11:55 AM",
           "color": "blue"
         },
         {
           "type": "Lunch",
           "session": null,
           "speakers": [],
-          "start": "1:30 PM",
+          "start": "12:10 PM",
           "color": "amber"
         },
         {
@@ -284,7 +298,7 @@
             "Michael Spranger",
             "Wei Zhan"
           ],
-          "moderator": "TBD",
+          "moderator": null,
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
@@ -295,7 +309,7 @@
           "type": "Break",
           "session": null,
           "speakers": [],
-          "start": "4:30 PM",
+          "start": "4:10 PM",
           "color": "amber"
         },
         {
@@ -473,7 +487,7 @@
           "type": "Lunch",
           "session": null,
           "speakers": [],
-          "start": "1:00 PM",
+          "start": "11:30 AM",
           "color": "amber"
         },
         {
@@ -614,7 +628,7 @@
             "Faraz Shafiq",
             "Nikhil Chandhok"
           ],
-          "moderator": "TBD",
+          "moderator": null,
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],

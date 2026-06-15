@@ -45,10 +45,10 @@
                   {% if s.link %}</a>{% endif %}
                 </div>
                 {% endfor %}
-                <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+                {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
               {% else %}
                 {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
-                <p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>
+                {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
               {% endif %}
             </div>
           </div>
