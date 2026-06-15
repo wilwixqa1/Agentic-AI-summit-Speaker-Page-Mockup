@@ -587,6 +587,13 @@
           "session": "Agentic AI in Finance & Legal",
           "speakers": [
             {
+              "name": "Nikhil Chandhok",
+              "title": "Chief Product & Technology Officer",
+              "org": "Circle",
+              "link": "https://www.circle.com/leadership/nikhil-chandhok",
+              "talk": null
+            },
+            {
               "name": "Gabe Pereyra",
               "title": "Co-Founder/President",
               "org": "Harvey AI",
@@ -606,13 +613,6 @@
               "org": "Wells Fargo",
               "link": "https://www.linkedin.com/in/fshafiq/",
               "talk": null
-            },
-            {
-              "name": "Nikhil Chandhok",
-              "title": "Chief Product & Technology Officer",
-              "org": "Circle",
-              "link": "https://www.circle.com/leadership/nikhil-chandhok",
-              "talk": null
             }
           ],
           "start": "2:45 PM",
@@ -623,10 +623,10 @@
           "session": null,
           "panel_title": "Panel: Agentic AI in Finance & Legal",
           "panelists": [
+            "Nikhil Chandhok",
             "Gabe Pereyra",
             "Milind Naphade",
-            "Faraz Shafiq",
-            "Nikhil Chandhok"
+            "Faraz Shafiq"
           ],
           "moderator": null,
           "panel_only": false,
