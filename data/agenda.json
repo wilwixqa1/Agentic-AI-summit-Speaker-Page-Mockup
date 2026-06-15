@@ -79,7 +79,7 @@
         },
         {
           "type": "Fireside Chat",
-          "session": null,
+          "session": "Fireside Chat",
           "speakers": [
             {
               "name": "Martin Casado",
@@ -356,7 +356,7 @@
         },
         {
           "type": "Fireside Chat",
-          "session": null,
+          "session": "Fireside Chat",
           "speakers": [
             {
               "name": "Andrew Ng",
@@ -463,7 +463,7 @@
         },
         {
           "type": "Fireside Chat",
-          "session": null,
+          "session": "Fireside Chat",
           "speakers": [
             {
               "name": "Ali Ghodsi",
