@@ -88,19 +88,20 @@
 .tl-logistics { color: var(--ink-2); font-size: 16px; font-weight: 600; }
 
 /* Session header bar — blue tint with left accent. Sits above the rail
-   (position+z-index) with an opaque background so the timeline line is masked. */
+   (position+z-index) with an opaque background so the timeline line is masked.
+   Time sits as a small label above the title (left-aligned). */
 .session-header {
   position: relative; z-index: 1;
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
   background: #e8eefc; border-left: 4px solid #2563eb;
-  border-radius: 8px; padding: 18px 24px;
+  border-radius: 8px; padding: 14px 24px;
   margin: 18px 0 10px 0;
 }
 .session-header h3 {
   margin: 0; color: #2563eb; font-size: 22px; font-weight: 700;
 }
 .session-time {
-  color: #2563eb; font-size: 17px; font-weight: 600; white-space: nowrap;
+  display: block; color: var(--ink-2); font-size: 14px; font-weight: 600;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 720px) {

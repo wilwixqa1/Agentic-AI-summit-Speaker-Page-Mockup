@@ -72,7 +72,7 @@
           ],
           "moderator": "TBD",
           "speakers": [],
-          "start": null,
+          "start": "10:25 AM",
           "color": "blue"
         },
         {
@@ -161,7 +161,7 @@
           ],
           "moderator": "Anjney Midha",
           "speakers": [],
-          "start": null,
+          "start": "11:45 AM",
           "color": "blue"
         },
         {
@@ -235,7 +235,7 @@
           ],
           "moderator": "Will Knight (Wired)",
           "speakers": [],
-          "start": null,
+          "start": "2:35 PM",
           "color": "blue"
         },
         {
@@ -294,7 +294,7 @@
           ],
           "moderator": "TBD",
           "speakers": [],
-          "start": null,
+          "start": "3:45 PM",
           "color": "blue"
         },
         {
@@ -305,44 +305,8 @@
           "color": "amber"
         },
         {
-          "type": "Focus Talks",
-          "session": "Agentic AI in Capital Markets",
-          "speakers": [
-            {
-              "name": "Ali Nazari",
-              "title": "Head of Deep Learning Research",
-              "org": "Susquehanna International Group",
-              "link": "https://www.linkedin.com/in/ali-nazari-97246716/",
-              "talk": null
-            },
-            {
-              "name": "Jeff Wecker",
-              "title": "CTO",
-              "org": "Two Sigma",
-              "link": "https://www.linkedin.com/in/jeffwecker/",
-              "talk": null
-            },
-            {
-              "name": "Jen Allum",
-              "title": "SVP, Co-Head of GenAI",
-              "org": "The D. E. Shaw Group",
-              "link": "https://www.linkedin.com/in/jen-allum/",
-              "talk": null
-            },
-            {
-              "name": "Li Deng",
-              "title": "Chief AI Officer, Global Head of ML",
-              "org": "Vatic Investments",
-              "link": null,
-              "talk": null
-            }
-          ],
-          "start": "4:30 PM",
-          "color": "blue"
-        },
-        {
           "type": "Panel",
-          "session": null,
+          "session": "Agentic AI in Capital Markets",
           "panel_title": "Panel: Agentic AI in Capital Markets",
           "panelists": [
             "Ali Nazari",
@@ -352,7 +316,7 @@
           ],
           "moderator": "Bradley Olson (Technology Editor from WSJ)",
           "speakers": [],
-          "start": null,
+          "start": "4:30 PM",
           "color": "blue"
         },
         {
@@ -471,7 +435,7 @@
           ],
           "moderator": "Aaron Jacobson (GP, NEA)",
           "speakers": [],
-          "start": null,
+          "start": "10:35 AM",
           "color": "blue"
         },
         {
@@ -559,7 +523,7 @@
           ],
           "moderator": "Igor Babuschkin",
           "speakers": [],
-          "start": null,
+          "start": "1:35 PM",
           "color": "blue"
         },
         {
@@ -602,7 +566,7 @@
           ],
           "moderator": "Megan Morrone (Axios, Editor of Technology)",
           "speakers": [],
-          "start": null,
+          "start": "2:15 PM",
           "color": "blue"
         },
         {
@@ -653,7 +617,7 @@
           ],
           "moderator": "TBD",
           "speakers": [],
-          "start": null,
+          "start": "3:15 PM",
           "color": "blue"
         }
       ]
