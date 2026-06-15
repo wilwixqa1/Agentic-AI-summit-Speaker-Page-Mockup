@@ -98,7 +98,7 @@
           "color": "green"
         },
         {
-          "type": "Focus Talks",
+          "type": "Keynote",
           "session": "Future of Software Development",
           "speakers": [
             {
@@ -107,7 +107,15 @@
               "org": null,
               "link": "https://karpathy.ai/",
               "talk": null
-            },
+            }
+          ],
+          "start": "11:10 AM",
+          "color": "green"
+        },
+        {
+          "type": "Focus Talks",
+          "session": null,
+          "speakers": [
             {
               "name": "Peter Steinberger",
               "title": "Creator of OpenClaw",
@@ -137,7 +145,7 @@
               "talk": null
             }
           ],
-          "start": "11:10 AM",
+          "start": "11:30 AM",
           "color": "blue"
         },
         {
@@ -180,14 +188,30 @@
               "org": "Google DeepMind",
               "link": "https://research.google/people/105667/",
               "talk": null
-            },
+            }
+          ],
+          "start": "1:30 PM",
+          "color": "blue"
+        },
+        {
+          "type": "Keynote",
+          "session": null,
+          "speakers": [
             {
               "name": "Dawn Song",
               "title": "Professor; Co-Director",
               "org": "UC Berkeley; Berkeley RDI",
               "link": "https://people.eecs.berkeley.edu/~dawnsong/",
               "talk": null
-            },
+            }
+          ],
+          "start": "1:55 PM",
+          "color": "green"
+        },
+        {
+          "type": "Focus Talks",
+          "session": null,
+          "speakers": [
             {
               "name": "Dan Roth",
               "title": "Chief AI Scientist",
@@ -203,7 +227,7 @@
               "talk": null
             }
           ],
-          "start": "1:30 PM",
+          "start": "2:15 PM",
           "color": "blue"
         },
         {
