@@ -26,6 +26,12 @@
       <div class="timeline">
         {% for e in day.entries %}
           {% if e.type == 'Panel' %}
+          {% if e.session %}
+          <div class="session-header">
+            {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
+            <h3>{{ e.session }}</h3>
+          </div>
+          {% endif %}
           <div class="tl-row">
             <div class="tl-time">{{ e.start }}</div>
             <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
