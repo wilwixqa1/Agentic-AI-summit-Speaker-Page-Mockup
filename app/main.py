@@ -47,11 +47,9 @@ def build_mainstage_pool(data):
 
 
 def _headshot_index():
-    """Map normalized speaker name -> headshot filename, from frontier.json and
-    the speakers.json data (both reference headshot files)."""
-    import os
+    """Map normalized speaker name -> headshot filename, from frontier.json.
+    Includes aliases for agenda-vs-file spelling mismatches."""
     idx = {}
-    fr = load_frontier_agenda  # noqa (kept for clarity)
     try:
         with open(FRONTIER_PATH) as f:
             for s in json.load(f)["speakers"]:
@@ -59,6 +57,15 @@ def _headshot_index():
                     idx[_norm_name(s["name"])] = s["headshot"]
     except Exception:
         pass
+    # Aliases: agenda spelling -> existing headshot file (names differ slightly).
+    aliases = {
+        "shivakasiviswanthan": "shiva_kasiviswanathan.png",
+        "jonravshene": "jonrav_shende.png",
+        "professorjohnamcdermid": "john_mcdermid.png",
+        "johnamcdermid": "john_mcdermid.png",
+    }
+    for k, v in aliases.items():
+        idx.setdefault(k, v)
     return idx
 
 
