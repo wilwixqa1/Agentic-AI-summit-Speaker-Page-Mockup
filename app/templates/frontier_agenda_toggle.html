@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% set active = 'frontier-toggle' %}
+{% block head %}
+<link rel="stylesheet" href="/static/css/agenda.css">
+<link rel="stylesheet" href="/static/css/frontier_agenda.css">
+{% endblock %}
+
+{% macro render_entry(e) %}
+  {% if e.type == 'Session' %}
+    {% if e.title %}
+    <div class="session-header">
+      {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
+      <h3>{{ e.title }}</h3>
+    </div>
+    {% endif %}
+    <div class="tl-row">
+      <div class="tl-time">{{ e.start }}</div>
+      <div class="tl-dot-cell"><span class="tl-dot blue"></span></div>
+      <div class="tl-content">
+        {% for s in e.speakers %}
+        <div class="tl-speaker">
+          {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+          <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
+          {% if s.link %}</a>{% endif %}
+          {% if s.talk %}<div class="tl-talk">{{ s.talk }}</div>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% elif e.type == 'Workshop' %}
+    <div class="tl-row">
+      <div class="tl-time">{{ e.start }}</div>
+      <div class="tl-dot-cell"><span class="tl-dot magenta"></span></div>
+      <div class="tl-content"><p class="tl-kind">{{ e.label }}</p></div>
+    </div>
+  {% elif e.type == 'Lunch' %}
+    <div class="tl-row">
+      <div class="tl-time">{{ e.start }}</div>
+      <div class="tl-dot-cell"><span class="tl-dot amber"></span></div>
+      <div class="tl-content"><p class="tl-logistics">Lunch</p></div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% block content %}
+<section class="agenda-section">
+  <div class="container">
+    <h2 class="agenda-title">Frontier Stages</h2>
+    <p class="agenda-subtitle">Option B — stage tabs with day toggle</p>
+
+    <div class="agenda-tabs" role="tablist">
+      {% for st in fa.stages %}
+      <button class="agenda-tab stage-tab {% if loop.first %}active{% endif %}"
+              data-stage="{{ loop.index0 }}">{{ st.stage }}</button>
+      {% endfor %}
+    </div>
+
+    {% for st in fa.stages %}
+    <div class="stage-panel" id="stage-{{ loop.index0 }}" {% if not loop.first %}hidden{% endif %}>
+      {% set sidx = loop.index0 %}
+      {% if st.days | length > 1 %}
+      <div class="day-toggle" role="tablist">
+        {% for day in st.days %}
+        <button class="day-btn {% if loop.first %}active{% endif %}"
+                data-day-target="stage-{{ sidx }}-day-{{ loop.index0 }}">{{ day.day }}</button>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% for day in st.days %}
+      <div class="day-panel" id="stage-{{ sidx }}-day-{{ loop.index0 }}" {% if not loop.first %}hidden{% endif %}>
+        <p class="frontier-day-label">{{ day.date }}</p>
+        <div class="timeline">
+          {% for e in day.entries %}{{ render_entry(e) }}{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Stage-level tabs
+document.querySelectorAll('.stage-tab').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var idx = this.dataset.stage;
+    document.querySelectorAll('.stage-tab').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    document.querySelectorAll('.stage-panel').forEach(function (p) { p.hidden = (p.id !== 'stage-' + idx); });
+  });
+});
+// Day-level sub-toggle (scoped within each stage)
+document.querySelectorAll('.day-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var target = this.dataset.dayTarget;
+    var group = this.closest('.stage-panel');
+    group.querySelectorAll('.day-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    group.querySelectorAll('.day-panel').forEach(function (p) { p.hidden = (p.id !== target); });
+  });
+});
+</script>
+{% endblock %}

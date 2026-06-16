@@ -1,0 +1,807 @@
+{
+  "event": {
+    "name": "Agentic AI Summit 2026 \u2014 Frontier Stages"
+  },
+  "stages": [
+    {
+      "stage": "Atlas",
+      "days": [
+        {
+          "day": "Saturday",
+          "date": "Saturday, August 1",
+          "entries": [
+            {
+              "type": "Session",
+              "title": "Foundational Capabilities -1",
+              "speakers": [
+                {
+                  "name": "Noam Brown",
+                  "title": "MTS",
+                  "org": "OpenAI",
+                  "talk": null
+                },
+                {
+                  "name": "Jianfeng Gao",
+                  "title": "Technical Fellow & Corporate Vice President",
+                  "org": "Microsoft Research",
+                  "talk": null
+                },
+                {
+                  "name": "Sanja Fidler",
+                  "title": "VP of AI Research",
+                  "org": "Nvidia",
+                  "talk": null
+                },
+                {
+                  "name": "Giambattista Parascandolo",
+                  "title": "leading reasoning research team",
+                  "org": "OpenAI",
+                  "talk": null
+                },
+                {
+                  "name": "Rishabh Agarwal",
+                  "title": "Founding Member",
+                  "org": "Periodic Labs",
+                  "talk": null
+                },
+                {
+                  "name": "Aditya Grover",
+                  "title": "Co-Founder/CTO",
+                  "org": "Inception Labs",
+                  "talk": null
+                }
+              ],
+              "start": "10:00 AM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop - Daytona (Lovre Pesut, AI Engineer & Muhammad Hashmi, DevRel)",
+              "start": "11:15 AM"
+            },
+            {
+              "type": "Lunch",
+              "label": "Lunch",
+              "start": "12:15 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Robotics & World Models",
+              "speakers": [
+                {
+                  "name": "Peter Stone",
+                  "title": "Chief Scientist; Professor",
+                  "org": "Sony AI; UT Austin",
+                  "talk": null
+                },
+                {
+                  "name": "Vincent Vanhoucke",
+                  "title": "Distinguished Engineer",
+                  "org": "Waymo",
+                  "talk": null
+                },
+                {
+                  "name": "Chris Bregler",
+                  "title": "Senior Director / Distinguished Scientist",
+                  "org": "Google DeepMind",
+                  "talk": null
+                },
+                {
+                  "name": "Trevor Darrell",
+                  "title": "Professor",
+                  "org": "Ucb",
+                  "talk": null
+                },
+                {
+                  "name": "Manmohan Chandraker",
+                  "title": "Professor",
+                  "org": "University of California, San Diego",
+                  "talk": null
+                },
+                {
+                  "name": "Bolei Zhou",
+                  "title": "Associate Professor / Chief AI Scientist",
+                  "org": "UCLA / Coco Robotics",
+                  "talk": null
+                }
+              ],
+              "start": "1:00 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Frameworks & Dev Platforms -1",
+              "speakers": [
+                {
+                  "name": "Philip Rathle",
+                  "title": "CTO",
+                  "org": "Neo4j",
+                  "talk": null
+                },
+                {
+                  "name": "Josh Albrecht",
+                  "title": "Co-founder and CTO",
+                  "org": "Imbue",
+                  "talk": null
+                },
+                {
+                  "name": "Woosuk Kwon",
+                  "title": "Co-Founder & CTO",
+                  "org": "Inferact",
+                  "talk": null
+                },
+                {
+                  "name": "Banghua Zhu",
+                  "title": "Co-Founder",
+                  "org": "RadixArk",
+                  "talk": null
+                },
+                {
+                  "name": "Ranjan Sinha",
+                  "title": "IBM Fellow, CTO & VP for watsonx, enterpreise AI",
+                  "org": "IBM",
+                  "talk": null
+                },
+                {
+                  "name": "Raj De Datta",
+                  "title": "CEO & Co-Founder",
+                  "org": "Bloomreach",
+                  "talk": null
+                }
+              ],
+              "start": "4:15 PM"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "Sunday, August 2",
+          "entries": [
+            {
+              "type": "Session",
+              "title": "Enterprise AI",
+              "speakers": [
+                {
+                  "name": "Sunita Verma",
+                  "title": "Chief Technology Officer (CTO)",
+                  "org": "Ironclad",
+                  "talk": null
+                },
+                {
+                  "name": "Ori Goshen",
+                  "title": "Co-Founder/CEO",
+                  "org": "AI21 Labs",
+                  "talk": null
+                },
+                {
+                  "name": "Rene Pajta",
+                  "title": "Chief Architect Cloud & AI",
+                  "org": "Microsoft",
+                  "talk": null
+                },
+                {
+                  "name": "Vincent Sunn Chen",
+                  "title": "VP & Founding Member",
+                  "org": "Snorkel AI",
+                  "talk": null
+                },
+                {
+                  "name": "David Hsu",
+                  "title": "CEO and founder",
+                  "org": "Retool",
+                  "talk": null
+                },
+                {
+                  "name": "Michel Tricot",
+                  "title": "CEO & Co-Founder",
+                  "org": "Airbyte",
+                  "talk": null
+                },
+                {
+                  "name": "Dan Klein",
+                  "title": "Professor / Co-founder CTO",
+                  "org": "UC Berkeley / Scaled Cognition",
+                  "talk": null
+                }
+              ],
+              "start": "10:00 AM"
+            },
+            {
+              "type": "Lunch",
+              "label": "Lunch",
+              "start": "12:20 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Agent Evaluation & Benchmarks -1",
+              "speakers": [
+                {
+                  "name": "Anastasios N Angelopoulos",
+                  "title": "Co-Founder/CEO",
+                  "org": "LLMArena",
+                  "talk": null
+                },
+                {
+                  "name": "Michal Shmueli-Scheuer",
+                  "title": "Distinguished Engineer, AI Benchmarking and Evaluation",
+                  "org": "IBM Research",
+                  "talk": null
+                },
+                {
+                  "name": "Priya Ponnapalli",
+                  "title": "SVP of Engineering, Enterprise AI",
+                  "org": "Scale AI",
+                  "talk": null
+                },
+                {
+                  "name": "Srijith Rajamohan",
+                  "title": "Head of AI Research",
+                  "org": "Redis",
+                  "talk": null
+                }
+              ],
+              "start": "1:00 PM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Nexus",
+      "days": [
+        {
+          "day": "Saturday",
+          "date": "Saturday, August 1",
+          "entries": [
+            {
+              "type": "Session",
+              "title": "AI Systems -1",
+              "speakers": [
+                {
+                  "name": "Ion Stoica",
+                  "title": "Co-Founder; Professor",
+                  "org": "Databricks and Anyscale; UC Berkeley",
+                  "talk": null
+                },
+                {
+                  "name": "Nick Harris",
+                  "title": "Founder/CEO",
+                  "org": "Lightmatter",
+                  "talk": null
+                },
+                {
+                  "name": "Gosia Steinder",
+                  "title": "IBM Fellow",
+                  "org": "IBM Research",
+                  "talk": null
+                },
+                {
+                  "name": "Tim Hockin",
+                  "title": "Distinguished Engineer",
+                  "org": "Google",
+                  "talk": null
+                }
+              ],
+              "start": "10:00 AM"
+            },
+            {
+              "type": "Lunch",
+              "label": "Lunch",
+              "start": "11:45 AM"
+            },
+            {
+              "type": "Session",
+              "title": "Frameworks & Dev Platforms -2",
+              "speakers": [
+                {
+                  "name": "Haishi Bai",
+                  "title": "Principal Architect",
+                  "org": "Microsoft",
+                  "talk": null
+                },
+                {
+                  "name": "Wenbo Guo",
+                  "title": "Assistant Professor",
+                  "org": "UCSB",
+                  "talk": null
+                },
+                {
+                  "name": "Ramesh Raskar",
+                  "title": "Professor",
+                  "org": "MIT",
+                  "talk": null
+                },
+                {
+                  "name": "Karen Ullrich",
+                  "title": "Senior Research Scientist",
+                  "org": "Meta AI",
+                  "talk": null
+                },
+                {
+                  "name": "Shiva Kasiviswanthan",
+                  "title": "Principal Applied Scientist",
+                  "org": "Amazon Web Services",
+                  "talk": null
+                },
+                {
+                  "name": "Saurabh Gupta",
+                  "title": "Sr. Director, AI/ML",
+                  "org": "Cisco",
+                  "talk": null
+                },
+                {
+                  "name": "Tanya Roosta",
+                  "title": "Director of AI",
+                  "org": "AMD, Berkeley",
+                  "talk": null
+                },
+                {
+                  "name": "Denis Akhiyarov",
+                  "title": "Senior Staff AI Scientist",
+                  "org": "ServiceNow",
+                  "talk": null
+                },
+                {
+                  "name": "Nilou Salehi",
+                  "title": "Associate professor",
+                  "org": "UC, Berkeley",
+                  "talk": null
+                }
+              ],
+              "start": "1:00 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Foundational Capabilities -2",
+              "speakers": [
+                {
+                  "name": "Danqi Chen",
+                  "title": "Associate Professor",
+                  "org": "Princeton",
+                  "talk": null
+                },
+                {
+                  "name": "Doga Kerestecioglu",
+                  "title": "Principal Applied Scientist",
+                  "org": "Microsoft Corporation",
+                  "talk": null
+                },
+                {
+                  "name": "Yu Su",
+                  "title": "CEO / Associate Professor",
+                  "org": "NeoCognition / OSU",
+                  "talk": null
+                },
+                {
+                  "name": "Furong Huang",
+                  "title": "Associate Professor",
+                  "org": "University of Maryland",
+                  "talk": null
+                },
+                {
+                  "name": "Raja Giryes",
+                  "title": "Professor",
+                  "org": "Tel Aviv University",
+                  "talk": null
+                }
+              ],
+              "start": "2:50 PM"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "Sunday, August 2",
+          "entries": [
+            {
+              "type": "Session",
+              "title": "Agent Evaluation & Benchmarks -2",
+              "speakers": [
+                {
+                  "name": "Aayush Agrawal",
+                  "title": "Product Lead",
+                  "org": "Uber",
+                  "talk": null
+                },
+                {
+                  "name": "Izzy Miller",
+                  "title": "AI Research Lead",
+                  "org": "Hex",
+                  "talk": null
+                },
+                {
+                  "name": "Rahul Krishna",
+                  "title": "Senior Research Scientist",
+                  "org": "IBM Software Innovation Labs",
+                  "talk": null
+                },
+                {
+                  "name": "Yuan (Emily) Xue",
+                  "title": "Head of Enterprise AI",
+                  "org": "Scale AI",
+                  "talk": null
+                },
+                {
+                  "name": "S Joy Mountford",
+                  "title": "Vice President, Innovation Lab",
+                  "org": "S.A.P.",
+                  "talk": null
+                },
+                {
+                  "name": "Gideon Mendels",
+                  "title": "CEO and Co-founder",
+                  "org": "Comet",
+                  "talk": null
+                },
+                {
+                  "name": "Scott Clark",
+                  "title": "Co-Founder & CEO",
+                  "org": "Distributional",
+                  "talk": null
+                },
+                {
+                  "name": "Barr Moses",
+                  "title": "CEO and co-founder",
+                  "org": "Monte Carlo AI",
+                  "talk": null
+                },
+                {
+                  "name": "Arindam Sett",
+                  "title": "Principal ML Engineer",
+                  "org": "Genentech",
+                  "talk": null
+                }
+              ],
+              "start": "10:00 AM"
+            },
+            {
+              "type": "Lunch",
+              "label": "Lunch",
+              "start": "11:45 AM"
+            },
+            {
+              "type": "Session",
+              "title": "AI Safety",
+              "speakers": [
+                {
+                  "name": "Eric Ho",
+                  "title": "Co-Founder/CEO",
+                  "org": "Goodfire",
+                  "talk": null
+                },
+                {
+                  "name": "Lovedeep Gondara",
+                  "title": "Head of AI R&D | Adjunct Professor",
+                  "org": "Vanguard | University of British Columbia",
+                  "talk": null
+                },
+                {
+                  "name": "Neil Lawrence",
+                  "title": "Chief Scientist and Co-founder",
+                  "org": "Trent AI",
+                  "talk": null
+                },
+                {
+                  "name": "Jordan Jindong Gu",
+                  "title": "Senior Research Scientist",
+                  "org": "Google & University of Oxford",
+                  "talk": null
+                },
+                {
+                  "name": "Huan Sun",
+                  "title": "Associate Professor",
+                  "org": "The Ohio State University",
+                  "talk": null
+                },
+                {
+                  "name": "Navrina Singh",
+                  "title": "CEO, Founder",
+                  "org": "Credo AI",
+                  "talk": null
+                },
+                {
+                  "name": "Rishi Bommasani",
+                  "title": "Senior Research Scholar",
+                  "org": "Stanford Institute for Human-Centered Artificial Intelligence",
+                  "talk": null
+                }
+              ],
+              "start": "1:00 PM"
+            },
+            {
+              "type": "Session",
+              "title": "AI System -2",
+              "speakers": [
+                {
+                  "name": "Dr. Dan Fu",
+                  "title": "VP of Kernels",
+                  "org": "Together AI",
+                  "talk": null
+                },
+                {
+                  "name": "Jun Yang",
+                  "title": "Senior Director of Compute Architecture",
+                  "org": "NVIDIA",
+                  "talk": null
+                },
+                {
+                  "name": "John Liu",
+                  "title": "Principal Product Manager",
+                  "org": "AWS",
+                  "talk": null
+                },
+                {
+                  "name": "Jongryool Kim",
+                  "title": "Senior Director / Head of AI System Infra.",
+                  "org": "SK hynix",
+                  "talk": null
+                },
+                {
+                  "name": "Rahul Bakshi",
+                  "title": "Director, Applied Science (Edge AI)",
+                  "org": "Amazon",
+                  "talk": null
+                },
+                {
+                  "name": "Ben Athiwaratkun",
+                  "title": "Senior Director, Core ML (Turbo)",
+                  "org": "Together AI",
+                  "talk": null
+                },
+                {
+                  "name": "Tushar Krishna",
+                  "title": "Associate Professor",
+                  "org": "Georgia Institute of Technology",
+                  "talk": null
+                }
+              ],
+              "start": "1:45 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Enterprise AI -2",
+              "speakers": [
+                {
+                  "name": "Christopher Petrillo",
+                  "title": "Principal Product Manager",
+                  "org": "The Wikimedia Foundation",
+                  "talk": null
+                },
+                {
+                  "name": "Merve Unuvar",
+                  "title": "Director, IBM Research AI",
+                  "org": "IBM",
+                  "talk": null
+                },
+                {
+                  "name": "Anirudh Goyal",
+                  "title": "Principal Staff Software Engineer",
+                  "org": "LinkedIn",
+                  "talk": null
+                },
+                {
+                  "name": "Daniel Homola",
+                  "title": "Lead AI Engineer",
+                  "org": "BMW Research",
+                  "talk": null
+                },
+                {
+                  "name": "Nayaki Nayyar",
+                  "title": "CEO",
+                  "org": "Siteimprove",
+                  "talk": null
+                },
+                {
+                  "name": "Surbhi Rathore",
+                  "title": "VP, AI Products & Strategy",
+                  "org": "Invoca",
+                  "talk": null
+                },
+                {
+                  "name": "Daniel Fink",
+                  "title": "AI Engineering Lead",
+                  "org": "Cognizant",
+                  "talk": null
+                }
+              ],
+              "start": "2:20 PM"
+            },
+            {
+              "type": "Session",
+              "title": "AI for Math",
+              "speakers": [
+                {
+                  "name": "Sergei Gukov",
+                  "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics,",
+                  "org": "California Institute of Technology",
+                  "talk": null
+                },
+                {
+                  "name": "Vijay Ganesh",
+                  "title": "Professor",
+                  "org": "Georgia Institute of Technology",
+                  "talk": null
+                },
+                {
+                  "name": "Abhradeep Guha Thakurta",
+                  "title": "Staff Research Scientist",
+                  "org": "Google DeepMind",
+                  "talk": null
+                }
+              ],
+              "start": "2:55 PM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Horizon",
+      "days": [
+        {
+          "day": "Saturday",
+          "date": "Saturday, August 1",
+          "entries": [
+            {
+              "type": "Session",
+              "title": "AI for Science",
+              "speakers": [
+                {
+                  "name": "Markus J. Buehler",
+                  "title": "Professor, Founder, CTO",
+                  "org": "MIT/Unreasonable Labs",
+                  "talk": null
+                },
+                {
+                  "name": "James Zou",
+                  "title": "Professor",
+                  "org": "Stanford",
+                  "talk": null
+                },
+                {
+                  "name": "Lila Tretikov",
+                  "title": "Head of AI Strategy and Partner",
+                  "org": "NEA",
+                  "talk": null
+                },
+                {
+                  "name": "Mengdi Wang",
+                  "title": "Professor",
+                  "org": "Princeton",
+                  "talk": null
+                },
+                {
+                  "name": "Rose Yu",
+                  "title": "Associate Professor",
+                  "org": "UC San Diego",
+                  "talk": null
+                },
+                {
+                  "name": "Nick Talken",
+                  "title": "CEO & Cofounder",
+                  "org": "Albert Invent",
+                  "talk": null
+                }
+              ],
+              "start": "10:00 AM"
+            },
+            {
+              "type": "Lunch",
+              "label": "Lunch",
+              "start": "11:50 AM"
+            },
+            {
+              "type": "Session",
+              "title": "Coding & Web Agent",
+              "speakers": [
+                {
+                  "name": "Silas Alberti",
+                  "title": "SVP of Research",
+                  "org": "Cognition",
+                  "talk": null
+                },
+                {
+                  "name": "Eno Reyes",
+                  "title": "Co-Founder / CTO",
+                  "org": "Factory AI",
+                  "talk": null
+                },
+                {
+                  "name": "Dhruv Batra",
+                  "title": "Chief Scientist / co-founder",
+                  "org": "Yutori",
+                  "talk": null
+                },
+                {
+                  "name": "Shamir Abdul Aziz",
+                  "title": "Prinicipal Product Manager",
+                  "org": "Microsoft",
+                  "talk": null
+                },
+                {
+                  "name": "Krishnakumar Sharma",
+                  "title": "Senior Director of Engineering",
+                  "org": "Delivery Hero",
+                  "talk": null
+                }
+              ],
+              "start": "1:00 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Agentic AI Applications (Finance, HC)",
+              "speakers": [
+                {
+                  "name": "Donghao Huang",
+                  "title": "Vice President of R&D",
+                  "org": "Mastercard",
+                  "talk": null
+                },
+                {
+                  "name": "Venkat Bhat",
+                  "title": "Associate Professor; Director, AI for Mental Health (AI-M) Program",
+                  "org": "University of Toronto",
+                  "talk": null
+                },
+                {
+                  "name": "Kira Radinsky",
+                  "title": "CTO and Founder",
+                  "org": "Diagnostic Robotics",
+                  "talk": null
+                },
+                {
+                  "name": "Shaghayegh Gharghabi",
+                  "title": "Deep Learning Scientists",
+                  "org": "NVIDIA",
+                  "talk": null
+                }
+              ],
+              "start": "2:50 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Secure Agentic AI",
+              "speakers": [
+                {
+                  "name": "Jon-Rav Shene",
+                  "title": "Chief Technology Officer",
+                  "org": "Thales Group",
+                  "talk": null
+                },
+                {
+                  "name": "Itsik Mantin",
+                  "title": "Head of AI Security Research",
+                  "org": "Intuit",
+                  "talk": null
+                },
+                {
+                  "name": "Professor John A McDermid",
+                  "title": "Director, Centre for Assuring Autonomy",
+                  "org": "Institute for Safe Autonomy, University of York",
+                  "talk": null
+                },
+                {
+                  "name": "Geng Sng",
+                  "title": "Co-founder and CTO",
+                  "org": "Cogent Security",
+                  "talk": null
+                },
+                {
+                  "name": "Mohamed Nabeel",
+                  "title": "Senior Principal Researcher",
+                  "org": "Palo Alto Networks",
+                  "talk": null
+                },
+                {
+                  "name": "Vaishnavi Gudur",
+                  "title": "Senior AI Security Engineer",
+                  "org": "Microsoft",
+                  "talk": null
+                }
+              ],
+              "start": "3:25 PM"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "speakers.json"
 FRONTIER_PATH = BASE_DIR / "data" / "frontier.json"
 AGENDA_PATH = BASE_DIR / "data" / "agenda.json"
+FRONTIER_AGENDA_PATH = BASE_DIR / "data" / "frontier_agenda.json"
 
 app = FastAPI(title="Agentic AI Summit - Speaker Page Mockup")
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "app" / "static")), name="static")
@@ -28,6 +29,25 @@ def load_frontier():
 def load_agenda():
     with open(AGENDA_PATH) as f:
         return json.load(f)
+
+
+def load_frontier_agenda():
+    with open(FRONTIER_AGENDA_PATH) as f:
+        return json.load(f)
+
+
+@app.get("/frontier-agenda-flat", response_class=HTMLResponse)
+def frontier_agenda_flat(request: Request):
+    return templates.TemplateResponse(
+        request, "frontier_agenda_flat.html",
+        {"fa": load_frontier_agenda()})
+
+
+@app.get("/frontier-agenda-toggle", response_class=HTMLResponse)
+def frontier_agenda_toggle(request: Request):
+    return templates.TemplateResponse(
+        request, "frontier_agenda_toggle.html",
+        {"fa": load_frontier_agenda()})
 
 
 def frontier_sessions(frontier_data):

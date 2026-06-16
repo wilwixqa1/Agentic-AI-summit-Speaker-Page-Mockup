@@ -1,0 +1,26 @@
+/* Frontier agenda extras — builds on agenda.css */
+.agenda-subtitle {
+  text-align: center; color: var(--muted); font-size: 14px;
+  margin: -16px 0 24px;
+}
+.frontier-day-label {
+  text-align: center; font-size: 18px; font-weight: 600;
+  color: var(--ink); margin: 28px 0 16px;
+  padding-bottom: 8px; border-bottom: 1px solid #e5e7eb;
+  max-width: 920px; margin-left: auto; margin-right: auto;
+}
+.stage-panel[hidden], .day-panel[hidden] { display: none; }
+
+/* Day sub-toggle (Option B) */
+.day-toggle {
+  display: flex; justify-content: center; gap: 8px; margin: 8px 0 4px;
+}
+.day-btn {
+  padding: 7px 18px; font-size: 14px; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  color: var(--ink-2); background: #f1f3f5;
+  border: 1px solid #e2e6ea; border-radius: 999px;
+  transition: all 0.15s ease;
+}
+.day-btn:hover { background: #e9ecef; }
+.day-btn.active { background: #16a34a; color: #fff; border-color: #16a34a; }
