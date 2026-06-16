@@ -69,6 +69,14 @@ def _frontier_meta_index():
     for agenda_key, fr_key in spelling_alias.items():
         if fr_key in idx:
             idx.setdefault(agenda_key, idx[fr_key])
+    # New agenda-only speakers not in frontier.json: headshot + link sourced
+    # separately (per Linda). Headshot files added to static/img/speakers/.
+    extra = {
+        "joshalbrecht": {"headshot": "josh_albrecht.png", "link": "https://joshalbrecht.com/"},
+        "vincentsunnchen": {"headshot": "vincent_sunn_chen.png", "link": "https://snorkel.ai/author/vincent-chen/"},
+    }
+    for k, v in extra.items():
+        idx[k] = v
     return idx
 
 
