@@ -74,6 +74,7 @@ def _frontier_meta_index():
     extra = {
         "joshalbrecht": {"headshot": "josh_albrecht.png", "link": "https://joshalbrecht.com/"},
         "vincentsunnchen": {"headshot": "vincent_sunn_chen.png", "link": "https://snorkel.ai/author/vincent-chen/"},
+        "vijayganesh": {"headshot": "vijay_ganesh.png", "link": "https://www.cc.gatech.edu/people/vijay-ganesh"},
     }
     for k, v in extra.items():
         idx[k] = v
