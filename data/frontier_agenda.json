@@ -431,21 +431,9 @@
               "title": "Session 1: Agent Evaluation & Benchmarks",
               "speakers": [
                 {
-                  "name": "Aayush Agrawal",
-                  "title": "Product Lead",
-                  "org": "Uber",
-                  "talk": null
-                },
-                {
-                  "name": "Izzy Miller",
-                  "title": "AI Research Lead",
-                  "org": "Hex",
-                  "talk": null
-                },
-                {
-                  "name": "Rahul Krishna",
-                  "title": "Senior Research Scientist",
-                  "org": "IBM Software Innovation Labs",
+                  "name": "S Joy Mountford",
+                  "title": "Vice President, Innovation Lab",
+                  "org": "S.A.P.",
                   "talk": null
                 },
                 {
@@ -455,9 +443,33 @@
                   "talk": null
                 },
                 {
-                  "name": "S Joy Mountford",
-                  "title": "Vice President, Innovation Lab",
-                  "org": "S.A.P.",
+                  "name": "Rahul Krishna",
+                  "title": "Senior Research Scientist",
+                  "org": "IBM Software Innovation Labs",
+                  "talk": null
+                },
+                {
+                  "name": "Izzy Miller",
+                  "title": "AI Research Lead",
+                  "org": "Hex",
+                  "talk": null
+                },
+                {
+                  "name": "Chenguang Wang",
+                  "title": "Assistant Professor / Research Advisor",
+                  "org": "University of California, Santa Cruz / Scale AI",
+                  "talk": null
+                },
+                {
+                  "name": "Arindam Sett",
+                  "title": "Principal ML Engineer",
+                  "org": "Genentech",
+                  "talk": null
+                },
+                {
+                  "name": "Barr Moses",
+                  "title": "CEO and co-founder",
+                  "org": "Monte Carlo AI",
                   "talk": null
                 },
                 {
@@ -473,15 +485,9 @@
                   "talk": null
                 },
                 {
-                  "name": "Barr Moses",
-                  "title": "CEO and co-founder",
-                  "org": "Monte Carlo AI",
-                  "talk": null
-                },
-                {
-                  "name": "Arindam Sett",
-                  "title": "Principal ML Engineer",
-                  "org": "Genentech",
+                  "name": "Aayush Agrawal",
+                  "title": "Product Lead",
+                  "org": "Uber",
                   "talk": null
                 }
               ],
@@ -490,17 +496,23 @@
             {
               "type": "Workshop",
               "label": "Workshop",
-              "start": "10:45 AM"
+              "start": "10:55 AM"
             },
             {
               "type": "Lunch",
               "label": "Lunch",
-              "start": "11:45 AM"
+              "start": "11:55 AM"
             },
             {
               "type": "Session",
               "title": "Session 2: AI Safety",
               "speakers": [
+                {
+                  "name": "Lovedeep Gondara",
+                  "title": "Head of AI R&D | Adjunct Professor",
+                  "org": "Vanguard | University of British Columbia",
+                  "talk": null
+                },
                 {
                   "name": "Eric Ho",
                   "title": "Co-Founder/CEO",
@@ -508,9 +520,9 @@
                   "talk": null
                 },
                 {
-                  "name": "Lovedeep Gondara",
-                  "title": "Head of AI R&D | Adjunct Professor",
-                  "org": "Vanguard | University of British Columbia",
+                  "name": "Alex Obadia",
+                  "title": "Programme Director",
+                  "org": "Advanced Research & Invention Agency",
                   "talk": null
                 },
                 {
@@ -551,15 +563,15 @@
               "title": "Session 3: AI System",
               "speakers": [
                 {
-                  "name": "Dr. Dan Fu",
-                  "title": "VP of Kernels",
-                  "org": "Together AI",
-                  "talk": null
-                },
-                {
                   "name": "Jun Yang",
                   "title": "Senior Director of Compute Architecture",
                   "org": "NVIDIA",
+                  "talk": null
+                },
+                {
+                  "name": "Rahul Bakshi",
+                  "title": "Director, Applied Science (Edge AI)",
+                  "org": "Amazon",
                   "talk": null
                 },
                 {
@@ -575,9 +587,9 @@
                   "talk": null
                 },
                 {
-                  "name": "Rahul Bakshi",
-                  "title": "Director, Applied Science (Edge AI)",
-                  "org": "Amazon",
+                  "name": "Dr. Dan Fu",
+                  "title": "VP of Kernels",
+                  "org": "Together AI",
                   "talk": null
                 },
                 {
@@ -593,18 +605,12 @@
                   "talk": null
                 }
               ],
-              "start": "1:45 PM"
+              "start": "1:55 PM"
             },
             {
               "type": "Session",
               "title": "Session 4: Enterprise AI",
               "speakers": [
-                {
-                  "name": "Christopher Petrillo",
-                  "title": "Principal Product Manager",
-                  "org": "The Wikimedia Foundation",
-                  "talk": null
-                },
                 {
                   "name": "Merve Unuvar",
                   "title": "Director, IBM Research AI",
@@ -615,6 +621,12 @@
                   "name": "Daniel Homola",
                   "title": "Lead AI Engineer",
                   "org": "BMW Research",
+                  "talk": null
+                },
+                {
+                  "name": "Christopher Petrillo",
+                  "title": "Principal Product Manager",
+                  "org": "The Wikimedia Foundation",
                   "talk": null
                 },
                 {
@@ -636,7 +648,7 @@
                   "talk": null
                 }
               ],
-              "start": "2:20 PM"
+              "start": "2:30 PM"
             },
             {
               "type": "Session",
@@ -649,19 +661,19 @@
                   "talk": null
                 },
                 {
-                  "name": "Vijay Ganesh",
-                  "title": "Professor",
-                  "org": "Georgia Institute of Technology",
-                  "talk": null
-                },
-                {
                   "name": "Abhradeep Guha Thakurta",
                   "title": "Staff Research Scientist",
                   "org": "Google DeepMind",
                   "talk": null
+                },
+                {
+                  "name": "Vijay Ganesh",
+                  "title": "Professor",
+                  "org": "Georgia Institute of Technology",
+                  "talk": null
                 }
               ],
-              "start": "2:55 PM"
+              "start": "3:05 PM"
             }
           ]
         }
