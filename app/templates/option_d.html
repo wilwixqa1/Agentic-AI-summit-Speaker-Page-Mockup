@@ -49,6 +49,53 @@
   <div class="container">
     <h1 class="section-title">Featured Speakers</h1>
     <p class="section-sub">{{ data.event.name }} brings together leading researchers, founders, and industry leaders shaping the future of Agentic AI.</p>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="search-input" type="text" id="search" placeholder="Search speakers by name or organization..." />
+    </div>
+
+    {% set stages = [("", "Main"), ("Frontier Research Stage", "Frontier"), ("TBD", "TBD"), ("Media", "Media")] %}
+    {% for stage_label, stage_key in stages %}
+      {% set stage_speakers = data.speakers | selectattr("stage", "equalto", stage_key) | list %}
+      {% if stage_speakers %}
+      <div class="stage-group" data-stage="{{ stage_key }}">
+        {% if stage_label %}<span class="stage-label">{{ stage_label }}</span>{% endif %}
+        <div class="grid-speakers">
+          {% for s in stage_speakers %}
+          <div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ s.org | lower }}">
+            {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+            <div class="speaker-avatar" style="{% set colors = ['#dce9f5','#e8e5fa','#d9f0e6','#fae8df','#fbe3ec','#faecd4','#e5f0d8','#eceae3'] %}background: {{ colors[loop.index0 % 8] }};">
+              {% if s.headshot %}
+                <img src="/static/img/speakers/{{ s.headshot }}" alt="{{ s.name }}"{% if s.crop or s.scale %} style="{% if s.crop %}object-position: {{ s.crop }};{% endif %}{% if s.scale %}transform: scale({{ s.scale }});{% endif %}"{% endif %} />
+              {% else %}
+                {{ s.name.split()[0][0] }}{{ s.name.split()[-1][0] }}
+              {% endif %}
+            </div>
+            <p class="speaker-name">{{ s.name }}</p>
+            <p class="speaker-title">{{ s.title }}</p>
+            <p class="speaker-org">{{ s.org }}</p>
+            {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    <p class="more-announced">More speakers to be announced soon...</p>
+  </div>
+</section>
+
+<section class="side-events">
+  <div class="container side-events-inner">
+    <div class="se-copy">
+      <h2 class="se-title">Hosting a <em>side event?</em></h2>
+      <p>Planning a meetup, workshop, dinner, or hackathon around the Summit? Submit your event to be considered for listing on the Summit website.</p>
+      <p class="se-disclaimer">Side events are independently organized and not officially hosted by Berkeley RDI or RDI Foundation. Submission does not guarantee inclusion.</p>
+    </div>
+    <div class="se-cta">
+      <a class="btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSfkh3gu3p4L8abzHqFhAavPDpwuucmq1TXDW89_uVBws24fag/viewform" target="_blank" rel="noopener">Submit Your Event</a>
+      <span class="btn-sub">Opens the submission form</span>
+    </div>
   </div>
 </section>
 {% endblock %}
@@ -70,5 +117,22 @@ document.querySelectorAll('.day-btn').forEach(function (btn) {
     group.querySelectorAll('.day-panel').forEach(function (p) { p.hidden = (p.id !== target); });
   });
 });
+
+var d_search = document.getElementById('search');
+if (d_search) {
+  d_search.addEventListener('input', function (e) {
+    var q = e.target.value.toLowerCase();
+    document.querySelectorAll('.speaker-card').forEach(function (card) {
+      var name = card.dataset.name || '';
+      var org = card.dataset.org || '';
+      card.style.display = (name.includes(q) || org.includes(q)) ? '' : 'none';
+    });
+    document.querySelectorAll('.stage-group').forEach(function (group) {
+      var visible = group.querySelectorAll('.speaker-card[style=""], .speaker-card:not([style])');
+      var hidden = group.querySelectorAll('.speaker-card[style*="none"]');
+      group.style.display = (visible.length === 0 && hidden.length > 0) ? 'none' : '';
+    });
+  });
+}
 </script>
 {% endblock %}
