@@ -1,0 +1,60 @@
+{# Shared agenda entry renderer — used by option_a (flat) and option_d (grouped).
+   Renders one timeline entry: Panel, Break/Lunch, or a session/focus/fireside row. #}
+{% macro render_entry(e) %}
+  {% if e.type == 'Panel' %}
+  {% if e.session %}
+  <div class="session-header">
+    {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
+    <h3>{{ e.session }}</h3>
+  </div>
+  {% endif %}
+  <div class="tl-row">
+    <div class="tl-time">{{ e.start }}</div>
+    <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+    <div class="tl-content">
+      <p class="tl-kind">{{ e.panel_title }}</p>
+      {% if e.panel_only %}
+        {% for s in e.panel_speakers %}
+        <div class="tl-speaker">
+          {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+          <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
+          {% if s.link %}</a>{% endif %}
+        </div>
+        {% endfor %}
+        {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
+      {% else %}
+        {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
+        {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
+      {% endif %}
+    </div>
+  </div>
+  {% elif e.type in ['Break', 'Lunch'] %}
+  <div class="tl-row">
+    <div class="tl-time">{{ e.start }}</div>
+    <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+    <div class="tl-content"><p class="tl-logistics">{{ e.type }}</p></div>
+  </div>
+  {% else %}
+  {% if e.session %}
+  <div class="session-header">
+    {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
+    <h3>{{ e.session }}</h3>
+  </div>
+  {% endif %}
+  <div class="tl-row">
+    <div class="tl-time">{{ e.start }}</div>
+    <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
+    <div class="tl-content">
+      {% if not (e.session and e.session == e.type) %}<p class="tl-kind">{{ e.type }}</p>{% endif %}
+      {% for s in e.speakers %}
+      <div class="tl-speaker">
+        {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+        <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
+        {% if s.link %}</a>{% endif %}
+        {% if s.talk %}<div class="tl-talk">{{ s.talk }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+{% endmacro %}

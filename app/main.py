@@ -36,18 +36,75 @@ def load_frontier_agenda():
         return json.load(f)
 
 
-@app.get("/frontier-agenda-flat", response_class=HTMLResponse)
-def frontier_agenda_flat(request: Request):
-    return templates.TemplateResponse(
-        request, "frontier_agenda_flat.html",
-        {"fa": load_frontier_agenda()})
+def _frontier_entry_to_common(e):
+    """Normalize a frontier_agenda entry into the same shape option_a's macro uses
+    (type/session/start/color/speakers/...)."""
+    if e["type"] == "Session":
+        return {
+            "type": "Focus Talks" if e.get("title") else "Focus Talks",
+            "session": e.get("title") or None,
+            "start": e.get("start"),
+            "color": "blue",
+            "speakers": e.get("speakers", []),
+        }
+    if e["type"] == "Workshop":
+        return {
+            "type": e.get("label", "Workshop"),
+            "session": None,
+            "start": e.get("start"),
+            "color": "magenta",
+            "speakers": [],
+        }
+    if e["type"] == "Lunch":
+        return {
+            "type": "Lunch", "session": None,
+            "start": e.get("start"), "color": "amber", "speakers": [],
+        }
+    return {"type": e["type"], "session": None, "start": e.get("start"),
+            "color": "blue", "speakers": e.get("speakers", [])}
 
 
-@app.get("/frontier-agenda-toggle", response_class=HTMLResponse)
-def frontier_agenda_toggle(request: Request):
-    return templates.TemplateResponse(
-        request, "frontier_agenda_toggle.html",
-        {"fa": load_frontier_agenda()})
+def build_flat_tabs(agenda, frontier):
+    """Option A (flat): Mainstage Sat | Mainstage Sun | Atlas | Nexus | Horizon.
+    Each tab = one panel of timeline entries. Frontier stages that span 2 days
+    stack their days inside the panel with a date divider."""
+    tabs = []
+    for day in agenda["days"]:
+        tabs.append({"key": "m-" + day["key"], "label": day["label"],
+                     "sections": [{"date": None, "entries": day["entries"]}]})
+    for st in frontier["stages"]:
+        sections = []
+        for d in st["days"]:
+            sections.append({
+                "date": d["date"] if len(st["days"]) > 1 else None,
+                "entries": [_frontier_entry_to_common(e) for e in d["entries"]],
+            })
+        tabs.append({"key": "f-" + st["stage"].lower(), "label": st["stage"],
+                     "sections": sections})
+    return tabs
+
+
+def build_grouped_tabs(agenda, frontier):
+    """Option D: stage tabs (Mainstage | Atlas | Nexus | Horizon), each with a
+    Saturday/Sunday day sub-toggle."""
+    groups = []
+    # Mainstage group (its 'days' already split by day)
+    groups.append({
+        "key": "mainstage", "label": "Mainstage",
+        "days": [{"day": d["label"].split(" - ")[-1], "date": d["date"],
+                  "entries": d["entries"], "key": d["key"]}
+                 for d in agenda["days"]],
+    })
+    for st in frontier["stages"]:
+        groups.append({
+            "key": st["stage"].lower(), "label": st["stage"],
+            "days": [{"day": d["day"], "date": d["date"],
+                      "entries": [_frontier_entry_to_common(e) for e in d["entries"]],
+                      "key": d["day"].lower()}
+                     for d in st["days"]],
+        })
+    return groups
+
 
 
 def frontier_sessions(frontier_data):
@@ -69,8 +126,23 @@ def index(request: Request):
 @app.get("/option-a", response_class=HTMLResponse)
 def option_a(request: Request):
     data = load_speakers()
-    return templates.TemplateResponse(request, "option_a.html",
-                                      {"data": data, "agenda": load_agenda()})
+    agenda = load_agenda()
+    frontier = load_frontier_agenda()
+    return templates.TemplateResponse(
+        request, "option_a.html",
+        {"data": data, "agenda": agenda,
+         "agenda_tabs": build_flat_tabs(agenda, frontier)})
+
+
+@app.get("/option-d", response_class=HTMLResponse)
+def option_d(request: Request):
+    data = load_speakers()
+    agenda = load_agenda()
+    frontier = load_frontier_agenda()
+    return templates.TemplateResponse(
+        request, "option_d.html",
+        {"data": data,
+         "agenda_groups": build_grouped_tabs(agenda, frontier)})
 
 
 @app.get("/option-b", response_class=HTMLResponse)

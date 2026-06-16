@@ -1,88 +1,35 @@
 {% extends "base.html" %}
+{% from "_agenda_macros.html" import render_entry %}
 {% set active = 'a' %}
 {% block title %}Option A — Circle Grid{% endblock %}
 {% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/css/agenda.css">
+<link rel="stylesheet" href="/static/css/frontier_agenda.css">
 <link rel="stylesheet" href="/static/css/sponsors.css">{% endblock %}
 {% block content %}
-{% if agenda %}
-<!-- ════════ PROGRAM SCHEDULE / AGENDA — NEW (sits above Featured Speakers) ════════ -->
+{% if agenda_tabs %}
+<!-- ════════ PROGRAM SCHEDULE / AGENDA (Mainstage + Frontier, flat tabs) ════════ -->
 <section class="agenda-section">
   <div class="container">
     <h2 class="agenda-title">Program Schedule</h2>
 
-    <div class="agenda-tabs" role="tablist" aria-label="Agenda day">
-      {% for day in agenda.days %}
+    <div class="agenda-tabs" role="tablist" aria-label="Agenda stage">
+      {% for tab in agenda_tabs %}
       <button class="agenda-tab {% if loop.first %}active{% endif %}"
-              data-target="agenda-{{ day.key }}" role="tab"
-              aria-selected="{{ 'true' if loop.first else 'false' }}">{{ day.label }}</button>
+              data-target="agenda-{{ tab.key }}" role="tab"
+              aria-selected="{{ 'true' if loop.first else 'false' }}">{{ tab.label }}</button>
       {% endfor %}
     </div>
 
-    {% for day in agenda.days %}
-    <div class="agenda-panel" id="agenda-{{ day.key }}" {% if not loop.first %}hidden{% endif %}>
-      <p class="agenda-date">{{ day.date }}</p>
+    {% for tab in agenda_tabs %}
+    <div class="agenda-panel" id="agenda-{{ tab.key }}" {% if not loop.first %}hidden{% endif %}>
+      {% for sec in tab.sections %}
+      {% if sec.date %}<p class="frontier-day-label">{{ sec.date }}</p>{% endif %}
       <div class="timeline">
-        {% for e in day.entries %}
-          {% if e.type == 'Panel' %}
-          {% if e.session %}
-          <div class="session-header">
-            {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
-            <h3>{{ e.session }}</h3>
-          </div>
-          {% endif %}
-          <div class="tl-row">
-            <div class="tl-time">{{ e.start }}</div>
-            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
-            <div class="tl-content">
-              <p class="tl-kind">{{ e.panel_title }}</p>
-              {% if e.panel_only %}
-                {% for s in e.panel_speakers %}
-                <div class="tl-speaker">
-                  {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
-                  <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
-                  {% if s.link %}</a>{% endif %}
-                </div>
-                {% endfor %}
-                {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
-              {% else %}
-                {% if e.panelists %}<p class="tl-panel-meta">Panelists: {{ e.panelists | join(', ') }}</p>{% endif %}
-                {% if e.moderator %}<p class="tl-panel-meta">Moderator: {{ e.moderator }}</p>{% endif %}
-              {% endif %}
-            </div>
-          </div>
-          {% elif e.type in ['Break', 'Lunch'] %}
-          <div class="tl-row">
-            <div class="tl-time">{{ e.start }}</div>
-            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
-            <div class="tl-content"><p class="tl-logistics">{{ e.type }}</p></div>
-          </div>
-          {% else %}
-          {% if e.session %}
-          <div class="session-header">
-            {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
-            <h3>{{ e.session }}</h3>
-          </div>
-          {% endif %}
-          <div class="tl-row">
-            <div class="tl-time">{{ e.start }}</div>
-            <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
-            <div class="tl-content">
-              {% if not (e.session and e.session == e.type) %}<p class="tl-kind">{{ e.type }}</p>{% endif %}
-              {% for s in e.speakers %}
-              <div class="tl-speaker">
-                {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
-                <span class="tl-name">{{ s.name }}</span>{% set role = [s.title, s.org] | select | join(', ') %}{% if role %}<span class="tl-role">&nbsp;&nbsp;{{ role }}</span>{% endif %}
-                {% if s.link %}</a>{% endif %}
-                {% if s.talk %}<div class="tl-talk">{{ s.talk }}</div>{% endif %}
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-          {% endif %}
-        {% endfor %}
+        {% for e in sec.entries %}{{ render_entry(e) }}{% endfor %}
       </div>
+      {% endfor %}
     </div>
     {% endfor %}
   </div>

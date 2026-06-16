@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "_agenda_macros.html" import render_entry %}
+{% set active = 'd' %}
+{% block title %}Option D — Stage Tabs + Day Toggle{% endblock %}
+{% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/agenda.css">
+<link rel="stylesheet" href="/static/css/frontier_agenda.css">
+<link rel="stylesheet" href="/static/css/sponsors.css">{% endblock %}
+{% block content %}
+{% if agenda_groups %}
+<!-- ════════ PROGRAM SCHEDULE — stage tabs + day toggle (Mainstage + Frontier) ════════ -->
+<section class="agenda-section">
+  <div class="container">
+    <h2 class="agenda-title">Program Schedule</h2>
+
+    <div class="agenda-tabs" role="tablist" aria-label="Stage">
+      {% for g in agenda_groups %}
+      <button class="agenda-tab stage-tab {% if loop.first %}active{% endif %}"
+              data-stage="stagegrp-{{ g.key }}">{{ g.label }}</button>
+      {% endfor %}
+    </div>
+
+    {% for g in agenda_groups %}
+    <div class="stage-panel" id="stagegrp-{{ g.key }}" {% if not loop.first %}hidden{% endif %}>
+      {% if g.days | length > 1 %}
+      <div class="day-toggle" role="tablist">
+        {% for day in g.days %}
+        <button class="day-btn {% if loop.first %}active{% endif %}"
+                data-day-target="{{ g.key }}-{{ day.key }}">{{ day.day }}</button>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% for day in g.days %}
+      <div class="day-panel" id="{{ g.key }}-{{ day.key }}" {% if not loop.first %}hidden{% endif %}>
+        <p class="agenda-date">{{ day.date }}</p>
+        <div class="timeline">
+          {% for e in day.entries %}{{ render_entry(e) }}{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="speakers-section">
+  <div class="container">
+    <h1 class="section-title">Featured Speakers</h1>
+    <p class="section-sub">{{ data.event.name }} brings together leading researchers, founders, and industry leaders shaping the future of Agentic AI.</p>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.querySelectorAll('.stage-tab').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var target = this.dataset.stage;
+    document.querySelectorAll('.stage-tab').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    document.querySelectorAll('.stage-panel').forEach(function (p) { p.hidden = (p.id !== target); });
+  });
+});
+document.querySelectorAll('.day-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var target = this.dataset.dayTarget;
+    var group = this.closest('.stage-panel');
+    group.querySelectorAll('.day-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    group.querySelectorAll('.day-panel').forEach(function (p) { p.hidden = (p.id !== target); });
+  });
+});
+</script>
+{% endblock %}
