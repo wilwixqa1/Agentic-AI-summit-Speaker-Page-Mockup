@@ -107,6 +107,16 @@
               "start": "1:00 PM"
             },
             {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "2:15 PM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "3:15 PM"
+            },
+            {
               "type": "Session",
               "title": "Frameworks & Dev Platforms -1",
               "speakers": [
@@ -205,6 +215,11 @@
               "start": "10:00 AM"
             },
             {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "11:20 AM"
+            },
+            {
               "type": "Lunch",
               "label": "Lunch",
               "start": "12:20 PM"
@@ -239,6 +254,11 @@
                 }
               ],
               "start": "1:00 PM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "1:45 PM"
             }
           ]
         }
@@ -281,6 +301,11 @@
                 }
               ],
               "start": "10:00 AM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "10:45 AM"
             },
             {
               "type": "Lunch",
@@ -349,6 +374,11 @@
               "start": "1:00 PM"
             },
             {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "2:00 PM"
+            },
+            {
               "type": "Session",
               "title": "Foundational Capabilities -2",
               "speakers": [
@@ -384,6 +414,11 @@
                 }
               ],
               "start": "2:50 PM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "3:40 PM"
             }
           ]
         },
@@ -451,6 +486,11 @@
                 }
               ],
               "start": "10:00 AM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "10:45 AM"
             },
             {
               "type": "Lunch",
@@ -610,7 +650,7 @@
               "speakers": [
                 {
                   "name": "Sergei Gukov",
-                  "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics,",
+                  "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics",
                   "org": "California Institute of Technology",
                   "talk": null
                 },
@@ -684,6 +724,11 @@
               "start": "10:00 AM"
             },
             {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "10:50 AM"
+            },
+            {
               "type": "Lunch",
               "label": "Lunch",
               "start": "11:50 AM"
@@ -724,6 +769,11 @@
                 }
               ],
               "start": "1:00 PM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "1:50 PM"
             },
             {
               "type": "Session",
