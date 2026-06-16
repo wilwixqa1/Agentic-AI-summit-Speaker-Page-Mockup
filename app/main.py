@@ -46,27 +46,35 @@ def build_mainstage_pool(data):
     return mains
 
 
-def _headshot_index():
-    """Map normalized speaker name -> headshot filename, from frontier.json.
-    Includes aliases for agenda-vs-file spelling mismatches."""
+def _frontier_meta_index():
+    """Map normalized speaker name -> {headshot, link} from frontier.json, which
+    has both for all original Frontier speakers. Includes aliases for agenda-vs-
+    frontier.json spelling differences so matches don't fail on spelling."""
     idx = {}
     try:
         with open(FRONTIER_PATH) as f:
             for s in json.load(f)["speakers"]:
-                if s.get("headshot"):
-                    idx[_norm_name(s["name"])] = s["headshot"]
+                idx[_norm_name(s["name"])] = {
+                    "headshot": s.get("headshot"), "link": s.get("link"),
+                }
     except Exception:
         pass
-    # Aliases: agenda spelling -> existing headshot file (names differ slightly).
-    aliases = {
-        "shivakasiviswanthan": "shiva_kasiviswanathan.png",
-        "jonravshene": "jonrav_shende.png",
-        "professorjohnamcdermid": "john_mcdermid.png",
-        "johnamcdermid": "john_mcdermid.png",
+    # agenda spelling -> frontier.json spelling (same person, different spelling)
+    spelling_alias = {
+        "shivakasiviswanthan": "shivakasiviswanathan",
+        "jonravshene": "jonravshende",
+        "professorjohnamcdermid": "johnamcdermid",
+        "johnamcdermid": "johnamcdermid",
     }
-    for k, v in aliases.items():
-        idx.setdefault(k, v)
+    for agenda_key, fr_key in spelling_alias.items():
+        if fr_key in idx:
+            idx.setdefault(agenda_key, idx[fr_key])
     return idx
+
+
+def _headshot_index():
+    """Back-compat: name -> headshot only (delegates to the meta index)."""
+    return {k: v["headshot"] for k, v in _frontier_meta_index().items() if v.get("headshot")}
 
 
 def build_frontier_combined():
@@ -99,11 +107,11 @@ def paginate_speakers(speakers, num_pages=3, cols=4):
 
 def build_frontier_by_stage():
     """Option E: Frontier speakers grouped per stage, derived from the agenda data
-    (reliable per-stage order). Headshots matched by name from frontier.json."""
+    (reliable per-stage order). Headshots AND profile links matched by name from
+    frontier.json (which has both for all original Frontier speakers)."""
     fa = load_frontier_agenda()
-    hs = _headshot_index()
+    meta = _frontier_meta_index()
     groups = []
-    seen_global = {}
     for st in fa["stages"]:
         speakers = []
         seen = set()
@@ -116,10 +124,11 @@ def build_frontier_by_stage():
                     if key in seen:
                         continue
                     seen.add(key)
+                    m = meta.get(key, {})
                     speakers.append({
                         "name": s["name"], "title": s.get("title"),
                         "org": s.get("org"), "stage": "Frontier",
-                        "headshot": hs.get(key), "link": None,
+                        "headshot": m.get("headshot"), "link": m.get("link"),
                     })
         groups.append({"stage": st["stage"], "speakers": speakers})
     return groups
