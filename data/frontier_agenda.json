@@ -12,7 +12,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "Foundational Capabilities",
+              "title": "Session 1: Foundational Capabilities",
               "speakers": [
                 {
                   "name": "Noam Brown",
@@ -65,7 +65,7 @@
             },
             {
               "type": "Session",
-              "title": "Robotics & World Models",
+              "title": "Session 2: Robotics & World Models",
               "speakers": [
                 {
                   "name": "Peter Stone",
@@ -118,7 +118,7 @@
             },
             {
               "type": "Session",
-              "title": "Frameworks & Dev Platforms",
+              "title": "Session 3: Frameworks & Dev Platforms",
               "speakers": [
                 {
                   "name": "Philip Rathle",
@@ -167,7 +167,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "Enterprise AI",
+              "title": "Session 1: Enterprise AI",
               "speakers": [
                 {
                   "name": "Sunita Verma",
@@ -226,7 +226,7 @@
             },
             {
               "type": "Session",
-              "title": "Agent Evaluation & Benchmarks",
+              "title": "Session 2: Agent Evaluation & Benchmarks",
               "speakers": [
                 {
                   "name": "Anastasios N Angelopoulos",
@@ -273,7 +273,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "AI Systems",
+              "title": "Session 1: AI Systems",
               "speakers": [
                 {
                   "name": "Ion Stoica",
@@ -314,7 +314,7 @@
             },
             {
               "type": "Session",
-              "title": "Frameworks & Dev Platforms",
+              "title": "Session 2: Frameworks & Dev Platforms",
               "speakers": [
                 {
                   "name": "Haishi Bai",
@@ -380,7 +380,7 @@
             },
             {
               "type": "Session",
-              "title": "Foundational Capabilities",
+              "title": "Session 3: Foundational Capabilities",
               "speakers": [
                 {
                   "name": "Danqi Chen",
@@ -428,7 +428,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "Agent Evaluation & Benchmarks",
+              "title": "Session 1: Agent Evaluation & Benchmarks",
               "speakers": [
                 {
                   "name": "Aayush Agrawal",
@@ -499,7 +499,7 @@
             },
             {
               "type": "Session",
-              "title": "AI Safety",
+              "title": "Session 2: AI Safety",
               "speakers": [
                 {
                   "name": "Eric Ho",
@@ -548,7 +548,7 @@
             },
             {
               "type": "Session",
-              "title": "AI System",
+              "title": "Session 3: AI System",
               "speakers": [
                 {
                   "name": "Dr. Dan Fu",
@@ -597,7 +597,7 @@
             },
             {
               "type": "Session",
-              "title": "Enterprise AI",
+              "title": "Session 4: Enterprise AI",
               "speakers": [
                 {
                   "name": "Christopher Petrillo",
@@ -640,7 +640,7 @@
             },
             {
               "type": "Session",
-              "title": "AI for Math",
+              "title": "Session 5: AI for Math",
               "speakers": [
                 {
                   "name": "Sergei Gukov",
@@ -676,7 +676,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "AI for Science",
+              "title": "Session 1: AI for Science",
               "speakers": [
                 {
                   "name": "Markus J. Buehler",
@@ -729,7 +729,7 @@
             },
             {
               "type": "Session",
-              "title": "Coding & Web Agent",
+              "title": "Session 2: Coding & Web Agent",
               "speakers": [
                 {
                   "name": "Silas Alberti",
@@ -771,7 +771,7 @@
             },
             {
               "type": "Session",
-              "title": "Agentic AI Applications (Finance, HC)",
+              "title": "Session 3: Agentic AI Applications (Finance, HC)",
               "speakers": [
                 {
                   "name": "Donghao Huang",
@@ -802,7 +802,7 @@
             },
             {
               "type": "Session",
-              "title": "Secure Agentic AI",
+              "title": "Session 4: Secure Agentic AI",
               "speakers": [
                 {
                   "name": "Jon-Rav Shene",
