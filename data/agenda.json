@@ -100,7 +100,7 @@
           "color": "green"
         },
         {
-          "type": "Keynote",
+          "type": "Focus Talks",
           "session": "Session 2: Future of Software Development",
           "speakers": [
             {
@@ -109,15 +109,7 @@
               "org": null,
               "link": "https://karpathy.ai/",
               "talk": null
-            }
-          ],
-          "start": "11:10 AM",
-          "color": "green"
-        },
-        {
-          "type": "Focus Talks",
-          "session": null,
-          "speakers": [
+            },
             {
               "name": "Peter Steinberger",
               "title": "Creator of OpenClaw",
@@ -147,7 +139,7 @@
               "talk": null
             }
           ],
-          "start": "11:30 AM",
+          "start": "11:10 AM",
           "color": "blue"
         },
         {
@@ -176,7 +168,7 @@
           "color": "amber"
         },
         {
-          "type": "Keynote",
+          "type": "Focus Talks",
           "session": "Session 3: Agentic AI Foundational Capabilities",
           "speakers": [
             {
@@ -185,15 +177,7 @@
               "org": null,
               "link": "https://people.eecs.berkeley.edu/~dawnsong/",
               "talk": null
-            }
-          ],
-          "start": "1:30 PM",
-          "color": "green"
-        },
-        {
-          "type": "Focus Talks",
-          "session": null,
-          "speakers": [
+            },
             {
               "name": "Wojciech Zaremba",
               "title": "Co-Founder",
@@ -223,7 +207,7 @@
               "talk": null
             }
           ],
-          "start": "1:50 PM",
+          "start": "1:30 PM",
           "color": "blue"
         },
         {
@@ -231,9 +215,9 @@
           "session": null,
           "panel_title": "Panel: Agentic AI Foundational Capabilities",
           "panelists": [
+            "Dawn Song",
             "Wojciech Zaremba",
             "Pushmeet Kohli",
-            "Dawn Song",
             "Dan Roth",
             "Weizhu Chen"
           ],
