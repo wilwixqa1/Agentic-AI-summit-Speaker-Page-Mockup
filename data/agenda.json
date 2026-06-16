@@ -26,7 +26,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Agentic AI Infrastructure & Platform",
+          "session": "Session 1: Agentic AI Infrastructure & Platform",
           "speakers": [
             {
               "name": "Peter DeSantis",
@@ -101,7 +101,7 @@
         },
         {
           "type": "Keynote",
-          "session": "Future of Software Development",
+          "session": "Session 2: Future of Software Development",
           "speakers": [
             {
               "name": "Andrej Karpathy",
@@ -177,7 +177,7 @@
         },
         {
           "type": "Keynote",
-          "session": "Agentic AI Foundational Capabilities",
+          "session": "Session 3: Agentic AI Foundational Capabilities",
           "speakers": [
             {
               "name": "Dawn Song",
@@ -246,7 +246,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Robotic & World Models",
+          "session": "Session 4: Robotic & World Models",
           "speakers": [
             {
               "name": "Sergey Levine",
@@ -314,7 +314,7 @@
         },
         {
           "type": "Panel",
-          "session": "Agentic AI in Capital Markets",
+          "session": "Session 5: Agentic AI in Capital Markets",
           "panel_title": "Panel: Agentic AI in Capital Markets",
           "panelists": [
             "Ali Nazari (Head of Deep Learning Research, Susquehanna International Group)",
@@ -400,7 +400,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Enterprise AI",
+          "session": "Session 1: Enterprise AI",
           "speakers": [
             {
               "name": "Rao Surapaneni",
@@ -492,7 +492,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Frontier Research",
+          "session": "Session 2: Frontier Research",
           "speakers": [
             {
               "name": "Ekin Dogus Cubuk",
@@ -553,7 +553,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Agentic AI Developer Platforms",
+          "session": "Session 3: Agentic AI Developer Platforms",
           "speakers": [
             {
               "name": "Lukas Biewald",
@@ -584,7 +584,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Agentic AI in Finance & Legal",
+          "session": "Session 4: Agentic AI in Finance & Legal",
           "speakers": [
             {
               "name": "Nikhil Chandhok",
