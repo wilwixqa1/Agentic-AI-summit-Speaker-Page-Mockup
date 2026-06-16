@@ -1,3 +1,21 @@
+{% macro speaker_card(s, idx) %}
+{% set colors = ['#dce9f5','#e8e5fa','#d9f0e6','#fae8df','#fbe3ec','#faecd4','#e5f0d8','#eceae3'] %}
+<div class="speaker-card" data-name="{{ s.name | lower }}" data-org="{{ (s.org or '') | lower }}">
+  {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{% endif %}
+  <div class="speaker-avatar" style="background: {{ colors[idx % 8] }};">
+    {% if s.headshot %}
+      <img src="/static/img/speakers/{{ s.headshot }}" alt="{{ s.name }}"{% if s.crop or s.scale %} style="{% if s.crop %}object-position: {{ s.crop }};{% endif %}{% if s.scale %}transform: scale({{ s.scale }});{% endif %}"{% endif %} />
+    {% else %}
+      {{ s.name.split()[0][0] }}{{ s.name.split()[-1][0] }}
+    {% endif %}
+  </div>
+  <p class="speaker-name">{{ s.name }}</p>
+  <p class="speaker-title">{{ s.title }}</p>
+  <p class="speaker-org">{{ s.org }}</p>
+  {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
+</div>
+{% endmacro %}
+
 {# Shared agenda entry renderer — used by option_a (flat) and option_d (grouped).
    Renders one timeline entry: Panel, Break/Lunch, or a session/focus/fireside row. #}
 {% macro render_entry(e) %}

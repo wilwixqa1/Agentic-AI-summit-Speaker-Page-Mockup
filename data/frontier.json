@@ -26,13 +26,24 @@
       "link": "https://www.microsoft.com/en-us/research/people/jfgao/"
     },
     {
+      "name": "Sanja Fidler",
+      "title": "VP of AI Research",
+      "org": "Nvidia",
+      "stage": "Frontier",
+      "session": "Foundational Capabilities",
+      "session_order": 0,
+      "slot": 3,
+      "headshot": "sanja_fidler.png",
+      "link": "https://www.cs.utoronto.ca/~fidler/"
+    },
+    {
       "name": "Danqi Chen",
       "title": "Associate Professor",
       "org": "Princeton",
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 3,
+      "slot": 4,
       "headshot": "danqi_chen.png",
       "link": "https://www.cs.princeton.edu/~danqic/"
     },
@@ -43,7 +54,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 4,
+      "slot": 5,
       "headshot": "giambattista_parascandolo.png",
       "link": "https://sites.google.com/view/giambattista-parascandolo/home"
     },
@@ -54,7 +65,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 5,
+      "slot": 6,
       "headshot": "doga_kerestecioglu.png",
       "link": "https://www.linkedin.com/in/dogaker"
     },
@@ -65,7 +76,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 6,
+      "slot": 7,
       "headshot": "aditya_grover.png",
       "link": "https://aditya-grover.github.io/"
     },
@@ -76,7 +87,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 7,
+      "slot": 8,
       "headshot": "yu_su.png",
       "link": "https://ysu1989.github.io/"
     },
@@ -87,7 +98,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 8,
+      "slot": 9,
       "headshot": "rishabh_agarwal.png",
       "link": "https://agarwl.github.io/"
     },
@@ -98,7 +109,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 9,
+      "slot": 10,
       "headshot": "furong_huang.png",
       "link": "https://furong-huang.com/"
     },
@@ -109,7 +120,7 @@
       "stage": "Frontier",
       "session": "Foundational Capabilities",
       "session_order": 0,
-      "slot": 10,
+      "slot": 11,
       "headshot": "raja_giryes.png",
       "link": "https://www.giryes.sites.tau.ac.il/"
     },

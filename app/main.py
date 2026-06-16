@@ -26,6 +26,76 @@ def load_frontier():
         return json.load(f)
 
 
+def _norm_name(n):
+    import re
+    return re.sub(r'[^a-z]', '', (n or '').lower())
+
+
+def build_mainstage_pool(data):
+    """Mainstage speaker pool with Linda's edits: drop Sanja Fidler (now Frontier),
+    swap DeSantis and Igor Babuschkin, pin Ion Stoica first."""
+    mains = [s for s in data["speakers"] if s.get("stage") == "Main"]
+    mains = [s for s in mains if _norm_name(s["name"]) != _norm_name("Sanja Fidler")]
+    # swap DeSantis and Igor positions
+    idx = {_norm_name(s["name"]): i for i, s in enumerate(mains)}
+    di, ii = idx.get(_norm_name("Peter DeSantis")), idx.get(_norm_name("Igor Babuschkin"))
+    if di is not None and ii is not None:
+        mains[di], mains[ii] = mains[ii], mains[di]
+    # pin Ion Stoica first
+    mains.sort(key=lambda s: 0 if _norm_name(s["name"]) == _norm_name("Ion Stoica") else 1)
+    return mains
+
+
+def _headshot_index():
+    """Map normalized speaker name -> headshot filename, from frontier.json and
+    the speakers.json data (both reference headshot files)."""
+    import os
+    idx = {}
+    fr = load_frontier_agenda  # noqa (kept for clarity)
+    try:
+        with open(FRONTIER_PATH) as f:
+            for s in json.load(f)["speakers"]:
+                if s.get("headshot"):
+                    idx[_norm_name(s["name"])] = s["headshot"]
+    except Exception:
+        pass
+    return idx
+
+
+def build_frontier_combined():
+    """Option D: all Frontier speakers as one combined list, in frontier.json order."""
+    with open(FRONTIER_PATH) as f:
+        return json.load(f)["speakers"]
+
+
+def build_frontier_by_stage():
+    """Option E: Frontier speakers grouped per stage, derived from the agenda data
+    (reliable per-stage order). Headshots matched by name from frontier.json."""
+    fa = load_frontier_agenda()
+    hs = _headshot_index()
+    groups = []
+    seen_global = {}
+    for st in fa["stages"]:
+        speakers = []
+        seen = set()
+        for day in st["days"]:
+            for e in day["entries"]:
+                if e["type"] != "Session":
+                    continue
+                for s in e.get("speakers", []):
+                    key = _norm_name(s["name"])
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    speakers.append({
+                        "name": s["name"], "title": s.get("title"),
+                        "org": s.get("org"), "stage": "Frontier",
+                        "headshot": hs.get(key), "link": None,
+                    })
+        groups.append({"stage": st["stage"], "speakers": speakers})
+    return groups
+
+
 def load_agenda():
     with open(AGENDA_PATH) as f:
         return json.load(f)
@@ -142,7 +212,22 @@ def option_d(request: Request):
     return templates.TemplateResponse(
         request, "option_d.html",
         {"data": data,
-         "agenda_groups": build_grouped_tabs(agenda, frontier)})
+         "agenda_groups": build_grouped_tabs(agenda, frontier),
+         "mainstage_speakers": build_mainstage_pool(data),
+         "frontier_speakers": build_frontier_combined()})
+
+
+@app.get("/option-e", response_class=HTMLResponse)
+def option_e(request: Request):
+    data = load_speakers()
+    agenda = load_agenda()
+    frontier = load_frontier_agenda()
+    return templates.TemplateResponse(
+        request, "option_e.html",
+        {"data": data,
+         "agenda_groups": build_grouped_tabs(agenda, frontier),
+         "mainstage_speakers": build_mainstage_pool(data),
+         "frontier_stage_groups": build_frontier_by_stage()})
 
 
 @app.get("/option-b", response_class=HTMLResponse)

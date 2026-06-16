@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% from "_agenda_macros.html" import render_entry, speaker_card %}
-{% set active = 'd' %}
-{% block title %}Option D — Stage Tabs + Day Toggle{% endblock %}
+{% set active = 'e' %}
+{% block title %}Option E — Per-Stage Speakers{% endblock %}
 {% block head %}<link rel="stylesheet" href="/static/css/option_a.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/css/agenda.css">
@@ -17,7 +17,7 @@
     <div class="agenda-tabs" role="tablist" aria-label="Stage">
       {% for g in agenda_groups %}
       <button class="agenda-tab stage-tab {% if loop.first %}active{% endif %}"
-              data-stage="stagegrp-{{ g.key }}">{{ g.label }}</button>
+              data-stage="stagegrp-{{ g.key }}" data-stagekey="{{ g.key }}">{{ g.label }}</button>
       {% endfor %}
     </div>
 
@@ -54,19 +54,21 @@
       <input class="search-input" type="text" id="search" placeholder="Search speakers by name or organization..." />
     </div>
 
-    <!-- Mainstage speaker pool (shown when a Mainstage agenda tab is active) -->
-    <div class="speaker-pool" id="pool-mainstage">
+    <!-- Mainstage speaker pool (shown when the Mainstage agenda tab is active) -->
+    <div class="speaker-pool" id="pool-mainstage" data-stagekey="mainstage">
       <div class="grid-speakers">
         {% for s in mainstage_speakers %}{{ speaker_card(s, loop.index0) }}{% endfor %}
       </div>
     </div>
 
-    <!-- Frontier speaker pool (shown when any Frontier agenda tab is active) -->
-    <div class="speaker-pool" id="pool-frontier" hidden>
+    <!-- One Frontier speaker pool PER stage (shown when that stage tab is active) -->
+    {% for grp in frontier_stage_groups %}
+    <div class="speaker-pool" id="pool-{{ grp.stage | lower }}" data-stagekey="{{ grp.stage | lower }}" hidden>
       <div class="grid-speakers">
-        {% for s in frontier_speakers %}{{ speaker_card(s, loop.index0) }}{% endfor %}
+        {% for s in grp.speakers %}{{ speaker_card(s, loop.index0) }}{% endfor %}
       </div>
     </div>
+    {% endfor %}
 
     <p class="more-announced">More speakers to be announced soon...</p>
   </div>
@@ -89,17 +91,18 @@
 
 {% block scripts %}
 <script>
+function showSpeakerPool(stagekey) {
+  document.querySelectorAll('.speaker-pool').forEach(function (p) {
+    p.hidden = (p.dataset.stagekey !== stagekey);
+  });
+}
 document.querySelectorAll('.stage-tab').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var target = this.dataset.stage;
+    var stagekey = this.dataset.stagekey;
     document.querySelectorAll('.stage-tab').forEach(function (b) { b.classList.toggle('active', b === btn); });
     document.querySelectorAll('.stage-panel').forEach(function (p) { p.hidden = (p.id !== target); });
-    // Swap speaker pool: Mainstage tab -> mainstage pool; any Frontier tab -> frontier pool
-    var isMain = (target === 'stagegrp-mainstage');
-    var mainPool = document.getElementById('pool-mainstage');
-    var frontierPool = document.getElementById('pool-frontier');
-    if (mainPool) mainPool.hidden = !isMain;
-    if (frontierPool) frontierPool.hidden = isMain;
+    showSpeakerPool(stagekey);  // each stage shows ONLY its own speakers
   });
 });
 document.querySelectorAll('.day-btn').forEach(function (btn) {
@@ -111,19 +114,14 @@ document.querySelectorAll('.day-btn').forEach(function (btn) {
   });
 });
 
-var d_search = document.getElementById('search');
-if (d_search) {
-  d_search.addEventListener('input', function (e) {
+var e_search = document.getElementById('search');
+if (e_search) {
+  e_search.addEventListener('input', function (e) {
     var q = e.target.value.toLowerCase();
     document.querySelectorAll('.speaker-card').forEach(function (card) {
       var name = card.dataset.name || '';
       var org = card.dataset.org || '';
       card.style.display = (name.includes(q) || org.includes(q)) ? '' : 'none';
-    });
-    document.querySelectorAll('.stage-group').forEach(function (group) {
-      var visible = group.querySelectorAll('.speaker-card[style=""], .speaker-card:not([style])');
-      var hidden = group.querySelectorAll('.speaker-card[style*="none"]');
-      group.style.display = (visible.length === 0 && hidden.length > 0) ? 'none' : '';
     });
   });
 }
