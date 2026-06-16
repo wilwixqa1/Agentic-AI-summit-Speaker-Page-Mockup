@@ -12,7 +12,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "Foundational Capabilities -1",
+              "title": "Foundational Capabilities",
               "speakers": [
                 {
                   "name": "Noam Brown",
@@ -118,7 +118,7 @@
             },
             {
               "type": "Session",
-              "title": "Frameworks & Dev Platforms -1",
+              "title": "Frameworks & Dev Platforms",
               "speakers": [
                 {
                   "name": "Philip Rathle",
@@ -226,7 +226,7 @@
             },
             {
               "type": "Session",
-              "title": "Agent Evaluation & Benchmarks -1",
+              "title": "Agent Evaluation & Benchmarks",
               "speakers": [
                 {
                   "name": "Anastasios N Angelopoulos",
@@ -273,7 +273,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "AI Systems -1",
+              "title": "AI Systems",
               "speakers": [
                 {
                   "name": "Ion Stoica",
@@ -314,7 +314,7 @@
             },
             {
               "type": "Session",
-              "title": "Frameworks & Dev Platforms -2",
+              "title": "Frameworks & Dev Platforms",
               "speakers": [
                 {
                   "name": "Haishi Bai",
@@ -380,7 +380,7 @@
             },
             {
               "type": "Session",
-              "title": "Foundational Capabilities -2",
+              "title": "Foundational Capabilities",
               "speakers": [
                 {
                   "name": "Danqi Chen",
@@ -428,7 +428,7 @@
           "entries": [
             {
               "type": "Session",
-              "title": "Agent Evaluation & Benchmarks -2",
+              "title": "Agent Evaluation & Benchmarks",
               "speakers": [
                 {
                   "name": "Aayush Agrawal",
@@ -548,7 +548,7 @@
             },
             {
               "type": "Session",
-              "title": "AI System -2",
+              "title": "AI System",
               "speakers": [
                 {
                   "name": "Dr. Dan Fu",
@@ -597,7 +597,7 @@
             },
             {
               "type": "Session",
-              "title": "Enterprise AI -2",
+              "title": "Enterprise AI",
               "speakers": [
                 {
                   "name": "Christopher Petrillo",
