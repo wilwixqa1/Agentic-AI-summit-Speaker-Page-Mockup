@@ -63,11 +63,24 @@
 
     <!-- Frontier speaker pool (shown when any Frontier agenda tab is active) -->
     <div class="speaker-pool" id="pool-frontier" hidden>
-      <div class="grid-speakers">
-        {% for s in frontier_speakers %}{{ speaker_card(s, loop.index0) }}{% endfor %}
+      {% set fcount = namespace(i=0) %}
+      {% for page in frontier_pages %}
+      <div class="page-panel" id="panel-fpage-{{ loop.index }}" {% if not loop.first %}hidden{% endif %}>
+        <div class="grid-speakers">
+          {% for s in page %}{{ speaker_card(s, fcount.i) }}{% set fcount.i = fcount.i + 1 %}{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+
+      <!-- Bottom pager (Frontier only) -->
+      <div class="page-pager" role="tablist" aria-label="Frontier speaker pages">
+        {% for page in frontier_pages %}
+        <button class="page-btn{% if loop.first %} active{% endif %}" data-page="{{ loop.index }}" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ loop.index }}</button>
+        {% endfor %}
       </div>
     </div>
 
+    <p class="no-results" id="no-results" hidden>No speakers match your search.</p>
     <p class="more-announced">More speakers to be announced soon...</p>
   </div>
 </section>
@@ -89,12 +102,27 @@
 
 {% block scripts %}
 <script>
+// ── Frontier bottom pager ──
+const pageBtns = document.querySelectorAll('#pool-frontier .page-btn');
+const pagePanels = document.querySelectorAll('#pool-frontier .page-panel');
+function showFPage(n) {
+  pageBtns.forEach(function (b) {
+    var on = b.dataset.page === String(n);
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
+  pagePanels.forEach(function (p) { p.hidden = (p.id !== 'panel-fpage-' + n); });
+}
+pageBtns.forEach(function (btn) {
+  btn.addEventListener('click', function () { showFPage(this.dataset.page); });
+});
+
+// ── Stage tabs: switch agenda panel AND speaker pool ──
 document.querySelectorAll('.stage-tab').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var target = this.dataset.stage;
     document.querySelectorAll('.stage-tab').forEach(function (b) { b.classList.toggle('active', b === btn); });
     document.querySelectorAll('.stage-panel').forEach(function (p) { p.hidden = (p.id !== target); });
-    // Swap speaker pool: Mainstage tab -> mainstage pool; any Frontier tab -> frontier pool
     var isMain = (target === 'stagegrp-mainstage');
     var mainPool = document.getElementById('pool-mainstage');
     var frontierPool = document.getElementById('pool-frontier');
@@ -102,6 +130,8 @@ document.querySelectorAll('.stage-tab').forEach(function (btn) {
     if (frontierPool) frontierPool.hidden = isMain;
   });
 });
+
+// ── Day sub-toggle ──
 document.querySelectorAll('.day-btn').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var target = this.dataset.dayTarget;
@@ -111,20 +141,36 @@ document.querySelectorAll('.day-btn').forEach(function (btn) {
   });
 });
 
+// ── Search (works within whichever pool is visible; reveals all Frontier pages) ──
 var d_search = document.getElementById('search');
+var noResults = document.getElementById('no-results');
+var fpager = document.querySelector('#pool-frontier .page-pager');
 if (d_search) {
   d_search.addEventListener('input', function (e) {
-    var q = e.target.value.toLowerCase();
+    var q = e.target.value.toLowerCase().trim();
+    var frontierVisible = !document.getElementById('pool-frontier').hidden;
+    if (q === '') {
+      // restore paged view for Frontier
+      pagePanels.forEach(function (p) { p.hidden = true; });
+      document.querySelectorAll('.speaker-card').forEach(function (c) { c.style.display = ''; });
+      if (fpager) fpager.style.display = '';
+      if (noResults) noResults.hidden = true;
+      var active = document.querySelector('#pool-frontier .page-btn.active');
+      showFPage(active ? active.dataset.page : 1);
+      return;
+    }
+    // searching: reveal all Frontier pages, hide pager, filter globally
+    pagePanels.forEach(function (p) { p.hidden = false; });
+    if (fpager) fpager.style.display = 'none';
+    var anyVisible = false;
     document.querySelectorAll('.speaker-card').forEach(function (card) {
       var name = card.dataset.name || '';
       var org = card.dataset.org || '';
-      card.style.display = (name.includes(q) || org.includes(q)) ? '' : 'none';
+      var match = name.includes(q) || org.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) anyVisible = true;
     });
-    document.querySelectorAll('.stage-group').forEach(function (group) {
-      var visible = group.querySelectorAll('.speaker-card[style=""], .speaker-card:not([style])');
-      var hidden = group.querySelectorAll('.speaker-card[style*="none"]');
-      group.style.display = (visible.length === 0 && hidden.length > 0) ? 'none' : '';
-    });
+    if (noResults) noResults.hidden = anyVisible;
   });
 }
 </script>

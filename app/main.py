@@ -68,6 +68,28 @@ def build_frontier_combined():
         return json.load(f)["speakers"]
 
 
+def paginate_speakers(speakers, num_pages=3, cols=4):
+    """Split a speaker list into `num_pages` balanced pages, nudging counts so no
+    page ends with a lone single card on the last row (mirrors option-a-paged)."""
+    total = len(speakers)
+    base = total // num_pages
+    counts = [base] * num_pages
+    for i in range(total - base * num_pages):
+        counts[i] += 1
+    for i in range(num_pages - 1):
+        if counts[i] % cols == 1:
+            counts[i] += 1
+            counts[i + 1] -= 1
+    if counts[-1] % cols == 1 and counts[-1] > 1:
+        counts[-2] += 1
+        counts[-1] -= 1
+    pages, start = [], 0
+    for c in counts:
+        pages.append(speakers[start:start + c])
+        start += c
+    return pages
+
+
 def build_frontier_by_stage():
     """Option E: Frontier speakers grouped per stage, derived from the agenda data
     (reliable per-stage order). Headshots matched by name from frontier.json."""
@@ -214,7 +236,7 @@ def option_d(request: Request):
         {"data": data,
          "agenda_groups": build_grouped_tabs(agenda, frontier),
          "mainstage_speakers": build_mainstage_pool(data),
-         "frontier_speakers": build_frontier_combined()})
+         "frontier_pages": paginate_speakers(build_frontier_combined(), num_pages=3)})
 
 
 @app.get("/option-e", response_class=HTMLResponse)
