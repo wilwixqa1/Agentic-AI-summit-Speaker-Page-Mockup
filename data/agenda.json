@@ -164,7 +164,7 @@
           "type": "Lunch",
           "session": null,
           "speakers": [],
-          "start": "12:10 PM",
+          "start": "12:20 PM",
           "color": "amber"
         },
         {
@@ -230,7 +230,7 @@
         },
         {
           "type": "Focus Talks",
-          "session": "Session 4: Robotic & World Models",
+          "session": "Session 4: Robotics & World Models",
           "speakers": [
             {
               "name": "Sergey Levine",
@@ -247,17 +247,17 @@
               "talk": null
             },
             {
-              "name": "Anastasis Germanidis",
-              "title": "Co-Founder/Co-CEO",
-              "org": "Runway",
-              "link": "https://agermanidis.com/",
-              "talk": null
-            },
-            {
               "name": "Michael Spranger",
               "title": "President",
               "org": "Sony AI",
               "link": "https://sites.google.com/view/michaelspranger/",
+              "talk": null
+            },
+            {
+              "name": "Anastasis Germanidis",
+              "title": "Co-Founder/Co-CEO",
+              "org": "Runway",
+              "link": "https://agermanidis.com/",
               "talk": null
             },
             {
@@ -274,12 +274,12 @@
         {
           "type": "Panel",
           "session": null,
-          "panel_title": "Panel: Robotic & World Models",
+          "panel_title": "Panel: Robotics & World Models",
           "panelists": [
             "Sergey Levine",
             "Jim Fan",
-            "Anastasis Germanidis",
             "Michael Spranger",
+            "Anastasis Germanidis",
             "Wei Zhan"
           ],
           "moderator": null,
@@ -301,20 +301,14 @@
           "session": "Session 5: Agentic AI in Capital Markets",
           "panel_title": "Panel: Agentic AI in Capital Markets",
           "panelists": [
-            "Ali Nazari (Head of Deep Learning Research, Susquehanna International Group)",
             "Jeff Wecker (CTO, Two Sigma)",
             "Jen Allum (SVP, Co-Head of GenAI, The D. E. Shaw Group)",
+            "Ali Nazari (Head of Deep Learning Research, Susquehanna International Group)",
             "Li Deng (Chief AI Officer, Global Head of ML, Vatic Investments)"
           ],
           "moderator": "Bradley Olson (Technology Editor, WSJ)",
           "panel_only": true,
           "panel_speakers": [
-            {
-              "name": "Ali Nazari",
-              "title": "Head of Deep Learning Research",
-              "org": "Susquehanna International Group",
-              "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
-            },
             {
               "name": "Jeff Wecker",
               "title": "CTO",
@@ -326,6 +320,12 @@
               "title": "SVP, Co-Head of GenAI",
               "org": "The D. E. Shaw Group",
               "link": "https://www.linkedin.com/in/jen-allum/"
+            },
+            {
+              "name": "Ali Nazari",
+              "title": "Head of Deep Learning Research",
+              "org": "Susquehanna International Group",
+              "link": "https://www.linkedin.com/in/ali-nazari-97246716/"
             },
             {
               "name": "Li Deng",
@@ -479,24 +479,24 @@
           "session": "Session 2: Frontier Research",
           "speakers": [
             {
-              "name": "Ekin Dogus Cubuk",
-              "title": "Co-Founder",
-              "org": "Periodic Labs",
-              "link": "https://www.linkedin.com/in/ekin-dogus-cubuk-9148b8114/",
-              "talk": null
-            },
-            {
-              "name": "Andi Peng",
-              "title": "Co-Founder",
-              "org": "Humans &",
-              "link": "https://andipeng.com/",
-              "talk": null
-            },
-            {
               "name": "Richard Socher",
               "title": "Co-Founder",
               "org": "Recursive Superintelligence",
               "link": "https://socher.org",
+              "talk": null
+            },
+            {
+              "name": "Ed Chi",
+              "title": "VP of Research",
+              "org": "Google DeepMind",
+              "link": "https://www.edchi.net/",
+              "talk": null
+            },
+            {
+              "name": "Ekin Dogus Cubuk",
+              "title": "Co-Founder",
+              "org": "Periodic Labs",
+              "link": "https://www.linkedin.com/in/ekin-dogus-cubuk-9148b8114/",
               "talk": null
             },
             {
@@ -507,10 +507,10 @@
               "talk": null
             },
             {
-              "name": "Ed Chi",
-              "title": "VP of Research",
-              "org": "Google DeepMind",
-              "link": "https://www.edchi.net/",
+              "name": "Andi Peng",
+              "title": "Co-Founder",
+              "org": "Humans &",
+              "link": "https://andipeng.com/",
               "talk": null
             }
           ],
@@ -522,11 +522,11 @@
           "session": null,
           "panel_title": "Panel: Frontier Research",
           "panelists": [
-            "Ekin Dogus Cubuk",
-            "Andi Peng",
             "Richard Socher",
+            "Ed Chi",
+            "Ekin Dogus Cubuk",
             "Krithik Puthalath",
-            "Ed Chi"
+            "Andi Peng"
           ],
           "moderator": "Igor Babuschkin (Co-Founder, xAI)",
           "panel_only": false,
@@ -545,6 +545,13 @@
               "org": "Weights & Biases",
               "link": "https://lukasbiewald.com/",
               "talk": null
+            },
+            {
+              "name": "Matt White",
+              "title": "Global CTO of AI, Linux Foundation; CTO, PyTorch Foundation",
+              "org": null,
+              "link": null,
+              "talk": null
             }
           ],
           "start": "2:05 PM",
@@ -555,15 +562,16 @@
           "session": null,
           "panel_title": "Panel: Agentic AI Developer Platforms",
           "panelists": [
-            "Dima Dmytro Dzhulgakov (Co-Founder/CTO, Fireworks AI)",
             "Lukas Biewald",
+            "Matt White",
+            "Dima Dmytro Dzhulgakov (Co-Founder/CTO, Fireworks AI)",
             "Ivan Burazin (Co-Founder/CEO, Daytona)"
           ],
           "moderator": "Megan Morrone (Editor of Technology, Axios)",
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
-          "start": "2:15 PM",
+          "start": "2:20 PM",
           "color": "blue"
         },
         {
@@ -599,7 +607,7 @@
               "talk": null
             }
           ],
-          "start": "2:45 PM",
+          "start": "2:50 PM",
           "color": "blue"
         },
         {
@@ -616,7 +624,7 @@
           "panel_only": false,
           "panel_speakers": [],
           "speakers": [],
-          "start": "3:15 PM",
+          "start": "3:20 PM",
           "color": "blue"
         }
       ]
