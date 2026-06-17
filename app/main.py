@@ -128,10 +128,13 @@ def build_frontier_by_stage():
     for st in fa["stages"]:
         speakers = []
         seen = set()
+        session_idx = 0   # running session order within the stage (across days)
+        row_idx = 0       # running row order, for stable final tiebreak
         for day in st["days"]:
             for e in day["entries"]:
                 if e["type"] != "Session":
                     continue
+                session_idx += 1
                 for s in e.get("speakers", []):
                     key = _norm_name(s["name"])
                     if key in seen:
@@ -142,7 +145,19 @@ def build_frontier_by_stage():
                         "name": s["name"], "title": s.get("title"),
                         "org": s.get("org"), "stage": "Frontier",
                         "headshot": m.get("headshot"), "link": m.get("link"),
+                        # sort keys (per Linda): length desc (15>10>5), then session
+                        # order, then sheet row order. Stripped before returning.
+                        "_len": s.get("length") or 0,
+                        "_sess": session_idx,
+                        "_row": row_idx,
                     })
+                    row_idx += 1
+        # Significance sort for the speaker cards: longest talks first, ties broken
+        # by session order, then original row order. Agenda timeline is unaffected
+        # (this only reorders the speaker-card list).
+        speakers.sort(key=lambda sp: (-sp["_len"], sp["_sess"], sp["_row"]))
+        for sp in speakers:
+            del sp["_len"]; del sp["_sess"]; del sp["_row"]
         groups.append({"stage": st["stage"], "speakers": speakers})
     return groups
 
@@ -209,9 +224,10 @@ def build_grouped_tabs(agenda, frontier):
     """Option D: stage tabs (Mainstage | Atlas | Nexus | Horizon), each with a
     Saturday/Sunday day sub-toggle."""
     groups = []
-    # Mainstage group (its 'days' already split by day)
+    # Mainstage group (its 'days' already split by day). Display name is now
+    # "Plenary" (per Linda); internal key stays "mainstage" for JS tab linkage.
     groups.append({
-        "key": "mainstage", "label": "Mainstage",
+        "key": "mainstage", "label": "Plenary",
         "days": [{"day": d["label"].split(" - ")[-1], "date": d["date"],
                   "entries": d["entries"], "key": d["key"]}
                  for d in agenda["days"]],
