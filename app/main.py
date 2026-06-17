@@ -77,6 +77,8 @@ def _frontier_meta_index():
         "vijayganesh": {"headshot": "vijay_ganesh.png", "link": "https://www.cc.gatech.edu/people/vijay-ganesh"},
         "lilatretikov": {"headshot": "lila_tretikov.png", "link": "https://www.nea.com/team/lila-tretikov"},
         "silasalberti": {"headshot": "silas_alberti.png", "link": "https://sil.as/"},
+        "chenguangwang": {"headshot": "chenguang_wang.png", "link": "https://cgraywang.github.io/"},
+        "alexobadia": {"headshot": "alex_obadia.png", "link": "https://alexobadia.com/(%E3%83%84)/about"},
     }
     for k, v in extra.items():
         idx[k] = v
