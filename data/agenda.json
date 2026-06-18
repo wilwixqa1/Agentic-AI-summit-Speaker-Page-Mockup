@@ -636,6 +636,21 @@
      "speakers": [],
      "start": "3:20 PM",
      "color": "blue"
+    },
+    {
+     "type": "Startup Spotlight",
+     "session": "Startup Spotlight",
+     "speakers": [],
+     "start": "3:45 PM",
+     "color": "blue"
+    },
+    {
+     "type": "Reception",
+     "session": null,
+     "label": "Reception & Poster Presentations",
+     "speakers": [],
+     "start": "5:00 PM",
+     "color": "amber"
     }
    ]
   }
