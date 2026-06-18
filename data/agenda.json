@@ -639,7 +639,7 @@
     },
     {
      "type": "Startup Spotlight",
-     "session": "Startup Spotlight",
+     "session": null,
      "speakers": [],
      "start": "3:45 PM",
      "color": "blue"
