@@ -60,7 +60,6 @@
   </div>
   {% endif %}
   {% set show_kind = not (e.session and e.session == e.type) %}
-  {% if e.speakers or show_kind %}
   <div class="tl-row">
     <div class="tl-time">{{ e.start }}</div>
     <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
@@ -76,6 +75,5 @@
       {% endfor %}
     </div>
   </div>
-  {% endif %}
   {% endif %}
 {% endmacro %}
