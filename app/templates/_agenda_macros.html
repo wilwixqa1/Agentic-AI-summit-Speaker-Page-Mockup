@@ -46,11 +46,11 @@
       {% endif %}
     </div>
   </div>
-  {% elif e.type in ['Break', 'Lunch'] %}
+  {% elif e.type in ['Break', 'Lunch', 'Reception'] %}
   <div class="tl-row">
     <div class="tl-time">{{ e.start }}</div>
     <div class="tl-dot-cell"><span class="tl-dot {{ e.color }}"></span></div>
-    <div class="tl-content"><p class="tl-logistics">{{ e.type }}</p></div>
+    <div class="tl-content"><p class="tl-logistics">{{ e.label or e.type }}</p></div>
   </div>
   {% else %}
   {% if e.session %}

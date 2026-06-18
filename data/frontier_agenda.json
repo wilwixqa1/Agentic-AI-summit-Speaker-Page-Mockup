@@ -59,7 +59,7 @@
             },
             {
               "type": "Lunch",
-              "label": "Lunch",
+              "label": "Lunch & Poster Presentations",
               "start": "12:05 PM"
             },
             {
@@ -162,6 +162,11 @@
                 }
               ],
               "start": "4:00 PM"
+            },
+            {
+              "type": "Reception",
+              "label": "Reception & Poster Presentations",
+              "start": "5:30 PM"
             }
           ]
         },
@@ -232,7 +237,7 @@
             },
             {
               "type": "Lunch",
-              "label": "Lunch",
+              "label": "Lunch & Poster Presentations",
               "start": "12:20 PM"
             },
             {
@@ -314,6 +319,11 @@
               "type": "Workshop",
               "label": "Workshop",
               "start": "3:30 PM"
+            },
+            {
+              "type": "Reception",
+              "label": "Reception & Poster Presentations",
+              "start": "4:30 PM"
             }
           ]
         }
@@ -382,7 +392,7 @@
             },
             {
               "type": "Lunch",
-              "label": "Lunch",
+              "label": "Lunch & Poster Presentations",
               "start": "11:50 AM"
             },
             {
@@ -522,6 +532,11 @@
                 }
               ],
               "start": "3:25 PM"
+            },
+            {
+              "type": "Reception",
+              "label": "Reception & Poster Presentations",
+              "start": "4:30 PM"
             }
           ]
         }
@@ -576,7 +591,7 @@
             },
             {
               "type": "Lunch",
-              "label": "Lunch",
+              "label": "Lunch & Poster Presentations",
               "start": "11:45 AM"
             },
             {
@@ -700,6 +715,11 @@
               "type": "Workshop",
               "label": "Workshop",
               "start": "3:50 PM"
+            },
+            {
+              "type": "Reception",
+              "label": "Reception & Poster Presentations",
+              "start": "4:50 PM"
             }
           ]
         },
@@ -784,7 +804,7 @@
             },
             {
               "type": "Lunch",
-              "label": "Lunch",
+              "label": "Lunch & Poster Presentations",
               "start": "12:10 PM"
             },
             {
@@ -968,6 +988,11 @@
                 }
               ],
               "start": "2:20 PM"
+            },
+            {
+              "type": "Reception",
+              "label": "Reception & Poster Presentations",
+              "start": "3:25 PM"
             }
           ]
         }

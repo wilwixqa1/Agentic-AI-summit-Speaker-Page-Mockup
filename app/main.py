@@ -196,6 +196,13 @@ def _frontier_entry_to_common(e):
     if e["type"] == "Lunch":
         return {
             "type": "Lunch", "session": None,
+            "label": e.get("label", "Lunch"),
+            "start": e.get("start"), "color": "amber", "speakers": [],
+        }
+    if e["type"] == "Reception":
+        return {
+            "type": "Reception", "session": None,
+            "label": e.get("label", "Reception"),
             "start": e.get("start"), "color": "amber", "speakers": [],
         }
     return {"type": e["type"], "session": None, "start": e.get("start"),
