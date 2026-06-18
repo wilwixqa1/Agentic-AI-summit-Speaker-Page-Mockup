@@ -423,6 +423,14 @@
       "stage": "Main",
       "headshot": "nikhil_chandhok.png",
       "link": "https://www.circle.com/leadership/nikhil-chandhok"
+    },
+    {
+      "name": "Matt White",
+      "title": "Global CTO of AI, Linux Foundation; CTO, PyTorch Foundation",
+      "org": "",
+      "stage": "Main",
+      "headshot": "matt_white.png",
+      "link": "https://www.matt-white.com/"
     }
   ]
 }

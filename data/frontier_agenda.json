@@ -43,13 +43,6 @@
                   "length": 10
                 },
                 {
-                  "name": "Rishabh Agarwal",
-                  "title": "Founding Member",
-                  "org": "Periodic Labs",
-                  "talk": null,
-                  "length": 10
-                },
-                {
                   "name": "Aditya Grover",
                   "title": "Co-Founder/CTO",
                   "org": "Inception Labs",
@@ -62,12 +55,12 @@
             {
               "type": "Workshop",
               "label": "Workshop",
-              "start": "11:15 AM"
+              "start": "11:05 AM"
             },
             {
               "type": "Lunch",
               "label": "Lunch",
-              "start": "12:15 PM"
+              "start": "12:05 PM"
             },
             {
               "type": "Session",
@@ -84,13 +77,6 @@
                   "name": "Vincent Vanhoucke",
                   "title": "Distinguished Engineer",
                   "org": "Waymo",
-                  "talk": null,
-                  "length": 15
-                },
-                {
-                  "name": "Chris Bregler",
-                  "title": "Senior Director / Distinguished Scientist",
-                  "org": "Google DeepMind",
                   "talk": null,
                   "length": 15
                 },
@@ -121,12 +107,12 @@
             {
               "type": "Workshop",
               "label": "Workshop",
-              "start": "2:15 PM"
+              "start": "2:00 PM"
             },
             {
               "type": "Workshop",
               "label": "Workshop",
-              "start": "3:15 PM"
+              "start": "3:00 PM"
             },
             {
               "type": "Session",
@@ -165,7 +151,7 @@
                   "title": "IBM Fellow, CTO & VP for watsonx, enterpreise AI",
                   "org": "IBM",
                   "talk": null,
-                  "length": 10
+                  "length": 15
                 },
                 {
                   "name": "Raj De Datta",
@@ -175,7 +161,7 @@
                   "length": 15
                 }
               ],
-              "start": "4:15 PM"
+              "start": "4:00 PM"
             }
           ]
         },
@@ -288,6 +274,46 @@
               "type": "Workshop",
               "label": "Workshop",
               "start": "1:45 PM"
+            },
+            {
+              "type": "Session",
+              "title": "Session 3: AI for Math",
+              "speakers": [
+                {
+                  "name": "Sergei Gukov",
+                  "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics",
+                  "org": "California Institute of Technology",
+                  "talk": null,
+                  "length": 15
+                },
+                {
+                  "name": "Tudor Achim",
+                  "title": "Co-Founder / CEO",
+                  "org": "Harmonic",
+                  "talk": null,
+                  "length": 15
+                },
+                {
+                  "name": "Abhradeep Guha Thakurta",
+                  "title": "Staff Research Scientist",
+                  "org": "Google DeepMind",
+                  "talk": null,
+                  "length": 10
+                },
+                {
+                  "name": "Vijay Ganesh",
+                  "title": "Professor",
+                  "org": "Georgia Institute of Technology",
+                  "talk": null,
+                  "length": 5
+                }
+              ],
+              "start": "2:45 PM"
+            },
+            {
+              "type": "Workshop",
+              "label": "Workshop",
+              "start": "3:30 PM"
             }
           ]
         }
@@ -451,6 +477,13 @@
                   "org": "Thales Group",
                   "talk": null,
                   "length": 15
+                },
+                {
+                  "name": "Bo Li",
+                  "title": "Co-Founder and CEO",
+                  "org": "Virtue AI / UIUC",
+                  "talk": null,
+                  "length": 10
                 },
                 {
                   "name": "Itsik Mantin",
@@ -679,6 +712,13 @@
               "title": "Session 1: AI Safety",
               "speakers": [
                 {
+                  "name": "Chris Bregler",
+                  "title": "Senior Director / Distinguished Scientist",
+                  "org": "Google DeepMind",
+                  "talk": null,
+                  "length": 15
+                },
+                {
                   "name": "Lovedeep Gondara",
                   "title": "Head of AI R&D | Adjunct Professor",
                   "org": "Vanguard | University of British Columbia",
@@ -740,12 +780,12 @@
             {
               "type": "Workshop",
               "label": "Workshop",
-              "start": "10:55 AM"
+              "start": "11:10 AM"
             },
             {
               "type": "Lunch",
               "label": "Lunch",
-              "start": "11:55 AM"
+              "start": "12:10 PM"
             },
             {
               "type": "Session",
@@ -756,7 +796,7 @@
                   "title": "Senior Director of Compute Architecture",
                   "org": "NVIDIA",
                   "talk": null,
-                  "length": 5
+                  "length": 10
                 },
                 {
                   "name": "Rahul Bakshi",
@@ -812,7 +852,7 @@
                   "title": "Director, IBM Research AI",
                   "org": "IBM",
                   "talk": null,
-                  "length": 5
+                  "length": 10
                 },
                 {
                   "name": "Daniel Homola",
@@ -850,7 +890,7 @@
                   "length": 5
                 }
               ],
-              "start": "1:35 PM"
+              "start": "1:40 PM"
             },
             {
               "type": "Session",
@@ -861,14 +901,21 @@
                   "title": "Vice President, Innovation Lab",
                   "org": "S.A.P.",
                   "talk": null,
-                  "length": 5
+                  "length": 10
                 },
                 {
                   "name": "Yuan (Emily) Xue",
                   "title": "Head of Enterprise AI",
                   "org": "Scale AI",
                   "talk": null,
-                  "length": 5
+                  "length": 10
+                },
+                {
+                  "name": "Chenguang Wang",
+                  "title": "Assistant Professor / Research Advisor",
+                  "org": "University of California, Santa Cruz / Scale AI",
+                  "talk": null,
+                  "length": 10
                 },
                 {
                   "name": "Rahul Krishna",
@@ -883,13 +930,6 @@
                   "org": "Hex",
                   "talk": null,
                   "length": 5
-                },
-                {
-                  "name": "Chenguang Wang",
-                  "title": "Assistant Professor / Research Advisor",
-                  "org": "University of California, Santa Cruz / Scale AI",
-                  "talk": null,
-                  "length": 10
                 },
                 {
                   "name": "Arindam Sett",
@@ -927,35 +967,7 @@
                   "length": 5
                 }
               ],
-              "start": "2:10 PM"
-            },
-            {
-              "type": "Session",
-              "title": "Session 5: AI for Math",
-              "speakers": [
-                {
-                  "name": "Sergei Gukov",
-                  "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics",
-                  "org": "California Institute of Technology",
-                  "talk": null,
-                  "length": 15
-                },
-                {
-                  "name": "Abhradeep Guha Thakurta",
-                  "title": "Staff Research Scientist",
-                  "org": "Google DeepMind",
-                  "talk": null,
-                  "length": 10
-                },
-                {
-                  "name": "Vijay Ganesh",
-                  "title": "Professor",
-                  "org": "Georgia Institute of Technology",
-                  "talk": null,
-                  "length": 5
-                }
-              ],
-              "start": "3:05 PM"
+              "start": "2:20 PM"
             }
           ]
         }
