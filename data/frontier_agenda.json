@@ -56,7 +56,7 @@
        "type": "Workshop",
        "label": "Workshop",
        "start": "11:05 AM",
-       "title": "Turning Chatbots into Agents: What Modern RL Looks Like by Daytona",
+       "title": "Workshop: Turning Chatbots into Agents: What Modern RL Looks Like by Daytona",
        "speakers": [
         {
          "name": "Lovre Pesut",
@@ -125,7 +125,7 @@
        "type": "Workshop",
        "label": "Workshop",
        "start": "2:00 PM",
-       "title": "Open-Source Agent Investigations: Security Arena, Distilled Traces, and Auto-Optimization by Lambda",
+       "title": "Workshop: Open-Source Agent Investigations: Security Arena, Distilled Traces, and Auto-Optimization by Lambda",
        "speakers": [
         {
          "name": "Devina Jain",
@@ -154,7 +154,7 @@
        "type": "Workshop",
        "label": "Workshop",
        "start": "3:00 PM",
-       "title": "Building Agentic Apps End-to-End with Replit Agent",
+       "title": "Workshop: Building Agentic Apps End-to-End with Replit Agent",
        "speakers": [
         {
          "name": "Brandon Middleton",
