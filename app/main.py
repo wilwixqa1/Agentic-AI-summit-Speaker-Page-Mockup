@@ -33,14 +33,9 @@ def _norm_name(n):
 
 def build_mainstage_pool(data):
     """Mainstage speaker pool with Linda's edits: drop Sanja Fidler (now Frontier),
-    swap DeSantis and Igor Babuschkin, pin Ion Stoica first."""
+    pin Ion Stoica first. Card order otherwise follows speakers.json directly."""
     mains = [s for s in data["speakers"] if s.get("stage") == "Main"]
     mains = [s for s in mains if _norm_name(s["name"]) != _norm_name("Sanja Fidler")]
-    # swap DeSantis and Igor positions
-    idx = {_norm_name(s["name"]): i for i, s in enumerate(mains)}
-    di, ii = idx.get(_norm_name("Peter DeSantis")), idx.get(_norm_name("Igor Babuschkin"))
-    if di is not None and ii is not None:
-        mains[di], mains[ii] = mains[ii], mains[di]
     # pin Ion Stoica first
     mains.sort(key=lambda s: 0 if _norm_name(s["name"]) == _norm_name("Ion Stoica") else 1)
     return mains

@@ -46,6 +46,30 @@
       "link": "https://karpathy.ai/"
     },
     {
+      "name": "Peter Steinberger",
+      "title": "Creator of OpenClaw",
+      "org": "OpenAI",
+      "stage": "Main",
+      "headshot": "peter_steinberger.png",
+      "link": "https://steipete.me/"
+    },
+    {
+      "name": "Peter DeSantis",
+      "title": "SVP, Foundational AI Models, Custom Silicon, Quantum Computing",
+      "org": "Amazon",
+      "stage": "Main",
+      "headshot": "peter_desantis.png",
+      "link": "https://www.aboutamazon.com/news/innovation-at-amazon/peter-desantis-amazon-artificial-general-intelligence"
+    },
+    {
+      "name": "Jasjeet Sekhon",
+      "title": "Chief Strategy Officer",
+      "org": "Google DeepMind",
+      "stage": "Main",
+      "headshot": "jasjeet_sekhon.png",
+      "link": "https://jsekhon.com"
+    },
+    {
       "name": "Ali Ghodsi",
       "title": "Co-Founder/CEO",
       "org": "Databricks",
@@ -62,14 +86,6 @@
       "link": "https://people.eecs.berkeley.edu/~svlevine/"
     },
     {
-      "name": "Peter Steinberger",
-      "title": "Creator of OpenClaw",
-      "org": "OpenAI",
-      "stage": "Main",
-      "headshot": "peter_steinberger.png",
-      "link": "https://steipete.me/"
-    },
-    {
       "name": "Jennifer Chayes",
       "title": "Dean of CDSS",
       "org": "UC Berkeley",
@@ -78,14 +94,6 @@
       "link": "https://cdss.berkeley.edu/people/jennifer-chayes",
       "scale": "1.15",
       "crop": "center 30%"
-    },
-    {
-      "name": "Jasjeet Sekhon",
-      "title": "Chief Strategy Officer",
-      "org": "Google DeepMind",
-      "stage": "Main",
-      "headshot": "jasjeet_sekhon.png",
-      "link": "https://jsekhon.com"
     },
     {
       "name": "Pushmeet Kohli",
@@ -118,14 +126,6 @@
       "stage": "Main",
       "headshot": "rao_surapaneni.png",
       "link": "https://www.linkedin.com/in/raosurapaneni/"
-    },
-    {
-      "name": "Peter DeSantis",
-      "title": "SVP, Foundational AI Models, Custom Silicon, Quantum Computing",
-      "org": "Amazon",
-      "stage": "Main",
-      "headshot": "peter_desantis.png",
-      "link": "https://www.aboutamazon.com/news/innovation-at-amazon/peter-desantis-amazon-artificial-general-intelligence"
     },
     {
       "name": "Sanja Fidler",
@@ -281,14 +281,6 @@
       "link": "https://github.com/chuanli11"
     },
     {
-      "name": "Surojit Chatterjee",
-      "title": "Founder/CEO",
-      "org": "Ema",
-      "stage": "Main",
-      "headshot": "surojit_chatterjee.png",
-      "link": "https://www.linkedin.com/in/surojitchatterjee/"
-    },
-    {
       "name": "Anahita Tafvizi",
       "title": "Chief Data & AI Officer",
       "org": "Snowflake",
@@ -353,6 +345,14 @@
       "link": "https://andipeng.com/"
     },
     {
+      "name": "Nikhil Chandhok",
+      "title": "Chief Product & Technology Officer",
+      "org": "Circle",
+      "stage": "Main",
+      "headshot": "nikhil_chandhok.png",
+      "link": "https://www.circle.com/leadership/nikhil-chandhok"
+    },
+    {
       "name": "Milind Naphade",
       "title": "SVP, AI Foundations",
       "org": "Capital One",
@@ -409,12 +409,12 @@
       "link": "https://www.linkedin.com/in/fshafiq/"
     },
     {
-      "name": "Nikhil Chandhok",
-      "title": "Chief Product & Technology Officer",
-      "org": "Circle",
+      "name": "Surojit Chatterjee",
+      "title": "Founder/CEO",
+      "org": "Ema",
       "stage": "Main",
-      "headshot": "nikhil_chandhok.png",
-      "link": "https://www.circle.com/leadership/nikhil-chandhok"
+      "headshot": "surojit_chatterjee.png",
+      "link": "https://www.linkedin.com/in/surojitchatterjee/"
     },
     {
       "name": "Matt White",
