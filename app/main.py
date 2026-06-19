@@ -81,6 +81,13 @@ def _frontier_meta_index():
         "alexobadia": {"headshot": "alex_obadia.png", "link": "https://alexobadia.com/(%E3%83%84)/about"},
         "tudorachim": {"headshot": "tudor_achim.png", "link": "https://cs.stanford.edu/~tachim/"},
         "boli": {"headshot": "bo_li.png", "link": "https://www.linkedin.com/in/drboli"},
+        # Atlas Saturday workshop presenters (agenda-only; headshots + links per Linda)
+        "lovrepesut": {"headshot": "lovre_pesut.png", "link": "https://lov.re/"},
+        "muhammadhashmi": {"headshot": "muhammad_hashmi.png", "link": "https://www.linkedin.com/in/mu-hash/"},
+        "devinajain": {"headshot": "devina_jain.png", "link": "https://www.linkedin.com/in/devina-jain-088aba86"},
+        "zachmueller": {"headshot": "zach_mueller.png", "link": "https://www.linkedin.com/in/zachary-mueller-135257118/"},
+        "chuanli": {"headshot": "chuan_li.png", "link": "https://github.com/chuanli11"},
+        "brandonmiddleton": {"headshot": "brandon_middleton.png", "link": "https://dschool.stanford.edu/directory/brandon-middleton"},
     }
     for k, v in extra.items():
         idx[k] = v
@@ -134,7 +141,7 @@ def build_frontier_by_stage():
         row_idx = 0       # running row order, for stable final tiebreak
         for day in st["days"]:
             for e in day["entries"]:
-                if e["type"] != "Session":
+                if e["type"] not in ("Session", "Workshop"):
                     continue
                 session_idx += 1
                 for s in e.get("speakers", []):
@@ -187,11 +194,11 @@ def _frontier_entry_to_common(e):
         }
     if e["type"] == "Workshop":
         return {
-            "type": e.get("label", "Workshop"),
+            "type": e.get("title") or e.get("label", "Workshop"),
             "session": None,
             "start": e.get("start"),
             "color": "magenta",
-            "speakers": [],
+            "speakers": e.get("speakers", []),
         }
     if e["type"] == "Lunch":
         return {

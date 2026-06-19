@@ -1047,17 +1047,6 @@
    "slot": 94,
    "headshot": "rishi_bommasani.png",
    "link": "https://rishibommasani.github.io/"
-  },
-  {
-   "name": "Ankit Goyal",
-   "title": "Principal Staff Software Engineer",
-   "org": "LinkedIn",
-   "stage": "Frontier",
-   "session": "Enterprise AI",
-   "session_order": 15,
-   "slot": 95,
-   "headshot": "ankit_goyal.png",
-   "link": "https://imankgoyal.github.io/"
   }
  ]
 }
