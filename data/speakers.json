@@ -54,6 +54,14 @@
       "link": "https://steipete.me/"
     },
     {
+      "name": "Andrew Ng",
+      "title": "Founder",
+      "org": "DeepLearning.AI",
+      "stage": "Main",
+      "headshot": "andrew_ng.png",
+      "link": "https://www.andrewng.org/"
+    },
+    {
       "name": "Peter DeSantis",
       "title": "SVP, Foundational AI Models, Custom Silicon, Quantum Computing",
       "org": "Amazon",
