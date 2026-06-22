@@ -18,7 +18,7 @@
 
 {# Shared agenda entry renderer — used by option_a (flat) and option_d (grouped).
    Renders one timeline entry: Panel, Break/Lunch, or a session/focus/fireside row. #}
-{% macro render_entry(e) %}
+{% macro render_entry(e, boxed=True) %}
   {% if e.type == 'Panel' %}
   {% if e.session %}
   <div class="session-header">
@@ -53,8 +53,8 @@
     <div class="tl-content"><p class="tl-logistics">{{ e.label or e.type }}</p></div>
   </div>
   {% else %}
+  {% if e.session and boxed %}<div class="session-block">{% endif %}
   {% if e.session %}
-  <div class="session-block">
   <div class="session-header">
     {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
     <h3>{{ e.session }}</h3>
@@ -76,6 +76,6 @@
       {% endfor %}
     </div>
   </div>
-  {% if e.session %}</div>{% endif %}
+  {% if e.session and boxed %}</div>{% endif %}
   {% endif %}
 {% endmacro %}

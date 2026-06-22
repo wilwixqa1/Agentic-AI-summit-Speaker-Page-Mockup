@@ -35,7 +35,7 @@
       <div class="day-panel" id="{{ g.key }}-{{ day.key }}" {% if not loop.first %}hidden{% endif %}>
         <p class="agenda-date">{{ day.date }}</p>
         <div class="timeline">
-          {% for e in day.entries %}{{ render_entry(e) }}{% endfor %}
+          {% for e in day.entries %}{{ render_entry(e, boxed=(g.key != 'mainstage')) }}{% endfor %}
         </div>
       </div>
       {% endfor %}
