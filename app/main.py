@@ -177,20 +177,6 @@ def load_frontier_agenda():
         return json.load(f)
 
 
-def _number_day_workshops(entries):
-    """Assign 'Workshop N' labels in chronological order within a single day,
-    resetting each day. Returns the entries (mutated copies) ready for conversion."""
-    out = []
-    n = 0
-    for e in entries:
-        if e.get("type") == "Workshop":
-            n += 1
-            e = dict(e)
-            e["_workshop_label"] = "Workshop " + str(n)
-        out.append(e)
-    return out
-
-
 def _frontier_entry_to_common(e):
     """Normalize a frontier_agenda entry into the same shape option_a's macro uses
     (type/session/start/color/speakers/...)."""
@@ -205,7 +191,7 @@ def _frontier_entry_to_common(e):
     if e["type"] == "Workshop":
         return {
             "type": e.get("title") or e.get("label", "Workshop"),
-            "session": e.get("_workshop_label"),
+            "session": None,
             "start": e.get("start"),
             "color": "magenta",
             "speakers": e.get("speakers", []),
@@ -239,7 +225,7 @@ def build_flat_tabs(agenda, frontier):
         for d in st["days"]:
             sections.append({
                 "date": d["date"] if len(st["days"]) > 1 else None,
-                "entries": [_frontier_entry_to_common(e) for e in _number_day_workshops(d["entries"])],
+                "entries": [_frontier_entry_to_common(e) for e in d["entries"]],
             })
         tabs.append({"key": "f-" + st["stage"].lower(), "label": st["stage"],
                      "sections": sections})
@@ -262,7 +248,7 @@ def build_grouped_tabs(agenda, frontier):
         groups.append({
             "key": st["stage"].lower(), "label": st["stage"],
             "days": [{"day": d["day"], "date": d["date"],
-                      "entries": [_frontier_entry_to_common(e) for e in _number_day_workshops(d["entries"])],
+                      "entries": [_frontier_entry_to_common(e) for e in d["entries"]],
                       "key": d["day"].lower()}
                      for d in st["days"]],
         })

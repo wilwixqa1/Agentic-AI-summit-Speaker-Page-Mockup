@@ -54,6 +54,7 @@
   </div>
   {% else %}
   {% if e.session %}
+  <div class="session-block">
   <div class="session-header">
     {% if e.start %}<span class="session-time">{{ e.start }}</span>{% endif %}
     <h3>{{ e.session }}</h3>
@@ -75,5 +76,6 @@
       {% endfor %}
     </div>
   </div>
+  {% if e.session %}</div>{% endif %}
   {% endif %}
 {% endmacro %}

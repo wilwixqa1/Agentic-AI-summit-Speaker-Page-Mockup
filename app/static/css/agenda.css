@@ -87,14 +87,18 @@
 /* Logistics rows (Break / Lunch) — single grey label */
 .tl-logistics { color: var(--ink-2); font-size: 16px; font-weight: 600; }
 
-/* Session header bar — blue tint with left accent. Sits above the rail
-   (position+z-index) with an opaque background so the timeline line is masked.
-   Time sits as a small label above the title (left-aligned). */
-.session-header {
-  position: relative; z-index: 1;
+/* Session block — blue tint wrapping the whole session (header + speakers).
+   Workshops/breaks are NOT wrapped, so they sit in the white gaps between blocks. */
+.session-block {
   background: #e8eefc; border-left: 4px solid #2563eb;
-  border-radius: 8px; padding: 14px 24px;
-  margin: 18px 0 10px 0;
+  border-radius: 8px; padding: 0 24px 16px 24px;
+  margin: 18px 0;
+}
+
+/* Session header — plain header inside the blue block (no own box). */
+.session-header {
+  padding: 14px 0 4px 0;
+  margin: 0;
 }
 .session-header h3 {
   margin: 0; color: #2563eb; font-size: 22px; font-weight: 700;
@@ -110,6 +114,6 @@
   .tl-row { grid-template-columns: 74px 30px 1fr; }
   .tl-dot { left: 9px; }
   .tl-time { font-size: 14px; }
-  .session-header { margin-left: 0; }
+  .session-block { padding-left: 12px; padding-right: 12px; }
   .session-header h3 { font-size: 18px; }
 }
