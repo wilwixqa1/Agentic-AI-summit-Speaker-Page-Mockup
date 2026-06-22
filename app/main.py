@@ -83,6 +83,7 @@ def _frontier_meta_index():
         "zachmueller": {"headshot": "zach_mueller.png", "link": "https://www.linkedin.com/in/zachary-mueller-135257118/"},
         "chuanli": {"headshot": "chuan_li.png", "link": "https://github.com/chuanli11"},
         "brandonmiddleton": {"headshot": "brandon_middleton.png", "link": "https://dschool.stanford.edu/directory/brandon-middleton"},
+        "mattwhite": {"headshot": "matt_white.png", "link": "https://www.matt-white.com/"},
     }
     for k, v in extra.items():
         idx[k] = v

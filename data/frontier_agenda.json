@@ -765,7 +765,17 @@
       {
        "type": "Workshop",
        "label": "Workshop",
-       "start": "3:50 PM"
+       "start": "3:50 PM",
+       "title": "The Open Agentic Stack: Building the Future of AI Systems with Open Source, Open Standards and Composability by Linux Foundation",
+       "speakers": [
+        {
+         "name": "Matt White",
+         "title": "Global CTO of AI, Linux Foundation; CTO, PyTorch Foundation",
+         "org": "",
+         "link": "https://www.matt-white.com/",
+         "talk": null
+        }
+       ]
       },
       {
        "type": "Reception",
