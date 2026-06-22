@@ -447,6 +447,38 @@
       "stage": "Main",
       "headshot": "matt_white.png",
       "link": "https://www.matt-white.com/"
+    },
+    {
+      "name": "Will Knight",
+      "title": "Senior Writer",
+      "org": "Wired",
+      "stage": "Main",
+      "headshot": "will_knight.png",
+      "link": "https://www.wired.com/author/will-knight/"
+    },
+    {
+      "name": "Bradley Olson",
+      "title": "Technology Editor",
+      "org": "WSJ",
+      "stage": "Main",
+      "headshot": "bradley_olson.png",
+      "link": "https://www.wsj.com/news/author/bradley-olson"
+    },
+    {
+      "name": "Aaron Jacobson",
+      "title": "GP",
+      "org": "NEA",
+      "stage": "Main",
+      "headshot": "aaron_jacobson.png",
+      "link": "https://www.nea.com/team/aaron-jacobson"
+    },
+    {
+      "name": "Megan Morrone",
+      "title": "Editor of Technology",
+      "org": "Axios",
+      "stage": "Main",
+      "headshot": "megan_morrone.png",
+      "link": "https://www.axios.com/authors/mmorrone"
     }
   ]
 }
