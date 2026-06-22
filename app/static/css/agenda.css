@@ -97,9 +97,18 @@
 }
 
 /* Session header — plain header inside the blue block (no own box). */
+/* Session header bar — blue tint with left accent (the original Plenary look).
+   Standalone (Plenary) it is its own thin box. Inside a .session-block (Frontier)
+   it is overridden to plain, since the block already provides the blue. */
 .session-header {
-  padding: 14px 0 4px 0;
-  margin: 0;
+  position: relative; z-index: 1;
+  background: #e8eefc; border-left: 4px solid #2563eb;
+  border-radius: 8px; padding: 14px 24px;
+  margin: 18px 0 10px 0;
+}
+.session-block .session-header {
+  background: none; border-left: none; border-radius: 0;
+  padding: 14px 0 4px 0; margin: 0;
 }
 .session-header h3 {
   margin: 0; color: #2563eb; font-size: 22px; font-weight: 700;
