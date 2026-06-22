@@ -90,6 +90,7 @@
 /* Session block — blue tint wrapping the whole session (header + speakers).
    Workshops/breaks are NOT wrapped, so they sit in the white gaps between blocks. */
 .session-block {
+  position: relative; z-index: 1;
   background: #e8eefc; border-left: 4px solid #2563eb;
   border-radius: 8px; padding: 0 24px 16px 24px;
   margin: 18px 0;
