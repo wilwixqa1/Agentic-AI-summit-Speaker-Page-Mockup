@@ -251,7 +251,7 @@
     {
       "name": "Andy Konwinski",
       "title": "Co-Founder",
-      "org": "Databricks, Perplexity and Laude Ventures",
+      "org": "Databricks; Perplexity; Laude Ventures",
       "stage": "Main",
       "headshot": "andy_konwinski.png",
       "link": "https://andykonwinski.com/about/"
@@ -299,7 +299,7 @@
     {
       "name": "Duncan Lennox",
       "title": "Chief Product & Technology Officer",
-      "org": "Hubspot",
+      "org": "HubSpot",
       "stage": "Main",
       "headshot": "duncan_lennox.png",
       "link": "https://www.hubspot.com/company/board-of-directors/duncan-lennox"
@@ -471,6 +471,14 @@
       "stage": "Main",
       "headshot": "aaron_jacobson.png",
       "link": "https://www.nea.com/team/aaron-jacobson"
+    },
+    {
+      "name": "Guru Chahal",
+      "title": "Partner",
+      "org": "Lightspeed Venture Partners",
+      "stage": "Main",
+      "headshot": "guru_chahal.png",
+      "link": "https://lsvp.com/team-member/guru-chahal/"
     },
     {
       "name": "Megan Morrone",

@@ -85,8 +85,8 @@
        "speakers": [
         {
          "name": "Peter Stone",
-         "title": "Chief Scientist; Professor",
-         "org": "Sony AI; UT Austin",
+         "title": "Chief Scientist, Sony AI; Professor, UT Austin",
+         "org": null,
          "talk": null,
          "length": 15
         },
@@ -113,8 +113,8 @@
         },
         {
          "name": "Bolei Zhou",
-         "title": "Associate Professor / Chief AI Scientist",
-         "org": "UCLA / Coco Robotics",
+         "title": "Associate Professor, UCLA; Chief AI Scientist, Coco Robotics",
+         "org": null,
          "talk": null,
          "length": 10
         }
@@ -273,8 +273,8 @@
         },
         {
          "name": "Dan Klein",
-         "title": "Professor / Co-founder CTO",
-         "org": "UC Berkeley / Scaled Cognition",
+         "title": "Professor, UC Berkeley; Co-founder CTO, Scaled Cognition",
+         "org": null,
          "talk": null,
          "length": 10
         }
@@ -337,8 +337,8 @@
        "speakers": [
         {
          "name": "Sergei Gukov",
-         "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics",
-         "org": "California Institute of Technology",
+         "title": "Executive Director, American Institute of Mathematics; John D. MacArthur Professor of Theoretical Physics and Mathematics, California Institute of Technology",
+         "org": null,
          "talk": null,
          "length": 15
         },
@@ -393,8 +393,8 @@
        "speakers": [
         {
          "name": "Markus J. Buehler",
-         "title": "Professor, Founder, CTO",
-         "org": "MIT/Unreasonable Labs",
+         "title": "Professor, MIT; Founder & CTO, Unreasonable Labs",
+         "org": null,
          "talk": null,
          "length": 15
         },
@@ -541,8 +541,8 @@
         },
         {
          "name": "Bo Li",
-         "title": "Co-Founder and CEO",
-         "org": "Virtue AI / UIUC",
+         "title": "Co-Founder and CEO, Virtue AI; UIUC",
+         "org": null,
          "talk": null,
          "length": 10
         },
@@ -606,8 +606,8 @@
        "speakers": [
         {
          "name": "Ion Stoica",
-         "title": "Co-Founder; Professor",
-         "org": "Databricks and Anyscale; UC Berkeley",
+         "title": "Co-Founder, Databricks and Anyscale; Professor, UC Berkeley",
+         "org": null,
          "talk": null,
          "length": 15
         },
@@ -740,8 +740,8 @@
         },
         {
          "name": "Yu Su",
-         "title": "CEO / Associate Professor",
-         "org": "NeoCognition / OSU",
+         "title": "CEO, NeoCognition; Associate Professor, OSU",
+         "org": null,
          "talk": null,
          "length": 10
         },
@@ -801,8 +801,8 @@
         },
         {
          "name": "Lovedeep Gondara",
-         "title": "Head of AI R&D | Adjunct Professor",
-         "org": "Vanguard | University of British Columbia",
+         "title": "Head of AI R&D, Vanguard; Adjunct Professor, University of British Columbia",
+         "org": null,
          "talk": null,
          "length": 10
         },
@@ -829,8 +829,8 @@
         },
         {
          "name": "Jordan Jindong Gu",
-         "title": "Senior Research Scientist",
-         "org": "Google & University of Oxford",
+         "title": "Senior Research Scientist, Google; University of Oxford",
+         "org": null,
          "talk": null,
          "length": 5
         },
@@ -1000,8 +1000,8 @@
         },
         {
          "name": "Chenguang Wang",
-         "title": "Assistant Professor / Research Advisor",
-         "org": "University of California, Santa Cruz / Scale AI",
+         "title": "Assistant Professor, University of California, Santa Cruz; Research Advisor, Scale AI",
+         "org": null,
          "talk": null,
          "length": 10
         },

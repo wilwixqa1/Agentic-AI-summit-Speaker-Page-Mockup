@@ -115,3 +115,8 @@
   text-align: center; color: var(--berkeley-blue);
   font-size: 18px; margin: 32px 0;
 }
+
+/* Inline org for dual-affiliation cards (each "Title, Org" on its own line) */
+.speaker-org-inline {
+  color: var(--berkeley-blue); font-weight: 500;
+}

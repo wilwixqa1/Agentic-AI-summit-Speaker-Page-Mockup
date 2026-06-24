@@ -83,7 +83,7 @@
   {
    "name": "Yu Su",
    "title": "CEO; Associate Professor",
-   "org": "NeoCognition; Ohio State University",
+   "org": "NeoCognition; OSU",
    "stage": "Frontier",
    "session": "Foundational Capabilities",
    "session_order": 0,
@@ -126,7 +126,7 @@
   },
   {
    "name": "Markus J. Buehler",
-   "title": "Professor; Co-Founder/CTO",
+   "title": "Professor; Founder & CTO",
    "org": "MIT; Unreasonable Labs",
    "stage": "Frontier",
    "session": "AI for Science",
@@ -181,8 +181,8 @@
   },
   {
    "name": "Sergei Gukov",
-   "title": "Executive Director, American Institute of Mathematics / John D. MacArthur Professor of Theoretical Physics and Mathematics,",
-   "org": "California Institute of Technology (Caltech)",
+   "title": "Executive Director; John D. MacArthur Professor of Theoretical Physics and Mathematics",
+   "org": "American Institute of Mathematics; California Institute of Technology",
    "stage": "Frontier",
    "session": "AI for Math",
    "session_order": 1,
@@ -467,8 +467,8 @@
   },
   {
    "name": "Dan Klein",
-   "title": "Co-Founder/CTO; Professor",
-   "org": "Scaled Cognition; UC Berkeley",
+   "title": "Professor; Co-founder CTO",
+   "org": "UC Berkeley; Scaled Cognition",
    "stage": "Frontier",
    "session": "Enterprise AI",
    "session_order": 15,
@@ -853,7 +853,7 @@
   {
    "name": "Jordan Jindong Gu",
    "title": "Senior Research Scientist",
-   "org": "Google & University of Oxford",
+   "org": "Google; University of Oxford",
    "stage": "Frontier",
    "session": "AI for Cybersecurity",
    "session_order": 8,
@@ -1028,8 +1028,8 @@
   },
   {
    "name": "Lovedeep Gondara",
-   "title": "Head of AI R&D | Adjunct Professor",
-   "org": "Vanguard | University of British Columbia",
+   "title": "Head of AI R&D; Adjunct Professor",
+   "org": "Vanguard; University of British Columbia",
    "stage": "Frontier",
    "session": "Policy & Governance",
    "session_order": 13,

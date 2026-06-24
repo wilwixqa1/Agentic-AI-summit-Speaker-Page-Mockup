@@ -51,6 +51,7 @@ def _frontier_meta_index():
             for s in json.load(f)["speakers"]:
                 idx[_norm_name(s["name"])] = {
                     "headshot": s.get("headshot"), "link": s.get("link"),
+                    "title": s.get("title"), "org": s.get("org"),
                 }
     except Exception:
         pass
@@ -123,6 +124,9 @@ def paginate_speakers(speakers, num_pages=3, cols=4):
     return pages
 
 
+CARD_EXCLUDE = {"ankitgoyal"}  # agenda speakers intentionally without a speaker card (matches production)
+
+
 def build_frontier_by_stage():
     """Option E: Frontier speakers grouped per stage, derived from the agenda data
     (reliable per-stage order). Headshots AND profile links matched by name from
@@ -142,13 +146,17 @@ def build_frontier_by_stage():
                 session_idx += 1
                 for s in e.get("speakers", []):
                     key = _norm_name(s["name"])
+                    if key in CARD_EXCLUDE:
+                        continue
                     if key in seen:
                         continue
                     seen.add(key)
                     m = meta.get(key, {})
                     speakers.append({
-                        "name": s["name"], "title": s.get("title"),
-                        "org": s.get("org"), "stage": "Frontier",
+                        "name": s["name"],
+                        "title": m.get("title") if m.get("title") is not None else s.get("title"),
+                        "org": m.get("org") if m.get("org") is not None else s.get("org"),
+                        "stage": "Frontier",
                         "headshot": m.get("headshot"), "link": m.get("link"),
                         # sort keys (per Linda): length desc (15>10>5), then session
                         # order, then sheet row order. Stripped before returning.
@@ -268,36 +276,8 @@ def frontier_sessions(frontier_data):
 
 
 @app.get("/", response_class=HTMLResponse)
-def index(request: Request):
-    return templates.TemplateResponse(request, "index.html")
-
-
-@app.get("/option-a", response_class=HTMLResponse)
-def option_a(request: Request):
-    data = load_speakers()
-    agenda = load_agenda()
-    frontier = load_frontier_agenda()
-    return templates.TemplateResponse(
-        request, "option_a.html",
-        {"data": data, "agenda": agenda,
-         "agenda_tabs": build_flat_tabs(agenda, frontier)})
-
-
-@app.get("/option-d", response_class=HTMLResponse)
-def option_d(request: Request):
-    data = load_speakers()
-    agenda = load_agenda()
-    frontier = load_frontier_agenda()
-    return templates.TemplateResponse(
-        request, "option_d.html",
-        {"data": data,
-         "agenda_groups": build_grouped_tabs(agenda, frontier),
-         "mainstage_speakers": build_mainstage_pool(data),
-         "frontier_pages": paginate_speakers(build_frontier_combined(), num_pages=3)})
-
-
 @app.get("/option-e", response_class=HTMLResponse)
-def option_e(request: Request):
+def index(request: Request):
     data = load_speakers()
     agenda = load_agenda()
     frontier = load_frontier_agenda()
@@ -307,119 +287,6 @@ def option_e(request: Request):
          "agenda_groups": build_grouped_tabs(agenda, frontier),
          "mainstage_speakers": build_mainstage_pool(data),
          "frontier_stage_groups": build_frontier_by_stage()})
-
-
-@app.get("/option-b", response_class=HTMLResponse)
-def option_b(request: Request):
-    data = load_speakers()
-    return templates.TemplateResponse(request, "option_b.html", {"data": data})
-
-
-@app.get("/option-c", response_class=HTMLResponse)
-def option_c(request: Request):
-    data = load_speakers()
-    return templates.TemplateResponse(request, "option_c.html", {"data": data})
-
-
-@app.get("/frontier", response_class=HTMLResponse)
-def frontier(request: Request):
-    data = load_frontier()
-    ordered = frontier_sessions(data)
-    return templates.TemplateResponse(
-        request, "frontier.html", {"data": data, "sessions": ordered}
-    )
-
-
-@app.get("/option-a-frontier", response_class=HTMLResponse)
-def option_a_frontier(request: Request):
-    """Option A circle-grid: Main Stage grid + Frontier grouped by session."""
-    main = load_speakers()
-    frontier_data = load_frontier()
-    return templates.TemplateResponse(
-        request,
-        "option_a_frontier.html",
-        {
-            "data": main,
-            "main_speakers": main["speakers"],
-            "sessions": frontier_sessions(frontier_data),
-        },
-    )
-
-
-@app.get("/option-a-toggle", response_class=HTMLResponse)
-def option_a_toggle(request: Request):
-    """Option A with a Main / Frontier toggle."""
-    main = load_speakers()
-    frontier_data = load_frontier()
-    return templates.TemplateResponse(
-        request,
-        "option_a_toggle.html",
-        {
-            "data": main,
-            "main_speakers": main["speakers"],
-            "sessions": frontier_sessions(frontier_data),
-        },
-    )
-
-
-@app.get("/option-a-flat", response_class=HTMLResponse)
-def option_a_flat(request: Request):
-    """Option A flat list, no categories: Main + Frontier combined."""
-    main = load_speakers()
-    frontier_data = load_frontier()
-    all_speakers = main["speakers"] + frontier_data["speakers"]
-    return templates.TemplateResponse(
-        request,
-        "option_a_flat.html",
-        {"data": main, "all_speakers": all_speakers},
-    )
-
-
-@app.get("/option-a-paged", response_class=HTMLResponse)
-def option_a_paged(request: Request):
-    """Option A circle-grid, combined list split into 3 pages (bottom pager).
-
-    Drops the duplicate Main-stage Aditya Grover entry (he also appears as a
-    Frontier speaker), and balances the 3-page split so no page ends with a
-    lone single card in the 4-column grid.
-    """
-    main = load_speakers()
-    frontier_data = load_frontier()
-    all_speakers = main["speakers"] + frontier_data["speakers"]
-
-    # Remove the Main-stage Aditya Grover (keep the Frontier instance, which
-    # sits later in the list). Only the first matching Main entry is dropped.
-    for i, s in enumerate(all_speakers):
-        if s.get("name") == "Aditya Grover" and s.get("stage") == "Main":
-            del all_speakers[i]
-            break
-
-    cols = 4
-    num_pages = 3
-    total = len(all_speakers)
-    base = total // num_pages
-    counts = [base] * num_pages
-    for i in range(total - base * num_pages):
-        counts[i] += 1
-    # Nudge counts so no page ends with a single card on the last row.
-    for i in range(num_pages - 1):
-        if counts[i] % cols == 1:
-            counts[i] += 1
-            counts[i + 1] -= 1
-    if counts[-1] % cols == 1 and counts[-1] > 1:
-        counts[-2] += 1
-        counts[-1] -= 1
-
-    pages, start = [], 0
-    for c in counts:
-        pages.append(all_speakers[start:start + c])
-        start += c
-
-    return templates.TemplateResponse(
-        request,
-        "option_a_paged.html",
-        {"data": main, "pages": pages, "num_pages": num_pages},
-    )
 
 
 @app.get("/healthz")

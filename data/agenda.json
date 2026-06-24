@@ -22,8 +22,8 @@
       },
       {
        "name": "Dawn Song",
-       "title": "Professor; Co-Director",
-       "org": "UC Berkeley; Berkeley RDI",
+       "title": "Professor, UC Berkeley; Co-Director, Berkeley RDI",
+       "org": null,
        "link": "https://people.eecs.berkeley.edu/~dawnsong/",
        "talk": null
       }
@@ -290,7 +290,7 @@
       "Anastasis Germanidis",
       "Wei Zhan"
      ],
-     "moderator": null,
+     "moderator": "Guru Chahal (Partner, Lightspeed Venture Partners)",
      "panel_only": false,
      "panel_speakers": [],
      "speakers": [],
@@ -426,7 +426,7 @@
       {
        "name": "Duncan Lennox",
        "title": "Chief Product & Technology Officer",
-       "org": "Hubspot",
+       "org": "HubSpot",
        "link": "https://www.hubspot.com/company/board-of-directors/duncan-lennox",
        "talk": null
       },
@@ -473,8 +473,8 @@
       },
       {
        "name": "Andy Konwinski",
-       "title": "Co-Founder",
-       "org": "Databricks, Perplexity and Laude Ventures",
+       "title": "Co-Founder, Databricks; Perplexity; Laude Ventures",
+       "org": null,
        "link": "https://andykonwinski.com/about/",
        "talk": null
       }

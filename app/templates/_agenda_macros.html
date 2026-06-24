@@ -10,8 +10,21 @@
     {% endif %}
   </div>
   <p class="speaker-name">{{ s.name }}</p>
+  {% if (s.title and ';' in s.title) or (s.org and ';' in s.org) %}
+    {% set titles = s.title.split(';') %}
+    {% set orgs = (s.org or '').split(';') %}
+    {% for t in titles %}
+      <p class="speaker-title">{{ t | trim }}{% if orgs[loop.index0] is defined and (orgs[loop.index0] | trim) %}, <span class="speaker-org-inline">{{ orgs[loop.index0] | trim }}</span>{% endif %}</p>
+    {% endfor %}
+    {% if orgs | length > titles | length %}
+      {% for extra in orgs[titles | length:] %}
+        {% if extra | trim %}<p class="speaker-title"><span class="speaker-org-inline">{{ extra | trim }}</span></p>{% endif %}
+      {% endfor %}
+    {% endif %}
+  {% else %}
   <p class="speaker-title">{{ s.title }}</p>
   <p class="speaker-org">{{ s.org }}</p>
+  {% endif %}
   {% if s.link %}<span class="speaker-link">View profile →</span></a>{% endif %}
 </div>
 {% endmacro %}
