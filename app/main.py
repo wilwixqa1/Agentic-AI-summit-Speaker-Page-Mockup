@@ -85,6 +85,7 @@ def _frontier_meta_index():
         "chuanli": {"headshot": "chuan_li.png", "link": "https://github.com/chuanli11"},
         "brandonmiddleton": {"headshot": "brandon_middleton.png", "link": "https://dschool.stanford.edu/directory/brandon-middleton"},
         "mattwhite": {"headshot": "matt_white.png", "link": "https://www.matt-white.com/"},
+        "ankitgoyal": {"headshot": "ankit_goyal.png", "link": "https://www.linkedin.com/in/goyalankit3/"},
     }
     for k, v in extra.items():
         idx[k] = v
@@ -124,7 +125,7 @@ def paginate_speakers(speakers, num_pages=3, cols=4):
     return pages
 
 
-CARD_EXCLUDE = {"ankitgoyal"}  # agenda speakers intentionally without a speaker card (matches production)
+CARD_EXCLUDE = set()  # agenda speakers intentionally without a speaker card (matches production)
 
 
 def build_frontier_by_stage():
