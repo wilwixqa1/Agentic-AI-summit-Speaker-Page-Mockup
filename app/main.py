@@ -1,8 +1,7 @@
 """Agentic AI Summit 2026 - Side Events display mock.
 
-Serves an index plus three full-page previews of the Summit events page, each
-with a different Side Events layout inserted directly above Our Community
-Partners. Repurposed from the earlier speaker-page mock; Railway deploy config
+Serves an index plus full-page previews of proposed Summit page changes:
+the approved compact Side Events layout and the pending sponsor additions. Repurposed from the earlier speaker-page mock; Railway deploy config
 (app.main:app, /healthz) is unchanged.
 """
 from pathlib import Path
@@ -29,14 +28,9 @@ def index():
     return _page("index.html")
 
 
-@app.get("/option-a", response_class=HTMLResponse)
-def option_a():
-    return _page("option_a.html")
-
-
-@app.get("/option-b", response_class=HTMLResponse)
-def option_b():
-    return _page("option_b.html")
+@app.get("/sponsors", response_class=HTMLResponse)
+def sponsors():
+    return _page("sponsors.html")
 
 
 @app.get("/option-c", response_class=HTMLResponse)
