@@ -38,9 +38,24 @@ def option_c():
     return _page("option_c.html")
 
 
+@app.get("/banner-a", response_class=HTMLResponse)
+def banner_a():
+    return _page("banner_a.html")
+
+
+@app.get("/banner-b", response_class=HTMLResponse)
+def banner_b():
+    return _page("banner_b.html")
+
+
+@app.get("/banner-c", response_class=HTMLResponse)
+def banner_c():
+    return _page("banner_c.html")
+
+
 @app.get("/banner-preview", response_class=HTMLResponse)
 def banner_preview():
-    return _page("banner_preview.html")
+    return _page("banner_b.html")
 
 
 @app.get("/healthz")
