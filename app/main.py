@@ -38,6 +38,11 @@ def option_c():
     return _page("option_c.html")
 
 
+@app.get("/banner-preview", response_class=HTMLResponse)
+def banner_preview():
+    return _page("banner_preview.html")
+
+
 @app.get("/healthz")
 def healthz():
     return JSONResponse({"ok": True})
